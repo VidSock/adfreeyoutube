@@ -1664,7 +1664,7 @@ background-position:center 30px;
               }
             
           100% {
-            transform: translateY(-500px); 	
+            transform: translateY(-100vh); 	
             }
           }
 
