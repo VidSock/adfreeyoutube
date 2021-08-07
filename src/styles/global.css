@@ -1570,7 +1570,7 @@ body.homepage .intro:before{
 /* left:0;
 top:0;
 right:0; */
-filter: drop-shadow(1px 1px 4px rgba(255, 2, 213, 0.9));
+filter: drop-shadow(1px 1px 24px rgba(255, 0, 0, 0.9));
 display: flex;
 align-items: center;
 justify-content: center;
