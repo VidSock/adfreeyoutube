@@ -63,7 +63,12 @@ const CustomBox = styled.div`
           }
 
           render() {
-            const Url = "https://www.youtube.com/embed/" + this.state.youtubelink + "?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=0&amp;playlist=" + this.state.youtubelink + ""
+
+            const Url = "https://www.youtube.com/embed/" + this.state.youtubelink + "?controls=1&amp;showinfo=1&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=0&amp;playlist=" + this.state.youtubelink + ""
+
+            // const urlNoProtocol = Url.replace(/^https?\:\/\//i, "")
+
+
             return (
           
           // render() {
