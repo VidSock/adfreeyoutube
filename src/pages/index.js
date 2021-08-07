@@ -42,7 +42,6 @@ const CustomBox = styled.div`
        // export default function nftPage({ data: { products } }) {
   
 
-        
 
         
         export default class IndexPage extends React.Component {
@@ -60,13 +59,16 @@ const CustomBox = styled.div`
           }
           handleSubmit = event => {
             event.preventDefault()
-            // alert(`Welcome ${this.state.youtubelink}!`)
+            alert(`Welcome ${this.state.youtubelink}!`)
           }
 
-          
           render() {
-            const Url = "https://www.youtube.com/embed/" + this.state.youtubelink + "?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=" + this.state.youtubelink + ""
+            const Url = "https://www.youtube.com/embed/" + this.state.youtubelink + "?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=0&amp;playlist=" + this.state.youtubelink + ""
             return (
+          
+          // render() {
+          //   const Url = "" + this.state.youtubelink + "?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=" + this.state.youtubelink + ""
+          //   return (
 <>
 
 
@@ -77,9 +79,9 @@ const CustomBox = styled.div`
 </Helmet>
 
 <Seo
-          title={`Time Trolley - Animated Photo Experience by Todd Lambert`}
-          description={`Experiences are a new melding of visual, audio and interactive together in a new medium for art`}
-          image={'https://twilightscapes.com/twilight-promo-time-trolley.jpg'}
+          title={`AD FREE YOUTUBE - Because we don't like ads either`}
+          description={`Sometimes you just need a break from the ads, that's why we are AdFree`}
+          image={'https://adfreeyoutube.com/default-og-image.jpg'}
         />
 
 
