@@ -1,19 +1,19 @@
 {
   "meta": {
     "iconimage": "/assets/AdFree-Logo.svg",
-    "companyname": "Propel Photo",
-    "siteUrl": "https://propelphoto.com/",
+    "companyname": "AdFree",
+    "siteUrl": "https://adfreeyt.com/",
     "twitterUsername": "toddlambert",
-    "siteTitleDefault": "Site Title Default",
-    "siteTitle": "Site Title",
+    "siteTitleDefault": "AdFree - Because I don't like clicking skip ads either",
+    "siteTitle": "AdFree - Because I don't like clicking skip ads either",
     "titleTemplate": "%s",
     "twitter": "yourtwittername",
     "siteImage": "/default-og-image.jpg",
-    "siteDescription": "Site Description",
-    "title": "Site Title",
+    "siteDescription": "AdFree - No injected ads, or autoplay ads. Just the video you want without the interruptions",
+    "title": "AdFree - Because I don't like clicking skip ads either",
     "hrefLang": "en",
     "image": "/assets/default-og-image.jpg",
-    "description": "Site Description"
+    "description": "AdFree - No injected ads, or autoplay ads. Just the video you want without the interruptions"
   },
   "ga": "yourgooglenumberhere"
 }

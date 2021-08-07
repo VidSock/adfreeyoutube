@@ -144,7 +144,7 @@ export function Layout({ children }) {
 
 
  </li>
- <li className="carto" style={{border:'none', margin:'0 0'}}>
+ <li className="carto" style={{border:'none', margin:'1rem 0'}}>
 <Link to="/">
 {/* <TwilightLogo /> */}
 <img src={iconimage} />
@@ -160,7 +160,7 @@ export function Layout({ children }) {
 
  <li className="carto" style={{textAlign:'center'}}>
  <Link state={{modal: true}}  className="navbar-item txtshadow" to="/contact/">
-Contact Us<span></span>
+Contact<span></span>
 </Link>
 
 

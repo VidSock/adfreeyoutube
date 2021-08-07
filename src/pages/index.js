@@ -84,8 +84,8 @@ const CustomBox = styled.div`
 </Helmet>
 
 <Seo
-          title={`AD FREE YOUTUBE - Because we don't like ads either`}
-          description={`Sometimes you just need a break from the ads, that's why we are AdFree`}
+          title={`AdFree - Because I don't like clicking skip ads either`}
+          description={`Sometimes you just need a break from the ads, that's why there is AdFree`}
           image={'https://adfreeyoutube.com/default-og-image.jpg'}
         />
 

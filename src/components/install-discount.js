@@ -7,7 +7,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import CookieConsent from "react-cookie-consent"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components";
-
+import { Link } from "gatsby"
 
 const CustomBox = styled.div`
 // #installer {
@@ -44,7 +44,7 @@ const InstallDiscount = () => (
 
 
 <div id="installer" className="popper" style={{ display:'flex', justifyContent:'center', alignContent:'center', position: 'fixed', top:'60px',
-left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', background:'transparent', padding:'0'}}>
+left:'-110vw', width:'600px', display:'flex', justifyContent:'center', alignItems:'center', background:'transparent', padding:'0'}}>
 
 
 
@@ -76,7 +76,7 @@ left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', back
 >
 
 
-<StaticImage src="../../static/assets/overlanding-setup.jpg" alt="Twilightscapes" className="popp" style={{position:'absolute', zIndex:'-1', borderRadius:'12px 12px 12px 12px', backgroundSize:'cover'}} />
+{/* <StaticImage src="../../static/assets/overlanding-setup.jpg" alt="Twilightscapes" className="popp" style={{position:'absolute', zIndex:'-1', borderRadius:'12px 12px 12px 12px', backgroundSize:'cover'}} /> */}
 
 {/* <div className="backdrop" style={{left:'0', top:'-60px'}}></div> */}
 <div className="container" style={{padding:'2rem 0', border:'0px solid #555', borderRadius:'8px', color:'#fff', textAlign:'center', position:'relative', textShadow:'2px 2px 0 #000', overflow:'hidden', borderRadius:'12px'}}>
@@ -84,17 +84,18 @@ left:'-90vw', display:'flex', justifyContent:'center', alignItems:'center', back
 
 
 	
-	<p style={{textAlign:'center', fontSize:'clamp(1.6rem, -0.875rem + 7.333vw, 2.5rem)', padding:'0', margin:'0 0 10px 0', overflowWrap:'break-word'}}>Integrated PopUp Windows <br /> <strong></strong></p>
+	<p style={{textAlign:'center', fontSize:'clamp(1.6rem, -0.875rem + 7.333vw, 2.5rem)', padding:'0', margin:'0 0 10px 0', overflowWrap:'break-word'}}>Your Name Here<strong></strong></p>
 	
 	{/* <p style={{fontSize:'100%', textAlign:'left',}}>
   Twilightscapes has app functionality. Add it to your home screen to get added features, exclusive content, and fullscreen capability. </p> */}
     
     <p style={{fontSize:'90%', }}>
-      <strong>(an industry first - we invented em!)</strong>
+   
+      <Link to="/contact/" className="navbar-item  button fire" style={{margin:'2rem'}}>Contact for Advertising</Link>
     </p>
 
  
-  <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'1px solid #333', borderRadius:'12px', backdropFilter:'blur(14px)', background:'rgba(0,0,0,0.50)',}}>Some ideas:
+  <div style={{fontSize:'90%', textAlign:'center', display:'none', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'1px solid #333', borderRadius:'12px', backdropFilter:'blur(14px)', background:'rgba(0,0,0,0.50)',}}>Some ideas:
 
   <div style={{textAlign:'left', display:'flex', padding:'.5rem 0', justifyContent:'center',}}>
   1) You could have a sales promotion here
