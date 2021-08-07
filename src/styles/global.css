@@ -855,6 +855,10 @@ input[type="checkbox"]:checked ~ #sidebarMenu {
 }
 
 
+input[type=checkbox]:checked ~ .sidebarIconToggle > .bug {
+opacity: 0 !important;
+}
+
 
 input[type=checkbox] {
   transition: all 0.3s;
