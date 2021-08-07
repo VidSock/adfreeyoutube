@@ -59,7 +59,7 @@ const CustomBox = styled.div`
           }
           handleSubmit = event => {
             event.preventDefault()
-            alert(`Welcome ${this.state.youtubelink}!`)
+            // alert(`Welcome ${this.state.youtubelink}!`)
           }
 
           render() {
