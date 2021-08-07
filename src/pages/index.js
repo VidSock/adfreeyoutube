@@ -80,7 +80,7 @@ const CustomBox = styled.div`
     <CustomBox style={{}}>
     <Layout className="thanks-page">
     <Helmet>
-  <body className="spaceport1" />
+  <body className="homepage" />
 </Helmet>
 
 <Seo

@@ -124,7 +124,7 @@ export function Layout({ children }) {
 
 
 
-  <Install />
+  {/* <Install /> */}
 
 
 
