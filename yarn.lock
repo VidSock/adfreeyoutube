@@ -1620,6 +1620,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/roboto@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-4.5.0.tgz#d6f925668ba6af46707f1040c43aff498ba204bb"
+  integrity sha512-ja4XYw/9kNRFM5Ndk9vwzHWsdBMXczyBazFkTXJQ74QQBnT0BbSsHn0pF60AU0Iznig1Wt9x3rADfG8LANvMpw==
+
 "@gatsby-contrib/gatsby-plugin-elasticlunr-search@^3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@gatsby-contrib/gatsby-plugin-elasticlunr-search/-/gatsby-plugin-elasticlunr-search-3.0.2.tgz#f60462f5f6283af170a22b28e2f159dd936f6a7b"
@@ -7042,11 +7047,6 @@ follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.1.tgz#d9114ded0a1cfdd334e164e6662ad02bfd91ff43"
   integrity sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==
-
-fontsource-hammersmith-one@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/fontsource-hammersmith-one/-/fontsource-hammersmith-one-4.0.0.tgz#446b976453f5f263cc30e0a940d6f787263ecf27"
-  integrity sha512-YjOZTkgpQgqBB7WWbM6iH1lRA9L0Qbx4cp361AVH0jBDxX2ITMHrTO5sywZFj2bx9P9KzbD9ymdvVQfH4NAJaQ==
 
 for-each@^0.3.3:
   version "0.3.3"
