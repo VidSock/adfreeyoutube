@@ -140,7 +140,7 @@ export function Layout({ children }) {
  <li className="carta" style={{border:'none', margin:'0 0', textAlign:'center'}}>
 <Link to="/"> 
 {/* <TwilightLogo /> */}
-<img src={iconimage} />
+<img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" />
 <span>Clicking Skip Sucks</span>
 </Link>
 
@@ -149,7 +149,7 @@ export function Layout({ children }) {
  <li className="carto" style={{border:'none', margin:'0 0', textAlign:'center'}}>
 <Link to="/">
 {/* <TwilightLogo /> */}
-<img src={iconimage} />
+<img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" />
 <span>Clicking Skip Sucks</span>
 </Link>
  </li>

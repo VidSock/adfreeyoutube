@@ -177,7 +177,7 @@ right:'', border:'0px solid yellow', justifyContent:'center', width:'', textAlig
 
     <div className="video-foreground" style={{position:'absolute', zIndex:'-1'}}>
       
-<iframe id="youtube" className="video" width="100%" height="350" src={Url} frameBorder="0" />
+<iframe title="AdFree YouTube" id="youtube" className="video" width="100%" height="350" src={Url} frameBorder="0" />
 
 
 

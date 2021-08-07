@@ -178,7 +178,7 @@ export function Footer() {
         
       </div>
       <nav className={links} aria-label="footer">
-      <div style={{textAlign: 'center', margin: '0 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem'}}><Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
+      <div style={{textAlign: 'center', margin: '0 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem'}}><Link to="/faq/">FAQ</Link>  |  <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
   
   
   
