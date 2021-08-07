@@ -35,11 +35,12 @@ body,h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.specia
 .fire{  box-shadow:  0 4px 22px var(--primary-color) !important;}
 
 .bug{
-max-width:80px;
+max-width:80px !important;
+height: auto !important;
 opacity:.2;
 }
 .bug:hover{
-  /* opacity:.6 !important; */
+  opacity:.6 !important;
   }
 
 .video-background {
@@ -856,7 +857,7 @@ input[type="checkbox"]:checked ~ #sidebarMenu {
 
 
 input[type=checkbox]:checked ~ .sidebarIconToggle > .bug {
-opacity: 0 !important;
+/* opacity: 0 !important; */
 }
 
 
@@ -871,7 +872,7 @@ input[type=checkbox] {
   cursor: pointer;
   position: fixed;
   z-index: 4;
-  top: 77vh;
+  top: 75vh;
   right: 50px;
   /* height: 100px;
   width: 100px; */
@@ -1575,7 +1576,7 @@ background: rgba(0,0,0,0.6);
 
 body.homepage .intro:before{
           
-  content: "Clicking skip sucks";
+  content: "Clicking Skip Sucks";
 /* position:fixed; */
 /* left:0;
 top:0;

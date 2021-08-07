@@ -141,7 +141,7 @@ export function Layout({ children }) {
 <Link to="/"> 
 {/* <TwilightLogo /> */}
 <img src={iconimage} />
-<span>Clicking skip sucks</span>
+<span>Clicking Skip Sucks</span>
 </Link>
 
 
@@ -150,7 +150,7 @@ export function Layout({ children }) {
 <Link to="/">
 {/* <TwilightLogo /> */}
 <img src={iconimage} />
-<span>Clicking skip sucks</span>
+<span>Clicking Skip Sucks</span>
 </Link>
  </li>
  
@@ -295,10 +295,10 @@ Contact Me<span>Ordering Questions?</span>
 
       <SkipNavContent className="intro">{children}</SkipNavContent>
       
-      <br /><br />
+
       {/* <Consent /> */}
      {/* <Install /> */}
-      {/* <Footer /> */}
+      <Footer />
       
       </>
     </div>
