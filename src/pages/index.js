@@ -56,24 +56,28 @@ const CustomBox = styled.div`
             this.setState({
               [name]: value,
             })
+ 
           }
           handleSubmit = event => {
             event.preventDefault()
-            // alert(`Welcome ${this.state.youtubelink}!`)
+            // alert(`Your Url ${this.state.youtubelink}!`)
+            
           }
 
           render() {
 
-            const Url = "https://www.youtube.com/embed/" + this.state.youtubelink + "?controls=1&amp;showinfo=1&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=0&amp;playlist=" + this.state.youtubelink + ""
+ 
 
-            // const urlNoProtocol = Url.replace(/^https?\:\/\//i, "")
+            const Url = this.state.youtubelink
+
+            const urlNoProtocol = Url.replace(/^.*((youtu.be\/))/i, "")
+
+
+            const final = "https://www.youtube.com/embed/" + urlNoProtocol + "?controls=1&amp;showinfo=1&amp;color=red&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=0&amp;playlist=" + urlNoProtocol + ""
 
 
             return (
-          
-          // render() {
-          //   const Url = "" + this.state.youtubelink + "?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=" + this.state.youtubelink + ""
-          //   return (
+
 <>
 
 
@@ -124,7 +128,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
   {/* <SVG style={{width:'100%', height:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} /> */}
 
   <div className="video-foreground" style={{position:'absolute', zIndex:'-1'}}>
-  <iframe id="youtube" className="video" width="100%" height="350" src={Url} frameBorder="0" allowFullScreen playsInline></iframe>
+  <iframe id="youtube" className="video" width="100%" height="350" src={final} frameBorder="0" allowFullScreen playsInline></iframe>
   </div>
   {/* zomZywCAPTA */}
   {/* YpcJ6jJlz6o */}
