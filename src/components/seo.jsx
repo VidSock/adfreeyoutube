@@ -44,7 +44,7 @@ export function Seo({
     description: description || siteDescription,
     url: pathname ? `${siteUrl}${pathname}` : location.href,
     image: `${image || siteImage}`,
-    // image = image[0] === "/" ? "https://twilightscapes.com" + image : image
+    // image = image[0] === "/" ? "https://adfreeyt.com" + image : image
   }
 
 

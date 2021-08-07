@@ -91,8 +91,8 @@ const HomePage = ({ data }) => {
   <body className="homepage" />
 </Helmet>
 <Seo
-          title={`Photo Galleries`}
-          description={`photography`}
+          title={`Clicking skip sucks`}
+          description={`Sometimes you just need a break from the ads, that's why there is AdFree`}
           image={'/default-og-image.jpg'}
         />
       

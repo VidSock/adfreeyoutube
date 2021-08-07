@@ -1,8 +1,8 @@
 ---
 template: index-page
 slug: /
-title: Local Professional Photography
-tagline: Capturing Moments of Your Life to Cherish Forever
+title: AdFree
+tagline: Sometimes you just need a break from the ads, that's why there is AdFree
 youtube: zomZywCAPTA
 featuredImage: /assets/4B4A9560.jpg
 cta:
