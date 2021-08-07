@@ -42,9 +42,13 @@ const CustomBox = styled.div`
        // export default function nftPage({ data: { products } }) {
   
 
-
+         function paste(input) {
+          const text = navigator.clipboard.readText();
+          input.value = text;
+        }
         
         export default class IndexPage extends React.Component {
+          
           
           state = {
             youtubelink: "",
@@ -56,6 +60,7 @@ const CustomBox = styled.div`
             this.setState({
               [name]: value,
             })
+            
  
           }
           handleSubmit = event => {
@@ -64,6 +69,8 @@ const CustomBox = styled.div`
             
           }
 
+
+          
           render() {
 
  
@@ -76,7 +83,9 @@ const CustomBox = styled.div`
             const final = "https://www.youtube.com/embed/" + urlNoProtocol + "?controls=1&amp;showinfo=1&amp;color=white&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=0&amp;playlist=" + urlNoProtocol + ""
 
 
+            
             return (
+
 
 <>
 
@@ -146,12 +155,15 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 <form className="contact-form" onSubmit={this.handleSubmit} style={{margin:'0', padding:'0', display:'flex', width:'100%', justifyContent:'center', alignItems:'center'}}>
         <label htmlFor="youtubelink" style={{minWidth:'100px'}}>
           Paste Url:</label>
+          
           <input
             id="youtubelink"
             type="text"
             name="youtubelink"
             value={this.state.youtubelink}
             onChange={this.handleInputChange}
+            onclick="paste(this)"
+            autoFocus
           />
           
         
