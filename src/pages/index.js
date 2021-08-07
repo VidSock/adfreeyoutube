@@ -73,7 +73,7 @@ const CustomBox = styled.div`
             const urlNoProtocol = Url.replace(/^.*((youtu.be\/))/i, "")
 
 
-            const final = "https://www.youtube.com/embed/" + urlNoProtocol + "?controls=1&amp;showinfo=1&amp;color=red&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=0&amp;playlist=" + urlNoProtocol + ""
+            const final = "https://www.youtube.com/embed/" + urlNoProtocol + "?controls=1&amp;showinfo=1&amp;color=white&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=0&amp;playlist=" + urlNoProtocol + ""
 
 
             return (
@@ -88,7 +88,7 @@ const CustomBox = styled.div`
 </Helmet>
 
 <Seo
-          title={`AdFree - Because I don't like clicking skip ads either`}
+          title={`Clicking skip sucks`}
           description={`Sometimes you just need a break from the ads, that's why there is AdFree`}
           image={'https://adfreeyoutube.com/default-og-image.jpg'}
         />
@@ -118,7 +118,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 <div className="vidbox" style={{maxHeight:'90vh', overflow:'hidden'}}>
   
-<div className="video-background" style={{width:'100vw'}}>
+<div className="video-background" style={{width:'100vw', overflow:'hidden'}}>
 
 
 
@@ -127,7 +127,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
   {/* <SVG style={{width:'100%', height:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} /> */}
 
-  <div className="video-foreground" style={{position:'absolute', zIndex:'-1'}}>
+  <div className="video-foreground" style={{position:'absolute', zIndex:'-1', overflow:'hidden'}}>
   <iframe id="youtube" className="video" width="100%" height="350" src={final} frameBorder="0" allowFullScreen playsInline></iframe>
   </div>
   {/* zomZywCAPTA */}
@@ -145,7 +145,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 <div style={{display:'flex', justifyContent:'center', width:'75%', margin:'0 auto'}}>
 <form className="contact-form" onSubmit={this.handleSubmit} style={{margin:'0', padding:'0', display:'flex', width:'100%', justifyContent:'center', alignItems:'center'}}>
         <label style={{minWidth:'100px'}}>
-          YouTube Url:</label>
+          Paste Url:</label>
           <input
             type="text"
             name="youtubelink"

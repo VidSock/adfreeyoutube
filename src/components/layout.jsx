@@ -8,7 +8,8 @@ import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
 // import { FaHandPointDown } from "react-icons/fa"
-import TwilightLogo from "../../static/assets/AdFree-Logo.svg"
+import TwilightLogo from "../../static/assets/adfree-youtube-logo.svg"
+import Bug from "../../static/assets/adfree-youtube-logo-bug.svg"
 import { StoreContext } from "../context/store-context"
 import { Toast } from "./toast"
 // import { FiShare } from 'react-icons/fi';
@@ -97,12 +98,12 @@ export function Layout({ children }) {
 
 
 
-{/* <IoMdFingerPrint style={{fontSize:'60px', marginLeft:'20px' }}/> */}
+<Bug className="bug" style={{fontSize:'20px', maxWidth:'80px', opacity:'.3' }}/>
 
 {/* <span>MENU</span> */}
-    <div className="spinner diagonal part-1"></div>
+    {/* <div className="spinner diagonal part-1"></div>
     <div className="spinner horizontal"></div>
-    <div className="spinner diagonal part-2"></div>
+    <div className="spinner diagonal part-2"></div> */}
   </label>
 
 
@@ -136,18 +137,20 @@ export function Layout({ children }) {
 
     <ul className="sidebarMenuInner post-card" style={{maxWidth:'250px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
- <li className="carta" style={{border:'none', margin:'1rem 0'}}>
+ <li className="carta" style={{border:'none', margin:'0 0', textAlign:'center'}}>
 <Link to="/"> 
 {/* <TwilightLogo /> */}
 <img src={iconimage} />
+<span>Clicking Skip Sucks</span>
 </Link>
 
 
  </li>
- <li className="carto" style={{border:'none', margin:'1rem 0'}}>
+ <li className="carto" style={{border:'none', margin:'0 0', textAlign:'center'}}>
 <Link to="/">
 {/* <TwilightLogo /> */}
 <img src={iconimage} />
+<span>Clicking Skip Sucks</span>
 </Link>
  </li>
  
