@@ -57,7 +57,7 @@ module.exports = {
       options: {
         // A selector to set react-modal's app root to, default is `#___gatsby`
         // See http://reactcommunity.org/react-modal/accessibility/#app-element
-        appElement: '#___gatsby',
+        appElement: '#___adfree',
 
         // Object of props that will be passed to the react-modal container
         // See http://reactcommunity.org/react-modal/#usage
@@ -178,11 +178,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `YourApp`,
-        short_name: `YourApp`,
+        name: `AdFree`,
+        short_name: `AdFree`,
         start_url: `/`,
         background_color: `#111`,
-        theme_color: `#111`,
+        theme_color: `#FF0000`,
         display: `standalone`,
         // icon: "static" + settings.meta.iconimage,
         icons: [
