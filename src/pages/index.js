@@ -125,7 +125,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-<div className="vidbox" style={{maxHeight:'90vh', overflow:'hidden'}}>
+<div className="vidbox" style={{maxHeight:'85vh', overflow:'hidden'}}>
   
 <div className="video-background" style={{width:'100vw', overflow:'hidden'}}>
 
