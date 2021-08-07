@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "iconimage": "/assets/toddtravels-logo-white-transparent-300dpi.png",
+    "companyname": "Propel Photo",
+    "siteUrl": "https://propelphoto.com/",
+    "twitterUsername": "toddlambert",
+    "siteTitleDefault": "Site Title Default",
+    "siteTitle": "Site Title",
+    "titleTemplate": "%s",
+    "twitter": "yourtwittername",
+    "siteImage": "/default-og-image.jpg",
+    "siteDescription": "Site Description",
+    "title": "Site Title",
+    "hrefLang": "en",
+    "image": "/assets/default-og-image.jpg",
+    "description": "Site Description"
+  },
+  "ga": "yourgooglenumberhere"
+}
