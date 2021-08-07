@@ -8,7 +8,7 @@ import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
 // import { FaHandPointDown } from "react-icons/fa"
-import TwilightLogo from "../../static/assets/TSidebarHover.svg"
+import TwilightLogo from "../../static/assets/AdFree-Logo.svg"
 import { StoreContext } from "../context/store-context"
 import { Toast } from "./toast"
 // import { FiShare } from 'react-icons/fi';
@@ -144,7 +144,7 @@ export function Layout({ children }) {
 
 
  </li>
- <li className="carto" style={{border:'none', margin:'1rem 0'}}>
+ <li className="carto" style={{border:'none', margin:'0 0'}}>
 <Link to="/">
 {/* <TwilightLogo /> */}
 <img src={iconimage} />
@@ -158,8 +158,8 @@ export function Layout({ children }) {
 
 
 
- <li className="carto">
- <Link className="navbar-item txtshadow" to="/contact/">
+ <li className="carto" style={{textAlign:'center'}}>
+ <Link state={{modal: true}}  className="navbar-item txtshadow" to="/contact/">
 Contact Us<span></span>
 </Link>
 
@@ -180,15 +180,15 @@ Contact Me<span>Ordering Questions?</span>
        </li> */}
 
 
-      <li className="carto">
+      {/* <li className="carto">
               <Link className="navbar-item txtshadow" to="/about/">
                 About Us <span>Our story</span>
               </Link>
-      </li>
+      </li> */}
 
-      <li className="carto">
+      {/* <li className="carto">
       <Link className="navbar-item txtshadow" to="/blog/">Blog<span>Latest Posts</span></Link>
-       </li>
+       </li> */}
 
 
       {/* <li className="carto">
@@ -206,12 +206,12 @@ Contact Me<span>Ordering Questions?</span>
 
 
 
-      <li className="carto" style={{textAlign:'center'}}>
+      {/* <li className="carto" style={{textAlign:'center'}}>
               <Link className="navbar-item txtshadow" to="/photos/">
       
               View Photos <span style={{color:'var(--primary-color)',}}>start here</span>
               </Link>
-      </li> 
+      </li>  */}
     
       <li className="carta">
       <div style={{display:'flex', justifyContent:'center'}}>
@@ -228,12 +228,12 @@ Contact Me<span>Ordering Questions?</span>
 
       <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-between', verticalAlign:'center', padding:'0 20px',  }}>
   
-      <Theme  style={{padding:'0'}} />
-   <Link className="sherlock" to="/search" style={{marginRight:'0', marginTop:'5px'}}>
+      {/* <Theme  style={{padding:'0'}} /> */}
+   {/* <Link className="sherlock" to="/search" style={{marginRight:'0', marginTop:'5px'}}>
     <span className="carto"><SearchIcon /></span>
-   </Link>
+   </Link> */}
    
-  <div className="carto"><CartButton quantity={quantity} /></div>
+  {/* <div className="carto"><CartButton quantity={quantity} /></div> */}
 
 
         </li>
@@ -295,7 +295,7 @@ Contact Me<span>Ordering Questions?</span>
       <br /><br />
       {/* <Consent /> */}
      {/* <Install /> */}
-      <Footer />
+      {/* <Footer /> */}
       
       </>
     </div>

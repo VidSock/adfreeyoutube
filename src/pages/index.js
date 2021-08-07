@@ -131,27 +131,27 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
     Your browser does not support the HTML5 Audio element.
 </audio>
 </div> */}
-
-
-<div className="fluff outerpanel" style={{borderLeft:'none', padding:'2rem 12%'}}>
-
-
-<form onSubmit={this.handleSubmit}>
-        <label>
-          YouTube Url:
+<div style={{display:'flex', justifyContent:'center', width:'75%', margin:'0 auto'}}>
+<form className="contact-form" onSubmit={this.handleSubmit} style={{margin:'0', padding:'0', display:'flex', width:'100%', justifyContent:'center', alignItems:'center'}}>
+        <label style={{minWidth:'100px'}}>
+          YouTube Url:</label>
           <input
             type="text"
             name="youtubelink"
             value={this.state.youtubelink}
             onChange={this.handleInputChange}
           />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
+        
+        {/* <button type="submit">Submit</button> */}
+      </form></div>
+{/* <div className="fluff outerpanel" style={{borderLeft:'none', padding:'2rem 12%'}}> */}
 
 
 
-    <StaticImage src="../img/interactive-photo-banner-alien-egg-farm.jpg" alt="Twilightscapes" className="pop" />
+
+
+
+    {/* <StaticImage src="../img/interactive-photo-banner-alien-egg-farm.jpg" alt="Twilightscapes" className="pop" /> */}
 
 
 
@@ -181,8 +181,8 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-</div>
-<PhotoMenu />
+{/* </div> */}
+{/* <PhotoMenu /> */}
        </Layout>
      </CustomBox>
      </>
