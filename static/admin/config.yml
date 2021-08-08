@@ -55,6 +55,13 @@ collections:
           required: false,
           tagname: "",
         }
+      - {
+          label: "Featured Image2",
+          name: "featuredImage2",
+          widget: "image",
+          required: false,
+          tagname: "",
+        }
 
 
 

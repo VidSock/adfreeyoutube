@@ -18,9 +18,10 @@ const PostCard = ({ data }) => (
           alt={data.frontmatter.title + " - Featured image"}
           className="featured-image"
         />
+
       </Link>
     ) : (
-      ""
+      <img src='/default-image.png' />
     )}
     <div className="post-content">
       <h2 className="title">
