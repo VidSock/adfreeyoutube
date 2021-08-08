@@ -25,7 +25,7 @@ const CustomBox = styled.div`
 
 
 export const pageQuery = graphql`
-  query homeQueryAndHomeQuery($id: String!) {
+  query homeQueryAndHomeQueryAndHomeQueryAndHomeQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
@@ -58,7 +58,7 @@ export const pageQuery = graphql`
             title
             featuredImage {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, width: 345, height: 260)
+                gatsbyImageData(layout: CONSTRAINED, width: 1200, height: 800)
               }
             }
           }

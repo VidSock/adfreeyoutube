@@ -1,10 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Layout } from "../components/layout"
-// import { ProductListing } from "../components/product-listing"
+import { ProductListing } from "../components/product-listing"
+// import BlogListing from "../components/blog-list-home"
 // import GoBack from "../components/goBack"
 import styled from "styled-components"
-// import ShareSocial from '../components/share' 
+import ShareSocial from '../components/share' 
 import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
 import { Seo } from "../components/seo"
@@ -14,7 +15,7 @@ import SVG from "../../static/assets/crude-addiction.svg"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import GiftShop from "../components/giftshop"
 import PhotoMenu from "../components/animated-photos-menu"
-// import CommentBox from "../components/commentbox"
+import CommentBox from "../components/commentbox"
 const CustomBox = styled.div`
 
 @media (max-width: 48em) {
@@ -39,7 +40,7 @@ const CustomBox = styled.div`
 //   }
 // `
 
-       // export default function nftPage({ data: { products } }) {
+      //  export default function nftPage({ data: { products } }) {
 
         export default class IndexPage extends React.Component {
           state = {
@@ -101,7 +102,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-<div style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}}><StaticImage src="../img/trolley-test.png" alt="Twilightscapes" className="layer1" style={{height:'100vh'}} /></div>
+{/* <div style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}}><StaticImage src="../img/trolley-test.png" alt="Twilightscapes" className="layer1" style={{height:'100vh'}} /></div> */}
 
   {/* <SVG style={{width:'100%', height:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} /> */}
 
@@ -122,51 +123,37 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 </div> */}
 
 
+
+<ShareSocial />
+<PhotoMenu />
+
 <div className="fluff outerpanel" style={{borderLeft:'none', padding:'2rem 12%'}}>
 
 
-<form>
-        <label>
-          First name
-          <input
-            type="text"
-            name="firstName"
-            value={this.state.firstName}
-            onChange={this.handleInputChange}
-          />
-        </label>
-        <label>
-          Last name
-          <input
-            type="text"
-            name="lastName"
-            value={this.state.lastName}
-            onChange={this.handleInputChange}
-          />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
+
+
+{/* <BlogListing /> */}
+
+    {/* <StaticImage src="../img/interactive-photo-banner-alien-egg-farm.jpg" alt="Twilightscapes" className="pop" /> */}
 
 
 
-    <StaticImage src="../img/interactive-photo-banner-alien-egg-farm.jpg" alt="Twilightscapes" className="pop" />
 
 
 
- {/* <ShareSocial />
-<br /><br /><br />
-
-<div style={{textAlign:'center', fontSize:'2rem', padding:'0', margin:'10px 0 1rem 0'}}>WANT THE PHOTO? <br /> TWILIGHTCAPES ARE ONLY $29</div>
+{/* <div style={{textAlign:'center', fontSize:'2rem', padding:'0', margin:'10px 0 1rem 0'}}>WANT THE PHOTO? <br /> TWILIGHTCAPES ARE ONLY $29</div>
 
 <div className="nft"><ProductListing products={data.shopifyCollection.products} />
 </div>
-<br /><br />
+<br /><br /> */}
+
+
 
 
 <div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
     <CommentBox />
  </div>
-     */}
+   
 
 
 
@@ -180,7 +167,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 </div>
-<PhotoMenu />
+
        </Layout>
      </CustomBox>
      </>

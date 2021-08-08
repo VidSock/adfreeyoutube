@@ -2268,12 +2268,33 @@ opacity:.8;
         scroll-snap-type: y proximity;
         height:60vh;
       }
-      section {
+      .container2 section {
         scroll-snap-align: start;
         overflow:hidden;
         /* height:70vh; */
         background:tranparent !important;
       }
+
+.blogscroller{
+overflow-y: scroll;
+        scroll-snap-type: y proximity;
+        height:70vh;
+}
+
+.blogscroller section {
+  scroll-snap-align: start;
+  /* overflow:hidden; */
+  height:100% !important;
+  background:tranparent !important;
+}
+
+.blogscroller section article {
+height:100vh;
+}
+   
+.blogscroller section article img{
+  height:100% !important;
+}
 
 
         

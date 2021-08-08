@@ -4,11 +4,12 @@ import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
 const PostCard = ({ data }) => (
+  <section>
   <article
     className="post-card"
-    sx={{
-      bg: "linear-gradient(180deg, #333 1%, #111 80%)",
-    }}
+    // sx={{
+    //   bg: "linear-gradient(180deg, #333 1%, #111 80%)",
+    // }}
   >
     {data.frontmatter.featuredImage ? (
       <Link to={data.frontmatter.slug}>
@@ -42,6 +43,7 @@ const PostCard = ({ data }) => (
       </p>
     </div>
   </article>
+  </section>
 )
 
 export default PostCard

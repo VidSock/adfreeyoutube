@@ -131,7 +131,7 @@ const PostMaker = ({ data }) => (
   
   <Link
       className="button"
-      to="/blog/"
+      to="/archive/"
       title="See More Galleries"
       style={{color:'#fff'}}
     >

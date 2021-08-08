@@ -91,8 +91,8 @@ const HomePage = ({ data }) => {
   <body className="homepage" />
 </Helmet>
 <Seo
-          title={`Clicking skip... sucks`}
-          description={`Sometimes you just need a break from the ads, that's why there is AdFree`}
+          title={`Photo Galleries`}
+          description={`photography`}
           image={'/default-og-image.jpg'}
         />
       
@@ -177,7 +177,7 @@ right:'', border:'0px solid yellow', justifyContent:'center', width:'', textAlig
 
     <div className="video-foreground" style={{position:'absolute', zIndex:'-1'}}>
       
-<iframe title="AdFree YouTube" id="youtube" className="video" width="100%" height="350" src={Url} frameBorder="0" />
+<iframe id="youtube" className="video" width="100%" height="350" src={Url} frameBorder="0" />
 
 
 

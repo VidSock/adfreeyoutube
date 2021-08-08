@@ -190,7 +190,7 @@ Contact Me<span>Ordering Questions?</span>
       </li> */}
 
       {/* <li className="carto">
-      <Link className="navbar-item txtshadow" to="/blog/">Blog<span>Latest Posts</span></Link>
+      <Link className="navbar-item txtshadow" to="/archive/">Blog<span>Latest Posts</span></Link>
        </li> */}
 
 
