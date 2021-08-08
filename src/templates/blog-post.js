@@ -137,7 +137,7 @@ const Post = ({ data, pageContext }) => {
 
 
 <div style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}}>
-{/* {Image ? (
+{Image ? (
             <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
@@ -145,8 +145,8 @@ const Post = ({ data, pageContext }) => {
               style={{height:'100vh'}}
             />
           ) : (
-            ""
-          )} */}
+            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" />
+          )}
 </div>
 
   {/* <SVG style={{width:'100%', height:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} /> */}
@@ -179,7 +179,7 @@ const Post = ({ data, pageContext }) => {
               style={{height:'100vh'}}
             />
           ) : (
-            ""
+            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" />
           )} */}
           <section className="article-header" style={{textAlign:'left', margin:'0 4%', height:'auto'}}>
             <h1>{frontmatter.title}</h1>
@@ -204,10 +204,6 @@ const Post = ({ data, pageContext }) => {
 
    
       <div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
-     {/* {commentBox('5730512475783168-proj')} */}
-{/* <div className="commentbox"></div> */}
-{/* <CommentBox /> */}
-{/* <div className="commentbox" /> */}
 <CommentBox />
      </div>
 

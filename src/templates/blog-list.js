@@ -137,9 +137,9 @@ class BlogIndex extends React.Component {
     return (
       <Layout className="blog-page1">
         <Seo
-          title={"Twilightscapes Galleries — Page " + currentPage + " of " + numPages}
+          title={"AdFree Archive — Page " + currentPage + " of " + numPages}
           description={
-            "Twilightscapes base gallery page " + currentPage + " of " + numPages
+            "dFree Archive page " + currentPage + " of " + numPages
           }
         />
         

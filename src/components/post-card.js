@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 
 const PostCard = ({ data }) => (
   <section>
@@ -21,7 +21,7 @@ const PostCard = ({ data }) => (
 
       </Link>
     ) : (
-      <img src='/default-image.png' />
+      <Link to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/default-og-image.jpg" alt="AdFree Default Image" /></Link>
     )}
     <div className="post-content">
       <h2 className="title">
@@ -40,7 +40,7 @@ const PostCard = ({ data }) => (
           color: "muted",
         }}
       >
-        {/* <time>{data.frontmatter.date}</time> */}
+        <time>{data.frontmatter.date}</time>
       </p>
     </div>
   </article>
