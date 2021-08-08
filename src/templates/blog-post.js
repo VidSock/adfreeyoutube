@@ -141,7 +141,7 @@ const Post = ({ data, pageContext }) => {
 
 
 
-<div style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}}>
+{/* <div style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}}>
 {Image2 ? (
             <GatsbyImage
               image={Image2}
@@ -152,9 +152,9 @@ const Post = ({ data, pageContext }) => {
           ) : (
             <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" />
           )}
-</div>
+</div> */}
 
-<div className="featured-banner" style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} >
+{/* <div className="featured-banner" style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} >
 {Image ? (
             <GatsbyImage
               image={Image}
@@ -165,7 +165,7 @@ const Post = ({ data, pageContext }) => {
           ) : (
             <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" />
           )}
-</div>
+</div> */}
 
 
   {/* <SVG style={{width:'100%', height:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'1', backgroundSize:'cover'}} /> */}
@@ -174,7 +174,7 @@ const Post = ({ data, pageContext }) => {
 
 
 
-  {/* <iframe title="AdFree YouTube" id="youtube" className="video" width="100%" height="350" src={Url} frameBorder="0" /> */}
+  <iframe title="AdFree YouTube" id="youtube" className="video" width="100%" height="350" src={Url} frameBorder="0" />
 
 
   </div>
@@ -266,6 +266,8 @@ export const pageQuery = graphql`
         title
         description
         youtuber
+        youtubestart
+        youtubeend
         featuredImage {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)

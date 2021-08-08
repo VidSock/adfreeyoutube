@@ -1,7 +1,7 @@
 import * as React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Social from "../components/social"
-
+import Theme from "../components/theme"
 import Icons from "../util/socialmedia.json"
 import {
   RiFacebookBoxFill,
@@ -182,7 +182,10 @@ export function Footer() {
   
   
   
-      <div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>Copyright &copy; {(new Date().getFullYear())} AdFree - hand crafted Gatsby on Netlify</div>
+      <div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>
+        
+       Copyright &copy; {(new Date().getFullYear())} AdFree - hand crafted Gatsby on Netlify</div>
+       <Theme  style={{padding:'0', display:'flex', alignSelf:'center'}} />
       </nav>
    
     </footer>

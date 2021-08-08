@@ -882,7 +882,7 @@ input[type=checkbox] {
   flex-direction: column;
 justify-self:flex-start;
 border:0px solid white;
-filter: drop-shadow(1px 1px 1px var(--primary));;
+filter: drop-shadow(1px 1px 10px var(--primary));;
   text-shadow:1px 1px 0px #000;
 }
 
