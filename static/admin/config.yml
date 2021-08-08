@@ -48,6 +48,8 @@ collections:
         }
       - { label: "SEO Description", name: "description", widget: "text" }
       - { label: "YouTube Url", name: "youtuber", widget: "string" }
+      - { label: "YouTube Start", name: "youtubestart", widget: "string" }
+      - { label: "YouTube End", name: "youtubeend", widget: "string" }
       - {
           label: "Featured Image",
           name: "featuredImage",

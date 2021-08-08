@@ -6,6 +6,8 @@ slug: /second-post
 date: 2021-07-19 11:37
 description: West Coast - I've Landed!
 youtuber: i2lhwb_OckQ
+youtubestart: 400
+youtubeend: 600
 featuredImage: /assets/IMG_0556.jpg
 ---
 

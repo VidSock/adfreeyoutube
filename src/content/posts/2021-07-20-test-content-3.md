@@ -5,6 +5,8 @@ slug: /third-post
 date: 2021-07-22 11:37
 description: On the road with my dog Montana
 youtuber: I8OBfRyplyE
+youtubestart: 400
+youtubeend: 600
 featuredImage: /assets/IMG_0080.jpg
 featuredImage2: /assets/DSC02502.jpg
 ---
