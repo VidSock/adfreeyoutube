@@ -15,6 +15,7 @@ import SVG from "../../static/assets/crude-addiction.svg"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 import ShareSocial from '../components/share' 
+import GoBack from "../components/goBack"
 // import { commentBox } from "commentbox.io"
 const styles = {
   "article blockquote": {
@@ -89,8 +90,8 @@ const Post = ({ data, pageContext }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
 
-  const artImage = frontmatter.featuredImage
-  ? frontmatter.featuredImage.gatsbyImageData
+  const artImage = frontmatter.featuredImage2
+  ? frontmatter.featuredImage2.gatsbyImageData
   : ""
 
   // useEffect(() =>{
@@ -104,6 +105,11 @@ const Post = ({ data, pageContext }) => {
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
+
+    const Image2 = frontmatter.featuredImage2
+    ? frontmatter.featuredImage2.childImageSharp.gatsbyImageData
+    : ""
+
   const { previous, next } = pageContext
 
   let props = {
@@ -123,8 +129,7 @@ const Post = ({ data, pageContext }) => {
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
-        // image={artImage}
-        image={"https://twilightscapes.com" + getSrc(frontmatter.featuredImage) }
+        image={"https://adfreeyt.com" + getSrc(frontmatter.featuredImage) }
         article={true}
       />
 
@@ -137,6 +142,19 @@ const Post = ({ data, pageContext }) => {
 
 
 <div style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}}>
+{Image2 ? (
+            <GatsbyImage
+              image={Image2}
+              alt={frontmatter.title + " - Featured image"}
+              className="featured-image layer1"
+              style={{height:'100vh'}}
+            />
+          ) : (
+            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" />
+          )}
+</div>
+
+<div className="featured-banner" style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} >
 {Image ? (
             <GatsbyImage
               image={Image}
@@ -149,41 +167,30 @@ const Post = ({ data, pageContext }) => {
           )}
 </div>
 
-  {/* <SVG style={{width:'100%', height:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} /> */}
 
-  <div className="video-foreground" style={{position:'absolute', zIndex:'-1'}}>
+  {/* <SVG style={{width:'100%', height:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'1', backgroundSize:'cover'}} /> */}
 
-  {/* <iframe title="AdFree YouTube" className="" width="100%" height="350" src="https://www.youtube.com/embed/{frontmatter.youtuber}?controls=0&amp;playsinline=1&amp;start=5270&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist={frontmatter.youtuber}" frameBorder="0" allowFullScreen playsInline></iframe> */}
+  <div className="video-foreground" style={{position:'absolute', zIndex:'0'}}>
 
-  <iframe title="AdFree YouTube" id="youtube" className="video" width="100%" height="350" src={Url} frameBorder="0" />
+
+
+  {/* <iframe title="AdFree YouTube" id="youtube" className="video" width="100%" height="350" src={Url} frameBorder="0" /> */}
+
+
   </div>
-  {/* zomZywCAPTA */}
-  {/* YpcJ6jJlz6o */}
-</div>
-{/*  */}
-</div>
-
-{frontmatter.youtuber}
+</div></div>
 
 
+<br />
+<GoBack />
 
 
 
       <article className="blog-post">
-        <header className="featured-banner">
-         {/* {Image ? (
-            <GatsbyImage
-              image={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image layer1"
-              style={{height:'100vh'}}
-            />
-          ) : (
-            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" />
-          )} */}
-          <section className="article-header" style={{textAlign:'left', margin:'0 4%', height:'auto'}}>
+        <header>
+          <section className="article-header" style={{textAlign:'center', margin:'0 4%', height:'auto'}}>
             <h1>{frontmatter.title}</h1>
-            {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
+            <time sx={{color: "muted"}}>{frontmatter.date}</time>
           </section>
         </header>
 
@@ -194,10 +201,17 @@ const Post = ({ data, pageContext }) => {
           dangerouslySetInnerHTML={{ __html: html }}
         />      
         
-
-      <ShareSocial />
+<GoBack />
 
       </article>
+
+
+
+
+
+
+
+
       <div style={{padding:'0 5vw'}}>
       {(previous || next) && <Pagination {...props} />}
       </div>
@@ -206,7 +220,12 @@ const Post = ({ data, pageContext }) => {
       <div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
 <CommentBox />
      </div>
-
+    
+   <ShareSocial />
+   <br />
+   <GoBack />
+   <br />
+   <br />
 {/* <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a private question or comment?</h3>
 
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
@@ -248,6 +267,11 @@ export const pageQuery = graphql`
         description
         youtuber
         featuredImage {
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH)
+          }
+        }
+        featuredImage2 {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
           }
