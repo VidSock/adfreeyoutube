@@ -3,6 +3,7 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 import Social from "../components/social"
 import Theme from "../components/theme"
 import Icons from "../util/socialmedia.json"
+import Consent from "../components/Consent"
 import {
   RiFacebookBoxFill,
   RiTwitterFill,
@@ -158,8 +159,8 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 export function Footer() {
   const { companyname } = useSiteMetadata()
   return (
-
-    
+<>
+    <Consent />
     <footer className={footerStyle} style={{padding:'10px 0', marginTop:'0',}}>
       <div className={blurb}>
 
@@ -189,6 +190,7 @@ export function Footer() {
       </nav>
    
     </footer>
+    </>
   )
 }
 

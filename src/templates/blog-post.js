@@ -118,7 +118,10 @@ const Post = ({ data, pageContext }) => {
   }
 
 
-  const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=" + frontmatter.youtuber + ""
+  const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=1&amp;playlist=" + frontmatter.youtuber + ""
+
+
+  // const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=" + frontmatter.youtuber + ""
 
 
   return (
@@ -141,20 +144,9 @@ const Post = ({ data, pageContext }) => {
 
 
 
-{/* <div style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}}>
-{Image2 ? (
-            <GatsbyImage
-              image={Image2}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image layer1"
-              style={{height:'100vh'}}
-            />
-          ) : (
-            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" />
-          )}
-</div> */}
 
-{/* <div className="featured-banner" style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} >
+
+<div className="featured-banner" style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} >
 {Image ? (
             <GatsbyImage
               image={Image}
@@ -165,7 +157,7 @@ const Post = ({ data, pageContext }) => {
           ) : (
             <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" />
           )}
-</div> */}
+</div>
 
 
   {/* <SVG style={{width:'100%', height:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'1', backgroundSize:'cover'}} /> */}

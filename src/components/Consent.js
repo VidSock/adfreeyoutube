@@ -8,20 +8,20 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 const Consent = () => (
 
-    <ScrollAnimation animateIn="bounceInUp" delay={0} style={{ display:'flex',  position: 'fixed', bottom:'50px',
-left:'0', right:'0',  alignItems:'center', zIndex:'1', width:'100%',}}>
+//     <ScrollAnimation animateIn="bounceInUp" delay={0} style={{ display:'flex',  position: 'fixed', bottom:'50px',
+// left:'0', right:'0',  alignItems:'center', zIndex:'1', width:'100%',}}>
 
 <CookieConsent
-	debug={false}
+	debug={true}
 	location="none"
-	style={{ zIndex:'1', opacity:'.8', background: 'rgba(0,0,0,0.99)', padding:'2vh 3%', margin:'0'
+	style={{ zIndex:'1', opacity:'.8', padding:'2vh 3%', margin:'0 auto', border:'0px solid white', position:'relative', top:'0', zIndex:'2', display:'flex', alignSelf:'center', width:'50vw', justifyContent:'center', background:'transparent'
    }}
 	enableDeclineButton={false}
 	declineButtonText="No Cookies"
-    declineButtonStyle={{ color: "#fff", background: "#666", fontSize: "13px", }}
+    declineButtonStyle={{fontSize: "13px", }}
     
     buttonText="Accept"
-	buttonStyle={{ color: "#333", justifyContent:'center', textAlign:'center', background: "#eee", fontSize: "13px", fontWeight:'bold', borderRadius:'5px',  top:'10px',  position:'relative', margin:'0' }}
+	buttonStyle={{justifyContent:'center', textAlign:'center', fontSize: "13px", fontWeight:'bold', borderRadius:'5px', color:'red',  top:'10px',  position:'relative', margin:'0', background:'transparent', border:'1px solid red' }}
     contentStyle={{margin:'0', padding:'0', border:'0px solid red'}}
 
     expires={364}
@@ -29,15 +29,15 @@ left:'0', right:'0',  alignItems:'center', zIndex:'1', width:'100%',}}>
 >
 
 
-    <div style={{ padding:'0 0 0 0', fontSize:'90%', textAlign:'center',}}>
+    <div style={{color:'#999', padding:'0 0 0 0', fontSize:'90%', textAlign:'center',}}>
      We use cookies to optimize our website.{" "}<br />
     <span style={{ fontSize: "75%" }}>
-   <a href="/privacy/" style={{color:'#fff',}}>Do Not Sell My Personal Information</a> | <a href="/privacy/" style={{color:'#fff',}}>Privacy Policy</a>
+   <a style={{color:'#999 !important'}} href="/privacy/" style={{textDecoration:'underline'}}>Do Not Sell My Personal Information</a>
     </span>
     </div>
     
 </CookieConsent>
-</ScrollAnimation>
+// </ScrollAnimation>
 
 )
 

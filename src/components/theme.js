@@ -35,7 +35,8 @@ const themeStyles = {
       mt: "-2px",
       p: "0 0 0 0",
       "&:hover": {
-        color: "var(--primary-color)",
+        color: "",
+        background:'transparent'
       },
     },
   },
@@ -45,7 +46,8 @@ const themeStyles = {
     color: "#ccc",
     mt: "10px",
     "&:hover": {
-      color: "color:var(--primary-color)",
+      color: "color:",
+      background:'transparent'
     },
   },
   modeText: {
