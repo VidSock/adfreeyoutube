@@ -141,7 +141,7 @@ export function Layout({ children }) {
 <Link to="/"> 
 {/* <TwilightLogo /> */}
 <img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" />
-<span>Clicking Skip... Sucks</span>
+<span>Clicking Skip, Sucks</span>
 </Link>
 
 
@@ -150,7 +150,7 @@ export function Layout({ children }) {
 <Link to="/">
 {/* <TwilightLogo /> */}
 <img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" />
-<span>Clicking Skip... Sucks</span>
+<span>Clicking Skip, Sucks</span>
 </Link>
  </li>
  
@@ -201,11 +201,11 @@ Contact Me<span>Ordering Questions?</span>
       </li> */}
 
 
-      {/* <li className="carto">
-              <Link className="navbar-item txtshadow" to="/vault/favorites/">
-              The Vault <span>Full Photo archives</span>
+      <li className="carto">
+              <Link className="navbar-item txtshadow" to="/archive/">
+              The AdFree Vault <span>Video Multimedia Blog</span>
               </Link>
-      </li> */}
+      </li>
 
 
 
