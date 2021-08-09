@@ -1531,7 +1531,7 @@ border:1px solid #222;
         /* background-image: linear-gradient(#111212 40%, #232325  100%); */
           
             animation: poof 1s forwards;
-            animation-delay: 2s;
+            animation-delay: 4s;
             overflow: hidden !important;
         }
 
