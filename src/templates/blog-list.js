@@ -416,7 +416,7 @@ class BlogIndex extends React.Component {
         clear:'both'
       }}
     >
-<h1>Lastest Articles</h1>
+<h1>AdFree Archive</h1>
 
     
     

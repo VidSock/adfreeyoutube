@@ -185,7 +185,7 @@ export function Footer() {
   
       <div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>
         
-       Copyright &copy; {(new Date().getFullYear())} AdFree - hand crafted Gatsby on Netlify</div>
+       Copyright &copy; {(new Date().getFullYear())} AdFree - This website is a satire, parody or spoof. </div>
        <Theme  style={{padding:'0', display:'flex', alignSelf:'center'}} />
       </nav>
    
