@@ -31,7 +31,7 @@ const Consent = () => (
     contentStyle={{margin:'0', padding:'0', border:'0px solid red'}}
 
     expires={364}
-    cookieName="Twilightscapes.com-site-pref-cookie"
+    cookieName="AdFreeYT.com-site-pref-cookie"
 >
 
 
