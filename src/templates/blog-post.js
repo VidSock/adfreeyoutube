@@ -183,8 +183,8 @@ const Post = ({ data, pageContext }) => {
 </div></div>
 
 
-<br />
-<GoBack />
+{/* <br />
+<GoBack /> */}
 
 
 
