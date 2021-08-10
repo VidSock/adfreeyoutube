@@ -16,5 +16,5 @@ force = true
 [[redirects]]
 from = "https://adfreeyoutube.com/*"
 to = "https://adfreeyt.com/:splat"
-status = false
+status = 301
 force = true
