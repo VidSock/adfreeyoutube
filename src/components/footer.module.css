@@ -50,5 +50,10 @@
 
 .links a {
   padding: var(--space-md);
-  color: #666;
+  color: #666 !important;
+}
+
+.links a:hover {
+  padding: var(--space-md);
+  color: #999 !important;
 }
