@@ -160,6 +160,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
             value={this.state.youtubelink}
             onChange={this.handleInputChange}
             onclick="paste(this)"
+            placeholder="https://youtu.be/cVsQLlk-T0s"
             autoFocus
           />
           
