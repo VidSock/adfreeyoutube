@@ -4,7 +4,7 @@ import Social from "../components/social"
 import Theme from "../components/theme"
 import Icons from "../util/socialmedia.json"
 import Consent from "../components/Consent"
-import Install from "../components/install2"
+import Install from "../components/Install-footer"
 import {
   RiFacebookBoxFill,
   RiTwitterFill,
