@@ -26,7 +26,7 @@ const Thanks = () => (
         }}
       />
       <h1 className="neonText" style={{fontSize:'200%'}}>Got your message</h1>
-      <p>I should respond shortly, depending on where I am at.</p>
+      {/* <p>I should respond shortly, depending on where I am at.</p> */}
       <div className="spacer33"></div> 
       <Link to="/" className="button">
         <RiArrowLeftSLine className="icon -left" />

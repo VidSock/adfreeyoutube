@@ -143,9 +143,18 @@ const Post = ({ data, pageContext }) => {
 <div className="video-background" style={{width:'100vw'}}>
 
 
-
-
-
+{/* <div className="featured-banner" style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'2', backgroundSize:'cover'}} >
+{Image2 ? (
+            <GatsbyImage
+              image={Image2}
+              alt={frontmatter.title + " - Featured image"}
+              className="featured-image layer1"
+              style={{height:'100vh'}}
+            />
+          ) : (
+            <strong>NOPE!</strong>
+          )}
+</div> */}
 
 <div className="featured-banner" style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} >
 {Image ? (
