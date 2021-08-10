@@ -12,7 +12,7 @@ const Consent = () => (
 // left:'0', right:'0',  alignItems:'center', zIndex:'1', width:'100%',}}>
 
 <CookieConsent
-	debug={false}
+	debug={true}
 	location="none"
 	style={{ zIndex:'1', opacity:'1', padding:'2vh 3%', margin:'0 auto', border:'0px solid white', position:'relative', top:'0', zIndex:'2', display:'flex', alignSelf:'center', width:'50vw', justifyContent:'center', background:'transparent'
    }}
@@ -21,7 +21,13 @@ const Consent = () => (
     declineButtonStyle={{fontSize: "13px", }}
     
     buttonText="Accept"
-	buttonStyle={{justifyContent:'center', textAlign:'center', fontSize: "13px", fontWeight:'bold', borderRadius:'5px', color:'red',  top:'10px',  position:'relative', margin:'0', background:'transparent', border:'1px solid red' }}
+	buttonStyle={{justifyContent:'center', textAlign:'center', fontSize: "13px", fontWeight:'bold', borderRadius:'5px', color:'white',   top:'10px',  position:'relative', margin:'0', background:'transparent', border:'1px solid',
+    filter:'drop-shadow(1px 1px 10rem #fff)',
+    boxShadow:' 0px 1px 6px 1px black',
+    backdropFilter: 'blur(10px)',
+    textShadow: '1px 2px 2px rgba(0,0,0,.9)'
+ }}
+    
     contentStyle={{margin:'0', padding:'0', border:'0px solid red'}}
 
     expires={364}
