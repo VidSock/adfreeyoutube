@@ -10,6 +10,5 @@
 package = "@netlify/plugin-gatsby"
 
 [[redirects]]
-  from = "adfreeyoutube.com"
-  to = "adfreeyt.com"
-  status = 301
+http://adfreeyoutube.com/* https://adfreeyt.com/:splat 301!
+https://adfreeyoutube.com/* https://adfreeyt.com.com/:splat 301!
