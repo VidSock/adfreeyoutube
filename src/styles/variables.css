@@ -66,7 +66,7 @@
 
   /* text */
   /* color */
-  --text-color: #ccc;
+  --text-color: #333;
   --text-color-secondary: var(--white-50);
   --text-color-inverted: var(--white);
   --primary-color:fff;
