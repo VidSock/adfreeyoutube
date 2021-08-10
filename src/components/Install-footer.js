@@ -39,15 +39,15 @@ export default class Installer extends React.Component {
 
 {this.state.isActive ? 
 <>
-  <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'0px solid #333', borderRadius:'12px', maxWidth:'70vw' }}>
+  <div className="installwindow" style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'60%', margin:'0 auto', padding:' .5rem 1rem', border:'0px solid #333', borderRadius:'12px', maxWidth:'100vw' }}>
   
 One-Click Install - NO APP STORE NEEDED
 <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'1px solid #333', borderRadius:'12px', backdropFilter:'blur(14px)', background:'rgba(0,0,0,0.60)', position:'relative', color:'#fff'}}>
       
-<button onClick={this.handleHide} style={{position:'absolute', right:'10px', top:'10px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
+<button onClick={this.handleHide} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
 
-Simply click the "install" icon on the right-side of your browser address bar
-
+<p style={{maxWidth:'50vw'}}>Simply click the "install" icon on the right-side of your browser address bar
+</p>
 
 
   <span style={{fontSize:'80%'}}>For Apple iOS users:</span>
