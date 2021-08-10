@@ -43,7 +43,7 @@ const InstallDiscount = () => (
 
 
 
-<div id="installer" className="popper" style={{ display:'flex', justifyContent:'center', alignContent:'center', position: 'fixed', top:'60px',
+<div id="installer1" className="popper1" style={{ display:'flex', justifyContent:'center', alignContent:'center', position: 'fixed', top:'60px',
 left:'-110vw', width:'600px', display:'flex', justifyContent:'center', alignItems:'center', background:'transparent', padding:'0'}}>
 
 

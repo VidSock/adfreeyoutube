@@ -152,7 +152,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 <form className="contact-form" onSubmit={this.handleSubmit} style={{margin:'0', padding:'0', display:'flex', width:'100%', justifyContent:'center', alignItems:'center'}}>
         <label htmlFor="youtubelink" style={{minWidth:'220px', textAlign:'right', border:'0px solid red', paddingRight:'20px'}}>
           Click "Share" and copy Url<br />Then paste Url here:</label>
-          
+         
           <input
             id="youtubelink"
             type="text"

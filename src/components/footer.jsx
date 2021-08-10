@@ -4,6 +4,7 @@ import Social from "../components/social"
 import Theme from "../components/theme"
 import Icons from "../util/socialmedia.json"
 import Consent from "../components/Consent"
+import Install from "../components/install2"
 import {
   RiFacebookBoxFill,
   RiTwitterFill,
@@ -160,6 +161,8 @@ export function Footer() {
   const { companyname } = useSiteMetadata()
   return (
 <>
+
+<Install />
     <Consent />
     <footer className={footerStyle} style={{padding:'10px 0', marginTop:'0',}}>
       <div className={blurb}>
