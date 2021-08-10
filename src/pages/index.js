@@ -134,7 +134,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
   {/* <SVG style={{width:'100%', height:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} /> */}
 
   <div className="video-foreground" style={{position:'absolute', zIndex:'-1', overflow:'hidden'}}>
-  {/* <iframe title="AdFree YouTube" id="youtube" className="video" width="100%" height="350" src={final} frameBorder="0" allowFullScreen playsInline></iframe> */}
+  <iframe title="AdFree YouTube" id="youtube" className="video" width="100%" height="350" src={final} frameBorder="0" allowFullScreen playsInline></iframe>
   </div>
   {/* zomZywCAPTA */}
   {/* YpcJ6jJlz6o */}
