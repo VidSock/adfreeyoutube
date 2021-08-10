@@ -1,14 +1,14 @@
 ---
 template: blog-post
-title: On the road with my dog Montana
+title: Test Post 3
 slug: /third-post
 date: 2021-07-22 11:37
-description: On the road with my dog Montana
+description: My third post!
 youtuber: I8OBfRyplyE
 youtubestart: 100
 youtubeend: 120
-featuredImage: /assets/IMG_0080.jpg
-featuredImage2: /assets/DSC02502.jpg
+featuredImage: /assets/default-og-image.jpg
+featuredImage2: /assets/default-og-image.jpg
 ---
 
 ## Summertime, and the livin's easy

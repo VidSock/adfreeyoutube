@@ -1,14 +1,14 @@
 ---
-featuredImage2: /assets/IMG_0803.jpg
 template: blog-post
-title: West Coast - I've Landed!
+title: Test Post 2
 slug: /second-post
 date: 2021-07-19 11:37
-description: West Coast - I've Landed!
+description: My Second post!
 youtuber: i2lhwb_OckQ
 youtubestart: 400
 youtubeend: 600
-featuredImage: /assets/IMG_0556.jpg
+featuredImage: /assets/default-og-image.jpg
+featuredImage2: /assets/default-og-image.jpg
 ---
 
 ## Second Blog Post

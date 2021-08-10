@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
-
+import TimeAgo from 'react-timeago'
 const PostCard = ({ data }) => (
   <section>
   <article
@@ -40,7 +40,8 @@ const PostCard = ({ data }) => (
           color: "muted",
         }}
       >
-        <time>{data.frontmatter.date}</time>
+        <TimeAgo date={data.frontmatter.date}/>
+        {/* <time>{data.frontmatter.date}</time> */}
       </p>
     </div>
   </article>

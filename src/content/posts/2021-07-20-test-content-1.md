@@ -1,14 +1,14 @@
 ---
 template: blog-post
-title: My latest workshop - a bucket list location
+title: Test Post 1
 slug: /first-post
 date: 2021-07-18 11:37
-description: "My latest workshop - a bucket list location"
+description: "My first post"
 youtuber: I8OBfRyplyE
 youtubestart: 144
 youtubeend: 155
-featuredImage: /assets/IMG_0803.jpg
-featuredImage2: /assets/night316.jpg
+featuredImage: /assets/default-og-image.jpg
+featuredImage2: /assets/default-og-image.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut urna ipsum. Vivamus lacinia quis augue eget interdum. Pellentesque porttitor massa vitae nulla hendrerit, sed faucibus eros iaculis. Quisque molestie cursus ligula, auctor hendrerit sapien cursus a. Maecenas non ante et mi ornare lobortis. Vestibulum dapibus in eros quis placerat. Nulla accumsan ornare lobortis. Maecenas posuere risus ultricies, dignissim orci at, molestie elit. In eget porttitor nunc, et lacinia ligula. Nam magna enim, interdum quis turpis sed, gravida semper mauris. Vivamus dictum tempus elementum. Nullam tincidunt vel ligula quis bibendum. Sed dictum eget felis ac consectetur. Vivamus nec tortor convallis, hendrerit neque ut, hendrerit diam.

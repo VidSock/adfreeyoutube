@@ -16,6 +16,7 @@ import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 import ShareSocial from '../components/share' 
 import GoBack from "../components/goBack"
+import TimeAgo from 'react-timeago'
 // import { commentBox } from "commentbox.io"
 const styles = {
   "article blockquote": {
@@ -182,7 +183,8 @@ const Post = ({ data, pageContext }) => {
         <header>
           <section className="article-header" style={{textAlign:'center', margin:'0 4%', height:'auto'}}>
             <h1>{frontmatter.title}</h1>
-            <time sx={{color: "muted"}}>{frontmatter.date}</time>
+            {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
+            <TimeAgo date={frontmatter.date}/>
           </section>
         </header>
 
