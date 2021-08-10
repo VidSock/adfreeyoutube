@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: RAND PAUL SEX TAPE
+title: EXCLUSIVE RAND PAUL SEX TAPE
 slug: /randpaul-sex-tape-exposed
 date: 2021-08-10 11:37
 description: Forget about the Rand Paul Vaccination video, have you seen the sex tape?
@@ -11,10 +11,9 @@ featuredImage: /assets/randpaul-story.png
 featuredImage2: /assets/randpaul.png
 ---
 
-## EXCLUSIVE RAND PAUL SEX TAPE
+## Forget about the Rand Paul Vaccination video
 
-Forget about the Rand Paul Vaccination video, have you seen the sex tape?
+### Have you seen the sex tape?!?
 
-<img src="/assets/randpaul.png" width="100%" style="position:absolute; top:0; left:0; z-index:0; transform: rotate(); opacity:1;" />
 
-### <a href="">Love to read your comments below!</a>
+

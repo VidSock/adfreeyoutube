@@ -143,7 +143,7 @@ const Post = ({ data, pageContext }) => {
 <div className="video-background" style={{width:'100vw'}}>
 
 
-{/* <div className="featured-banner" style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'2', backgroundSize:'cover'}} >
+<div className="featured-banner" style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'2', backgroundSize:'cover'}} >
 {Image2 ? (
             <GatsbyImage
               image={Image2}
@@ -154,7 +154,7 @@ const Post = ({ data, pageContext }) => {
           ) : (
             <strong>NOPE!</strong>
           )}
-</div> */}
+</div>
 
 <div className="featured-banner" style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} >
 {Image ? (
@@ -197,7 +197,7 @@ const Post = ({ data, pageContext }) => {
           </section>
         </header>
 
-        <ShareSocial />
+        {/* <ShareSocial /> */}
         
         <div
           className="blog-post-content"
@@ -219,12 +219,13 @@ const Post = ({ data, pageContext }) => {
       {(previous || next) && <Pagination {...props} />}
       </div>
 
-   
-      <div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
+   <ShareSocial />
+      <div style={{padding:'1vh 5vw', borderTop:'0px solid', marginTop:'3rem', textAlign:'center', fontSize:'1.5rem'}}>
+        Always love to read your comments!
 <CommentBox />
      </div>
     
-   <ShareSocial />
+   
    <br />
    <GoBack />
    <br />
