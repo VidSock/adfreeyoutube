@@ -32,25 +32,25 @@ export default class Installer extends React.Component {
        return(
            <div>
            <div style={{textAlign:'center', marginTop:'1rem', }}>
-           <button onClick={this.handleShow} style={{borderBottom:'1px solid'}}>FREE Web App</button> &nbsp; | &nbsp; NO APP STORE NEEDED
+           <button onClick={this.handleShow} style={{borderBottom:'1px solid'}}>AdFree Web App</button> &nbsp; | &nbsp; FREE! NO APP STORE NEEDED
              
              
              </div>
 
 {this.state.isActive ? 
 <>
-  <div className="installwindow" style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'60%', margin:'0 auto', padding:' .5rem 1rem', border:'0px solid #333', borderRadius:'12px', maxWidth:'100vw' }}>
+  <div className="installwindow" style={{fontSize:'90%',  display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem', border:'0px solid #333', borderRadius:'12px', maxWidth:'100vw', textAlign:'center' }}>
   
-You can use AdFree anywhere, anytime - put a shortcut right next to your YouTube app. 
+You can use AdFree anywhere, anytime <br /> Put a shortcut right next to your YouTube app 
 <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'1px solid #333', borderRadius:'12px', backdropFilter:'blur(14px)', background:'rgba(0,0,0,0.60)', position:'relative', color:'#fff'}}>
       
 <button onClick={this.handleHide} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
 
-<p style={{maxWidth:'50vw'}}>Simply click the "install" icon on the right-side of your browser address bar
+<p style={{maxWidth:'', textAlign:'center'}}>Simply click the "install" icon in your browser address bar
 </p>
 
 
-  <span style={{fontSize:'100%'}}>For Apple iOS users:</span>
+  <span style={{fontSize:'100%'}}>OR</span>
   <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'0px solid #333', borderRadius:'12px', }}>
     
     <div style={{textAlign:'center', display:'flex', alignContent:'center', marginBottom:'1rem',}}>
