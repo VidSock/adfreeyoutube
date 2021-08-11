@@ -167,7 +167,7 @@ collections:
               - widget: image
                 name: image
                 label: image
-                default: "/assets/todd.jpg"
+                default: "/assets/default-og-image.jpg"
               - widget: image
                 name: iconimage
                 label: favicon
