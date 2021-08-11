@@ -170,7 +170,7 @@ module.exports = {
         enableIdentityWidget: true,
         publicPath: `admin`,
         htmlTitle: `AdFree CMS`,
-        htmlFavicon: `/static/icons/icon-512x512.png`,
+        htmlFavicon: `/icons/icon-512x512.png`,
         includeRobots: false,
       },
     },
@@ -192,25 +192,25 @@ module.exports = {
       options: {
         name: `AdFree`,
         short_name: `AdFree`,
-        start_url: `/`,
+        start_url: `/?user_mode=app`,
         description: `Clicking Skip, Sucks - Go AdFree`,
         background_color: `#111`,
         lang: `en`,
         theme_color: `#FF0000`,
         display: `standalone`,
         // icon: "static" + settings.meta.iconimage,
-        icon: `/static/icons/icon-512x512.png`,
+        icon: `/icons/icon-512x512.png`,
         icon_options: {
           purpose: `any maskable`,
         },
         icons: [
           {
-            src: `/static/icons/icon-192x192.png`,
+            src: `/icons/icon-192x192.png`,
             sizes: `192x192`,
             type: `image/png`,
           },
           {
-            src: `/static/icons/icon-512x512.png`,
+            src: `/icons/icon-512x512.png`,
             sizes: `512x512`,
             type: `image/png`,
             purpose: `any maskable`,
