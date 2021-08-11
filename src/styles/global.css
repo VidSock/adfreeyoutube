@@ -2238,6 +2238,10 @@ background-position:center 70px;
             .container2 {height:250px !important; margin-top:60px !important;}
             }
 
+            @media (min-width: 48rem) {
+              .installwindow{max-width:480px !important;}
+              }
+
 
 
           .container2{border-color:#FA02B7 !important;}
