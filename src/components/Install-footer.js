@@ -32,7 +32,7 @@ export default class Installer extends React.Component {
        return(
            <div>
            <div style={{textAlign:'center', }}>
-           <button onClick={this.handleShow} style={{borderBottom:'1px solid'}}>Install our Web App</button> - so you can easily find us.
+           <button onClick={this.handleShow} style={{borderBottom:'1px solid'}}>Get the FREE Web App</button> &nbsp; | &nbsp; One-Click Install - NO APP STORE NEEDED
              
              
              </div>
@@ -41,7 +41,7 @@ export default class Installer extends React.Component {
 <>
   <div className="installwindow" style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'60%', margin:'0 auto', padding:' .5rem 1rem', border:'0px solid #333', borderRadius:'12px', maxWidth:'100vw' }}>
   
-One-Click Install - NO APP STORE NEEDED
+You can use AdFree anywhere, anytime - put a shortcut right next to your YouTube app. 
 <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'1px solid #333', borderRadius:'12px', backdropFilter:'blur(14px)', background:'rgba(0,0,0,0.60)', position:'relative', color:'#fff'}}>
       
 <button onClick={this.handleHide} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
@@ -50,15 +50,15 @@ One-Click Install - NO APP STORE NEEDED
 </p>
 
 
-  <span style={{fontSize:'80%'}}>For Apple iOS users:</span>
+  <span style={{fontSize:'100%'}}>For Apple iOS users:</span>
   <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'0px solid #333', borderRadius:'12px', }}>
     
-    <div style={{textAlign:'left', display:'flex', alignContent:'center', marginBottom:'1rem',}}>
+    <div style={{textAlign:'center', display:'flex', alignContent:'center', marginBottom:'1rem',}}>
    <IoShareOutline style={{fontSize:'200%', marginLeft:'0', marginRight:'2%', float:'',}} />
     1) Press the 'Share' button 
   </div>
   
-   <div style={{textAlign:'left', display:'flex', alignContent:'center',}}>
+   <div style={{textAlign:'center', display:'flex', alignContent:'center',}}>
    <FaRegPlusSquare style={{fontSize:'200%', marginLeft:'0', marginRight:'2%', float:'',}} /> 
    
   2) Press 'Add to Home Screen'
