@@ -50,6 +50,8 @@ collections:
       - { label: "YouTube Url", name: "youtuber", widget: "string" }
       - { label: "YouTube Start", name: "youtubestart", widget: "string" }
       - { label: "YouTube End", name: "youtubeend", widget: "string" }
+      - { label: "YouTube Mute ( 1=true or 0=false)", name: "youtubemute", widget: "string" }
+      - { label: "YouTube Show Controls ( 1=true or 0=false)", name: "youtubecontrols", widget: "string" }
       - {
           label: "Featured Image",
           name: "featuredImage",
@@ -58,12 +60,13 @@ collections:
           tagname: "",
         }
       - {
-          label: "Featured Image2",
+          label: "SVG",
           name: "featuredImage2",
           widget: "image",
           required: false,
           tagname: "",
         }
+      - { label: "SVG Z-Index", name: "svgzindex", widget: "string" }
 
 
 
