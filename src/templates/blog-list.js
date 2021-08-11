@@ -436,7 +436,7 @@ class BlogIndex extends React.Component {
 <ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
 <FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
 </ScrollAnimation> */}
-
+ <br /><br />
       </Layout>
     )
   }
