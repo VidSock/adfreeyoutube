@@ -10,8 +10,6 @@ youtubemute: 1
 youtubecontrols: 0
 svgzindex: 2
 description: Forget about the Rand Paul Vaccination video, have you seen the sex tape?
-
-
 featuredImage: /assets/randpaul-story.png
 featuredImage2: /assets/randpaul-sucks.svg
 ---
