@@ -38,8 +38,7 @@ export default function CustomerPage({}) {
     <p>Thank You!</p>
     
   
-{/* 
-    <StaticImage src="../img/toddlambert.jpg" alt="Todd Travels" /> */}
+
     <br />
      <p>If you should ever have any questions or concerns, please feel free to drop me a line anytime.</p>
 

@@ -11,11 +11,11 @@ import { Helmet } from "react-helmet"
 import { Seo } from "../components/seo"
 // import { RiSendPlane2Line } from "react-icons/ri"
 
-import SVG from "../../static/assets/crude-addiction.svg"
+// import SVG from "../../static/assets/crude-addiction.svg"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import GiftShop from "../components/giftshop"
-import PhotoMenu from "../components/animated-photos-menu"
-import CommentBox from "../components/commentbox"
+// import PhotoMenu from "../components/animated-photos-menu"
+// import CommentBox from "../components/commentbox"
 const CustomBox = styled.div`
 
 @media (max-width: 48em) {
@@ -124,8 +124,8 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-<ShareSocial />
-<PhotoMenu />
+{/* <ShareSocial />
+<PhotoMenu /> */}
 
 <div className="fluff outerpanel" style={{borderLeft:'none', padding:'2rem 12%'}}>
 
@@ -150,9 +150,9 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-<div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
+{/* <div style={{padding:'5vh 5vw', borderTop:'0px solid', marginTop:'3rem'}}>
     <CommentBox />
- </div>
+ </div> */}
    
 
 
