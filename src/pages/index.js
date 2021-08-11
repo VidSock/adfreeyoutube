@@ -5,15 +5,15 @@ import { Layout } from "../components/layout"
 // import GoBack from "../components/goBack"
 import styled from "styled-components"
 // import ShareSocial from '../components/share' 
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
 import { Seo } from "../components/seo"
 // import { RiSendPlane2Line } from "react-icons/ri"
-import Install from "../components/install-discount"
-import SVG from "../../static/assets/crude-addiction.svg"
+// import Install from "../components/install-discount"
+// import SVG from "../../static/assets/crude-addiction.svg"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import GiftShop from "../components/giftshop"
-import PhotoMenu from "../components/animated-photos-menu"
+// import PhotoMenu from "../components/animated-photos-menu"
 // import CommentBox from "../components/commentbox"
 const CustomBox = styled.div`
 

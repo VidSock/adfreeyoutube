@@ -11,7 +11,7 @@ youtubecontrols: 0
 youtubemute: 1
 description: Mayor Cuomo tries to keep his hands to himself
 svgzindex: 2
-youtubestart: "0"
+youtubestart: 0
 ---
 
 ## (Now) Ex-Mayor Cuomo announces post-retirement plans to invest in a chain of restaurants.

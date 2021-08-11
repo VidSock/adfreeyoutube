@@ -9,7 +9,7 @@ import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 // import ScrollAnimation from 'react-animate-on-scroll'
 import CommentBox from "../components/commentbox"
 import { StaticImage } from "gatsby-plugin-image"
-import SVG from "../../static/assets/crude-addiction.svg"
+// import SVG from "../../static/assets/crude-addiction.svg"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 import ShareSocial from '../components/share' 

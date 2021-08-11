@@ -5,7 +5,7 @@ import { RiArrowDownLine, RiArrowRightSLine } from "react-icons/ri"
 
 
 import PostCard from "./post-card"
-import FeaturedGalleries from "./featured-galleries"
+// import FeaturedGalleries from "./featured-galleries"
 
 export default function BlogListHome(props) {
   const data = props.data
