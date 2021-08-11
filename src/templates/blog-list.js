@@ -60,7 +60,7 @@ export const blogListQuery = graphql`
           id
           excerpt(pruneLength: 250)
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "YYYY-MM-DD-HH-MM-SS")
             slug
             title
             featuredImage {
