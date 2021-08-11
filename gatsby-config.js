@@ -163,7 +163,19 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-theme-ui",
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        modulePath: ``, // default: undefined
+        enableIdentityWidget: true,
+        publicPath: `admin`,
+        htmlTitle: `AdFree CMS`,
+        htmlFavicon: `/static/assets/icon-512x512.png`,
+        includeRobots: false,
+      },
+    },
+
+
 
 
  
@@ -181,10 +193,16 @@ module.exports = {
         name: `AdFree`,
         short_name: `AdFree`,
         start_url: `/`,
+        description: `Clicking Skip, Sucks - Go AdFree`,
         background_color: `#111`,
+        lang: `en`,
         theme_color: `#FF0000`,
         display: `standalone`,
         // icon: "static" + settings.meta.iconimage,
+        icon: `/static/assets/icon-512x512.png`,
+        icon_options: {
+          purpose: `any maskable`,
+        },
         icons: [
           {
             src: `/static/assets/icon-192x192.png`,
