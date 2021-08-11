@@ -1,15 +1,13 @@
 /** @jsx jsx */
-// import React, { useEffect } from 'react';
+import React from "react"
 import { jsx } from "theme-ui"
 import { Link, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
-// import DisqusComments from '../components/disqus'
-import { FaHandPointDown } from "react-icons/fa"
-import ScrollAnimation from 'react-animate-on-scroll'
+// import { FaHandPointDown } from "react-icons/fa"
+// import ScrollAnimation from 'react-animate-on-scroll'
 import CommentBox from "../components/commentbox"
-// import commentbox from 'commentbox.io'
 import { StaticImage } from "gatsby-plugin-image"
 import SVG from "../../static/assets/crude-addiction.svg"
 import { Seo } from "../components/seo"
@@ -17,7 +15,6 @@ import { Layout } from "../components/layout"
 import ShareSocial from '../components/share' 
 import GoBack from "../components/goBack"
 import TimeAgo from 'react-timeago'
-// import { commentBox } from "commentbox.io"
 const styles = {
   "article blockquote": {
     "background-color": "cardBg",
@@ -91,25 +88,17 @@ const Post = ({ data, pageContext }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
 
-  const artImage = frontmatter.featuredImage2
-  ? frontmatter.featuredImage2.gatsbyImageData
-  : ""
 
-  // useEffect(() =>{
-  //   commentbox('5708736052068352-proj', {
-  //     backgroundColor: null,  // default transparent
-  //     textColor: "#222",  // default black
-  //      subtextColor: "#222",  // default grey
-  //  })
-  // },[])
+
+
 
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
 
-    const Image2 = frontmatter.featuredImage2
-    ? frontmatter.featuredImage2.childImageSharp.gatsbyImageData
-    : ""
+    // const Image2 = frontmatter.featuredImage2
+    // ? frontmatter.featuredImage2.childImageSharp.gatsbyImageData
+    // : ""
 
   const { previous, next } = pageContext
 
@@ -119,10 +108,12 @@ const Post = ({ data, pageContext }) => {
   }
 
 
-  const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=1&amp;playlist=" + frontmatter.youtuber + ""
+  const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playlist=" + frontmatter.youtuber + ""
 
+ 
+  const svgUrl = "../assets/" + frontmatter.featuredImage2.relativePath + ""
 
-  // const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=" + frontmatter.youtuber + ""
+  const svgZindex = frontmatter.svgzindex
 
 
   return (
@@ -143,7 +134,7 @@ const Post = ({ data, pageContext }) => {
 <div className="video-background" style={{width:'100vw'}}>
 
 
-<div className="featured-banner" style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'2', backgroundSize:'cover'}} >
+{/* <div className="featured-banner" style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'2', backgroundSize:'cover'}} >
 {Image2 ? (
             <GatsbyImage
               image={Image2}
@@ -154,7 +145,19 @@ const Post = ({ data, pageContext }) => {
           ) : (
             <strong>NOPE!</strong>
           )}
-</div>
+</div> */}
+
+
+
+
+
+
+
+
+<object className={svgZindex + " " + svgZindex} id="svg" data={svgUrl} type="image/svg+xml" style={{position:'absolute', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'1',  }} ></object>
+
+
+
 
 <div className="featured-banner" style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} >
 {Image ? (
@@ -170,21 +173,21 @@ const Post = ({ data, pageContext }) => {
 </div>
 
 
-  {/* <SVG style={{width:'100%', height:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'1', backgroundSize:'cover'}} /> */}
+
 
   <div className="video-foreground" style={{position:'absolute', zIndex:'0'}}>
 
 
 
-  <iframe title="AdFree YouTube" id="youtube" className="video" width="100%" height="350" src={Url} frameBorder="0" />
+  <iframe title="AdFree YouTube" id="youtube" className="video" width="100%" height="350" src={Url} frameBorder="0" playsInline />
 
 
   </div>
 </div></div>
 
 
-{/* <br />
-<GoBack /> */}
+<br />
+<GoBack />
 
 
 
@@ -197,15 +200,15 @@ const Post = ({ data, pageContext }) => {
           </section>
         </header>
 
-        {/* <ShareSocial /> */}
+
         
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />      
         
-<GoBack />
 
+        
       </article>
 
 
@@ -230,11 +233,7 @@ const Post = ({ data, pageContext }) => {
    <GoBack />
    <br />
    <br />
-{/* <h3 style={{textAlign:'center', fontSize:'160%', fontWeight:'bold', maxWidth:'700px', margin:'3rem  auto 0 auto'}}>Have a private question or comment?</h3>
 
-<ScrollAnimation animateIn="bounce" duration={1} animateOnce={false} animatePreScroll={false} >
-<FaHandPointDown className="bounce" style={{fontSize:'80px', textAlign:'center', width:'100%', margin:'1rem auto'}} />
-</ScrollAnimation> */}
     </Layout>
 
 
@@ -272,6 +271,9 @@ export const pageQuery = graphql`
         youtuber
         youtubestart
         youtubeend
+        youtubemute
+        youtubecontrols
+        svgzindex
         featuredImage {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
@@ -281,6 +283,7 @@ export const pageQuery = graphql`
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
           }
+          relativePath
         }
       }
     }
