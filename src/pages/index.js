@@ -134,7 +134,9 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
   {/* <SVG style={{width:'100%', height:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} /> */}
 
   <div className="video-foreground" style={{position:'absolute', zIndex:'-1', overflow:'hidden'}}>
-  <iframe title="AdFree YouTube" id="youtube" className="video" width="100%" height="350" src={final} frameBorder="0" allowFullScreen playsInline></iframe>
+
+  <iframe title="AdFree YouTube" id="youtube" className="video" width="100%" height="350" src={final} frameBorder="0" allowFullScreen ></iframe>
+
   </div>
   {/* zomZywCAPTA */}
   {/* YpcJ6jJlz6o */}
@@ -148,7 +150,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
     Your browser does not support the HTML5 Audio element.
 </audio>
 </div> */}
-<div style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto'}}>
+<div style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto',}}>
 <form className="contact-form" onSubmit={this.handleSubmit} style={{margin:'0', padding:'0', display:'flex', width:'100%', justifyContent:'center', alignItems:'center'}}>
         <label htmlFor="youtubelink" style={{minWidth:'220px', textAlign:'right', border:'0px solid red', paddingRight:'20px'}}>
           Click "Share" and copy Url<br />Then paste Url here:</label>

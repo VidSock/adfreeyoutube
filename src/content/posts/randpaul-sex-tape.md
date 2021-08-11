@@ -8,7 +8,7 @@ youtuber: Wz2-uJn_mhM
 youtubestart: 1144
 youtubeend: 2000
 youtubemute: 1
-youtubecontrols: "1"
+youtubecontrols: 1
 featuredImage: /assets/randpaul-story.png
 featuredImage2: /assets/randpaul-sucks.svg
 svgzindex: 2
