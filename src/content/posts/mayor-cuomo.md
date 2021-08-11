@@ -3,15 +3,15 @@ template: blog-post
 title: Mayor Cuomo Resigns
 slug: /mayor-cuomo-resigns
 date: 2021-08-11 13:03
+description: Mayor Cuomo tries to keep his hands to himself
 youtuber: nmk6OfD94PQ
+youtubestart: "1"
 youtubeend: 26
+youtubemute: 1
+youtubecontrols: "1"
 featuredImage: /assets/cuomotouchy-story.jpg
 featuredImage2: /assets/cuomo-touchy.svg
-youtubecontrols: 0
-youtubemute: 1
-description: Mayor Cuomo tries to keep his hands to himself
 svgzindex: 2
-youtubestart: 0
 ---
 
 ## (Now) Ex-Mayor Cuomo announces post-retirement plans to invest in a chain of restaurants.
