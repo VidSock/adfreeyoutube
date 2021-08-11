@@ -31,8 +31,8 @@ export default class Installer extends React.Component {
    render(){
        return(
            <div>
-           <div style={{textAlign:'center', }}>
-           <button onClick={this.handleShow} style={{borderBottom:'1px solid'}}>Get the FREE Web App</button> &nbsp; | &nbsp; One-Click Install - NO APP STORE NEEDED
+           <div style={{textAlign:'center', marginTop:'1rem', }}>
+           <button onClick={this.handleShow} style={{borderBottom:'1px solid'}}>FREE Web App</button> &nbsp; | &nbsp; NO APP STORE NEEDED
              
              
              </div>
