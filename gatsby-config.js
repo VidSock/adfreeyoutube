@@ -166,7 +166,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
-        modulePath: ``, // default: undefined
         enableIdentityWidget: true,
         publicPath: `admin`,
         htmlTitle: `AdFree CMS`,
@@ -174,8 +173,6 @@ module.exports = {
         includeRobots: false,
       },
     },
-
-
 
 
  
@@ -192,25 +189,21 @@ module.exports = {
       options: {
         name: `AdFree`,
         short_name: `AdFree`,
-        start_url: `/?user_mode=app`,
-        description: `Clicking Skip, Sucks - Go AdFree`,
+        start_url: `/`,
+        description: `Clicking Skip Sucks Go AdFree`,
         background_color: `#111`,
-        lang: `en`,
+        
         theme_color: `#FF0000`,
         display: `standalone`,
         // icon: "static" + settings.meta.iconimage,
-        icon: `/icons/icon-512x512.png`,
-        icon_options: {
-          purpose: `any maskable`,
-        },
         icons: [
           {
-            src: `/icons/icon-192x192.png`,
+            src: `/static/assets/icon-192x192.png`,
             sizes: `192x192`,
             type: `image/png`,
           },
           {
-            src: `/icons/icon-512x512.png`,
+            src: `/static/assets/icon-512x512.png`,
             sizes: `512x512`,
             type: `image/png`,
             purpose: `any maskable`,
