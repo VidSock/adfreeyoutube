@@ -14,7 +14,7 @@ const netlifyCmsPaths = {
 const settings = require("./src/util/site.json")
 
 module.exports = {
-  flags: { PRESERVE_WEBPACK_CACHE: true },
+  flags: { PRESERVE_WEBPACK_CACHE: false },
   siteMetadata: settings.meta,
   plugins: [
     {
@@ -163,16 +163,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-theme-ui",
-    {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-        enableIdentityWidget: true,
-        publicPath: `admin`,
-        htmlTitle: `AdFree CMS`,
-        // htmlFavicon: `/icons/icon-512x512.png`,
-        includeRobots: false,
-      },
-    },
+    `gatsby-plugin-netlify-cms`,
 
 
  
@@ -190,17 +181,23 @@ module.exports = {
         name: `AdFree`,
         short_name: `AdFree`,
         start_url: `/?user_mode=app`,
-        description: `Clicking Skip Sucks Go AdFree`,
         background_color: `#111`,
-        lang: `en`,
         theme_color: `#FF0000`,
         display: `standalone`,
-        // icon: "static" + siteMetadata.iconimage,
-        icon: `src/img/adfree-youtube-logo-sq.svg`,
-        icon_options: {
-          purpose: `any maskable`,
-        },
-
+        // icon: "static" + settings.meta.iconimage,
+        icons: [
+          {
+            src: `/static/assets/icon-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/static/assets/icon-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+            purpose: `any maskable`,
+          },
+        ],
       },
     },
     "gatsby-plugin-offline",
