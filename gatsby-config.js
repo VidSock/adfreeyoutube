@@ -195,6 +195,9 @@ module.exports = {
         theme_color: `#ff0000`,
         display: `standalone`,
  icon: `src/img/adfree-youtube-logo-bug.svg`, // This path is relative to the root of the site.
+ icon_options: {
+  purpose: `any maskable`,
+},
       icons: [
         {
           src: `/icons/icon-192x192.png`,
