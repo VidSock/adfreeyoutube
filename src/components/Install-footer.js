@@ -30,7 +30,7 @@ export default class Installer extends React.Component {
 
    render(){
        return(
-           <div>
+           <div className="no-app">
            <div style={{textAlign:'center', marginTop:'1rem', }}>
            <button onClick={this.handleShow} style={{borderBottom:'1px solid'}}>AdFree Web App</button> &nbsp; | &nbsp; FREE! NO APP STORE NEEDED
              
