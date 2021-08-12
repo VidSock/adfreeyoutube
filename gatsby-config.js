@@ -163,7 +163,17 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-theme-ui",
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        modulePath: ``, // default: undefined
+        enableIdentityWidget: true,
+        publicPath: `admin`,
+        htmlTitle: `AdFree CMS`,
+        htmlFavicon: `/static/icons/icon-512x512.png`,
+        includeRobots: false,
+      },
+    },
 
 
  
