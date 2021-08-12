@@ -184,38 +184,26 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `AdFree`,
-        short_name: `AdFree`,
-        start_url: `/?user_mode=app`,
-        description: `Clicking Skip Sucks Go AdFree`,
-        background_color: `#111`,
-        lang: `en`,
-        theme_color: `#FF0000`,
-        display: `standalone`,
-        // icon: "static" + settings.meta.iconimage,
-        icon: `/static/assets/icon-512x512.png`,
-        icon_options: {
-          purpose: `any maskable`,
-        },
-        icons: [
-          {
-            src: `/static/assets/icon-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/static/assets/icon-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-            purpose: `any maskable`,
-          },
-        ],
-      },
-    },
-    "gatsby-plugin-offline",
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `AdFree`,
+    //     short_name: `AdFree`,
+    //     start_url: `/?user_mode=app`,
+    //     description: `Clicking Skip Sucks Go AdFree`,
+    //     background_color: `#111`,
+    //     lang: `en`,
+    //     theme_color: `#FF0000`,
+    //     display: `standalone`,
+    //     icon: "static" + siteMetadata.iconimage,
+    //     icon: `/static/assets/icon-512x512.png`,
+    //     icon_options: {
+    //       purpose: `any maskable`,
+    //     },
+
+    //   },
+    // },
+    // "gatsby-plugin-offline",
   ],
 }
 

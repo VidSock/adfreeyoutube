@@ -16,7 +16,7 @@ import { Toast } from "./toast"
 // import { FaRegPlusSquare } from 'react-icons/fa';
 import { ImArrowRight } from "react-icons/im"
 import { CartButton } from "./cart-button"
-import SearchIcon from "../../static/assets/search"
+import SearchIcon from "../../static/icons/search"
 import Theme from "../components/theme"
 // import Audio from '../assets/audio.mp3'
 // import TouchUp from '../components/TouchUp'
