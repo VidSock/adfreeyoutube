@@ -16,7 +16,7 @@ import GoBack from "../components/goBack"
 
 
 export default function DisclaimerPage() {
-  const { companyname, siteUrl } = useSiteMetadata()
+  const { companyname } = useSiteMetadata()
    return (
 
 

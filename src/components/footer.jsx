@@ -1,6 +1,6 @@
 import * as React from "react"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
-import Social from "../components/social"
+// import Social from "../components/social"
 import Theme from "../components/theme"
 import Icons from "../util/socialmedia.json"
 import Consent from "../components/Consent"
@@ -40,112 +40,112 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 
     <div key={"social icons" + index}>
       {icons.icon === "facebook" ? (
-        <a className="social" href={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiFacebookBoxFill />
         </a>
       ) : (
         ""
       )}
       {icons.icon === "twitter" ? (
-        <a className="social" href={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiTwitterFill />
         </a>
       ) : (
         ""
       )}
       {icons.icon === "linkedin" ? (
-        <a className="social" href={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiLinkedinBoxFill />
         </a>
       ) : (
         ""
       )}
       {icons.icon === "youtube" ? (
-        <a className="social" href={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiYoutubeFill />
         </a>
       ) : (
         ""
       )}
       {icons.icon === "instagram" ? (
-        <a className="social" href={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiInstagramFill />
         </a>
       ) : (
         ""
       )}
       {icons.icon === "rss" ? (
-        <a className="social" href={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiRssFill />
         </a>
       ) : (
         ""
       )}
       {icons.icon === "github" ? (
-        <a className="social" href={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiGithubFill />
         </a>
       ) : (
         ""
       )}
       {icons.icon === "telegram" ? (
-        <a className="social" href={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiTelegramFill />
         </a>
       ) : (
         ""
       )}
       {icons.icon === "pinterest" ? (
-        <a className="social" href={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiPinterestFill />
         </a>
       ) : (
         ""
       )}
       {icons.icon === "snapchat" ? (
-        <a className="social" href={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiSnapchatFill />
         </a>
       ) : (
         ""
       )}
       {icons.icon === "skype" ? (
-        <a className="social" href={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiSkypeFill />
         </a>
       ) : (
         ""
       )}
       {icons.icon === "wordpress" ? (
-        <a className="social" href={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <FaWordpress />
         </a>
       ) : (
         ""
       )}
       {icons.icon === "dribbble" ? (
-        <a className="social" href={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <RiDribbbleFill />
         </a>
       ) : (
         ""
       )}
       {icons.icon === "medium" ? (
-        <a href={icons.url} target="_blank">
+        <a href={icons.url} rel="noreferrer" target="_blank">
           <RiMediumFill />
         </a>
       ) : (
         ""
       )}
       {icons.icon === "behance" ? (
-        <a href={icons.url} target="_blank">
+        <a href={icons.url} rel="noreferrer" target="_blank">
           <RiBehanceFill />
         </a>
       ) : (
         ""
       )}
       {icons.icon === "vk" ? (
-        <a className="social" href={icons.url} target="_blank">
+        <a className="social" href={icons.url} rel="noreferrer" target="_blank">
           <FaVk />
         </a>
       ) : (
@@ -158,7 +158,7 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
 
 
 export function Footer() {
-  const { companyname } = useSiteMetadata()
+  // const { companyname } = useSiteMetadata()
   return (
 <>
 

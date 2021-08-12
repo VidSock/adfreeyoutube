@@ -4,42 +4,42 @@ import { SkipNavContent, SkipNavLink } from "./skip-nav"
 import { Footer } from "./footer"
 import { Seo } from "./seo"
 import '@fontsource/roboto'
+import Fullscreen from "../components/FullScreen"
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
 // import { FaHandPointDown } from "react-icons/fa"
-import TwilightLogo from "../../static/assets/adfree-youtube-logo.svg"
 import Bug from "../../static/assets/adfree-youtube-logo-bug.svg"
 import { StoreContext } from "../context/store-context"
 import { Toast } from "./toast"
 // import { FiShare } from 'react-icons/fi';
 // import { FaRegPlusSquare } from 'react-icons/fa';
 import { ImArrowRight } from "react-icons/im"
-import { CartButton } from "./cart-button"
-import SearchIcon from "../../static/icons/search"
-import Theme from "../components/theme"
+// import { CartButton } from "./cart-button"
+// import SearchIcon from "../../static/icons/search"
+// import Theme from "../components/theme"
 // import Audio from '../assets/audio.mp3'
 // import TouchUp from '../components/TouchUp'
 // import { IoMdFingerPrint } from 'react-icons/io'
 import "../assets/scss/style.scss"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import Consent from './Consent'
-import Install from './install-discount'
+// import Install from './install-discount'
 // 
 // import { BiLeftArrow } from "react-icons/bi"
 import { navigate } from "gatsby";
 
 export function Layout({ children }) {
   const { iconimage } = useSiteMetadata()
-  const { checkout, loading, didJustAddToCart } = React.useContext(StoreContext)
+  const { loading, didJustAddToCart } = React.useContext(StoreContext)
 
 
 
-  const items = checkout ? checkout.lineItems : []
+  // const items = checkout ? checkout.lineItems : []
 
-  const quantity = items.reduce((total, item) => {
-    return total + item.quantity
-  }, 0)
+  // const quantity = items.reduce((total, item) => {
+  //   return total + item.quantity
+  // }, 0)
 
  
 
@@ -77,6 +77,8 @@ export function Layout({ children }) {
     Your browser does not support the HTML5 Audio element.
 </audio> */}
 
+<Fullscreen />
+
 <header>
 
 {/* <Link to="/"><img id="logo" className="twlogo1" src={twLogo} alt="Twilightscapes Logo" style={{margin:'16px 0 40px 4vw', minWidth:'100px', maxWidth:'100px', height:'auto', padding:'0', border:'0px solid red', position:'fixed', zIndex:'2'}} /></Link> */}
@@ -87,7 +89,7 @@ export function Layout({ children }) {
 
 
 
-      <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
+      <input name="openSidebarMenu" type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
   <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
 
   {/* <div className="cornertext" style={{textShadow:'2px', color:'#fff',}}>

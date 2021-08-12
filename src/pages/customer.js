@@ -4,7 +4,7 @@ import { Layout } from "../components/layout"
 
 import { Link } from "gatsby"
 
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 
 
 
@@ -16,7 +16,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 
 
-export default function CustomerPage({}) {
+export default function CustomerPage() {
    return (
 
 

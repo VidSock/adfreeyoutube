@@ -3,7 +3,7 @@ import * as React from "react"
 // import { navigate } from 'gatsby-link'
 // import { FaEnvelope } from 'react-icons/fa';
 import CookieConsent from "react-cookie-consent";
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 
 
 const Consent = () => (
@@ -13,7 +13,7 @@ const Consent = () => (
 <CookieConsent
 	debug={false}
 	location="none"
-	style={{ zIndex:'1', opacity:'1', padding:'2vh 3%', margin:'0 auto', border:'0px solid white', position:'relative', top:'0', zIndex:'2', display:'flex', alignSelf:'center', width:'50vw', justifyContent:'center', background:'transparent'
+	style={{ opacity:'1', padding:'2vh 3%', margin:'0 auto', border:'0px solid white', position:'relative', top:'0', zIndex:'2', display:'flex', alignSelf:'center', width:'50vw', justifyContent:'center', background:'transparent'
    }}
 	enableDeclineButton={false}
 	declineButtonText="No Cookies"

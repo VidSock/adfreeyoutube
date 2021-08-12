@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React from "react"
+// import React from "react"
 import { jsx } from "theme-ui"
 import { Link, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
@@ -154,7 +154,7 @@ const Post = ({ data, pageContext }) => {
 
 
 
-<object className={svgZindex + " " + svgZindex} id="svg" data={svgUrl} type="image/svg+xml" style={{position:'absolute', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'1',  }} ></object>
+<object className={svgZindex + " " + svgZindex} id="svg" data={svgUrl} type="image/svg+xml" style={{position:'absolute', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'1',  }} >You need a new browser</object>
 
 
 
@@ -342,9 +342,7 @@ export const pageQuery = graphql`
           }
         }
         featuredImage2 {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
+          
           relativePath
         }
       }

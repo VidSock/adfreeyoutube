@@ -1,11 +1,11 @@
 import React from 'react'
 // import { navigate } from 'gatsby-link'
-import { FiShare } from 'react-icons/fi';
-import { IoShareOutline } from 'react-icons/io5';
-import { FaRegPlusSquare } from 'react-icons/fa';
-import ScrollAnimation from 'react-animate-on-scroll'
+// import { FiShare } from 'react-icons/fi';
+// import { IoShareOutline } from 'react-icons/io5';
+// import { FaRegPlusSquare } from 'react-icons/fa';
+// import ScrollAnimation from 'react-animate-on-scroll'
 import CookieConsent from "react-cookie-consent"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components";
 import { Link } from "gatsby"
 
@@ -44,7 +44,7 @@ const InstallDiscount = () => (
 
 
 <div id="installer1" className="popper1" style={{ display:'flex', justifyContent:'center', alignContent:'center', position: 'fixed', top:'60px',
-left:'-110vw', width:'600px', display:'flex', justifyContent:'center', alignItems:'center', background:'transparent', padding:'0'}}>
+left:'-110vw', width:'600px', alignItems:'center', background:'transparent', padding:'0'}}>
 
 
 

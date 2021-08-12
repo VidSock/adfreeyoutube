@@ -14,7 +14,7 @@ const netlifyCmsPaths = {
 const settings = require("./src/util/site.json")
 
 module.exports = {
-  flags: { PRESERVE_WEBPACK_CACHE: false },
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   siteMetadata: settings.meta,
   plugins: [
     {
@@ -169,7 +169,7 @@ module.exports = {
         enableIdentityWidget: true,
         publicPath: `admin`,
         htmlTitle: `AdFree CMS`,
-        htmlFavicon: `/static/assets/icon-512x512.png`,
+        // htmlFavicon: `/icons/icon-512x512.png`,
         includeRobots: false,
       },
     },
