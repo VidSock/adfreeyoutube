@@ -170,7 +170,6 @@ module.exports = {
         enableIdentityWidget: true,
         publicPath: `admin`,
         htmlTitle: `AdFree CMS`,
-        htmlFavicon: `/static/assets/icon-512x512.png`,
         includeRobots: false,
       },
     },
@@ -190,24 +189,23 @@ module.exports = {
       options: {
         name: `AdFree`,
         short_name: `AdFree`,
-        start_url: `/?user_mode=app`,
-        background_color: `#111`,
-        theme_color: `#FF0000`,
+        start_url: `/`,
+        background_color: `#222`,
+        theme_color: `#ff0000`,
         display: `standalone`,
-        // icon: "static" + settings.meta.iconimage,
-        icons: [
-          {
-            src: `/static/assets/icon-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/static/assets/icon-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-            purpose: `any maskable`,
-          },
-        ],
+ icon: `src/img/adfree-youtube-logo-bug.svg`, // This path is relative to the root of the site.
+      icons: [
+        {
+          src: `/static/icons/icon-192x192.png`,
+          sizes: `192x192`,
+          type: `image/png`,
+        },
+        {
+          src: `/static/icons/icon-512x512.png`,
+          sizes: `512x512`,
+          type: `image/png`,
+        },
+      ], // Add or remove icon sizes as desired
       },
     },
     "gatsby-plugin-offline",
