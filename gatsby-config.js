@@ -170,6 +170,7 @@ module.exports = {
         enableIdentityWidget: true,
         publicPath: `admin`,
         htmlTitle: `AdFree CMS`,
+        htmlFavicon: `/icons/icon-512x512.png`,
         includeRobots: false,
       },
     },
@@ -196,12 +197,12 @@ module.exports = {
  icon: `src/img/adfree-youtube-logo-bug.svg`, // This path is relative to the root of the site.
       icons: [
         {
-          src: `/static/icons/icon-192x192.png`,
+          src: `/icons/icon-192x192.png`,
           sizes: `192x192`,
           type: `image/png`,
         },
         {
-          src: `/static/icons/icon-512x512.png`,
+          src: `/icons/icon-512x512.png`,
           sizes: `512x512`,
           type: `image/png`,
         },
