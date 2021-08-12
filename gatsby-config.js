@@ -169,7 +169,7 @@ module.exports = {
         enableIdentityWidget: true,
         publicPath: `admin`,
         htmlTitle: `AdFree CMS`,
-        // htmlFavicon: `/icons/icon-512x512.png`,
+        htmlFavicon: `/static/assets/icon-512x512.png`,
         includeRobots: false,
       },
     },
@@ -196,6 +196,7 @@ module.exports = {
         theme_color: `#FF0000`,
         display: `standalone`,
         // icon: "static" + settings.meta.iconimage,
+        icon: `/static/assets/icon-512x512.png`,
         icon_options: {
           purpose: `any maskable`,
         },
