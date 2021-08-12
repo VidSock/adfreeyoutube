@@ -188,11 +188,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `AdFree`,
+        name: `Clicking Skip Sucks - Go AdFree `,
         short_name: `AdFree`,
-        start_url: `/`,
+        start_url: `/?user_mode=app`,
+        description: `Clicking Skip, Sucks - Go AdFree`,
         background_color: `#222`,
-        theme_color: `#ff0000`,
+        lang: `en`,
+        theme_color: `#222`,
         display: `standalone`,
  icon: `src/img/adfree-youtube-logo-bug.svg`, // This path is relative to the root of the site.
  icon_options: {
