@@ -170,7 +170,7 @@ module.exports = {
         enableIdentityWidget: true,
         publicPath: `admin`,
         htmlTitle: `AdFree CMS`,
-        htmlFavicon: `/static/icons/icon-512x512.png`,
+        htmlFavicon: `/static/assets/icon-512x512.png`,
         includeRobots: false,
       },
     },
