@@ -135,7 +135,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
   <div className="video-foreground" style={{position:'absolute', zIndex:'-1', overflow:'hidden'}}>
 
-  <iframe title="AdFree YouTube" id="youtube" className="video" width="100%" height="350" src={final} frameBorder="0" allowFullScreen ></iframe>
+  <iframe title="AdFree YouTube" id="youtube2" className="video" width="100%" height="350" src={final} frameBorder="0" allowFullScreen ></iframe>
 
   </div>
   {/* zomZywCAPTA */}
