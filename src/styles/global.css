@@ -44,12 +44,12 @@ opacity:.2;
   }
 
 .video-background {
-  background: #000;
+  /* background: #000; */
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   z-index: 0; 
 }
-.video-foreground,
+
 .video-background iframe {
   position: absolute;
   top: 0;
@@ -106,15 +106,6 @@ opacity:.2;
 @media (max-aspect-ratio: 16/9) {
   .video-foreground { width: 300%; left: -100%; }
 } */
-@media all and (max-width: 600px) {
-.vid-info { width: 50%; padding: .5rem; }
-.vid-info h1 { margin-bottom: .2rem; }
-}
-@media all and (max-width: 500px) {
-.vid-info .acronym { display: none; }
-}
-
-
 
 .vidbox {
   overflow: hidden;
@@ -836,6 +827,8 @@ border: 0px solid red;
     /* background:rgba(145, 26, 103, 0.829) !important; */
 
   }
+
+  .youtubeform{}
 
 
 

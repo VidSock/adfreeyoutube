@@ -141,7 +141,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 <div className="vidbox" style={{maxHeight:'100vh', overflow:'hidden'}}>
   <div className="video-background" style={{width:'100vw', overflow:'hidden'}}>
-  <div className="video-foreground" style={{position:'absolute', zIndex:'-1',}}>
+  <div className="video-foreground" style={{position:'relative', zIndex:'-1', display:'flex', justifyContent:'center'}}>
 
 {!this.state.isActive ? 
 <>
@@ -155,7 +155,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-  <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem', border:'1px solid #333', borderRadius:'12px', height:'auto', maxWidth:'88vw', margin:'0 8%', zIndex:'1', position:'absolute', top:'30vh', overflow:'hidden'}}>
+  <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'absolute', top:'40vh',}}>
 
 <p style={{fontSize:'18px', textAlign:'center'}}>Paste YouTube Link Here:
 </p>
