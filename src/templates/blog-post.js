@@ -162,7 +162,7 @@ function AddSvg(){
         article={true}
       />
 
-<div className="vidbox1" style={{overflow:'hidden', position:'relative', width:'100%', height:'100vh'}}>
+<div className="vidbox1" style={{overflow:'hidden', position:'relative', width:'100%', height:'90vh', borderBottom:'0px solid red', boxShadow:'0 0 20px red'}}>
   
 <div className="video-background1" style={{position:'absolute', top:'0', right:'0', left:'0', zIndex:'0', height:'100vh', overflow:'hidden'}}>
 
@@ -172,26 +172,27 @@ function AddSvg(){
 
 
 
-<div className="featured-banner" style={{width:'100%', height:'100%',  position:'absolute', left:'0', right:'0', zIndex:'0', backgroundSize:'contain'}} >
+
 
 {Image ? (
             <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', zIndex:'4', objectFit:'contain'}}
+              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', zIndex:'0', objectFit:'cover'}}
             />
           ) : (
+            // <div style={{display:'block', height:'30vh', marginTop:'-500px', border:'1px solid red'}}>sdsd</div>
             <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'1', bottom:'10vh'}} />
           )}
 
 
 
-</div>
 
 
 
-  <div className="video-foreground" style={{position:'absolute', zIndex:'0', top:'0', left:'0', right:'0', width:'100%', height:'100%'}}>
+
+  <div className="video-foreground" style={{position:'absolute', zIndex:'0', top:'0', left:'0', right:'0', width:'100%', height:'fit-content'}}>
 
   {Svg ? (
             <AddSvg />
@@ -225,9 +226,9 @@ function AddSvg(){
 </div></div>
 
 
-<br />
+{/* <br />
 
-<GoBack />
+<GoBack /> */}
 
 
 
