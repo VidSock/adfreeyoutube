@@ -12,6 +12,7 @@ const Theme = () => {
           setColorMode(colorMode === "default" ? "dark" : "default")
         }}
         aria-label="Theme Color"
+        className="menutheme"
       >
         <div sx={themeStyles.modeIcons}>
           <div>{colorMode === "default" ? <FiMoon /> : <FiSun />}</div>

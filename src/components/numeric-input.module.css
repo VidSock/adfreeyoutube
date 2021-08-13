@@ -23,7 +23,7 @@
   border-color: var(--input-border);
   border-width: 0 1px 0 0;
   font-weight: var(--medium);
-  color: var(--input-text);
+  color: var(--text-inverted);
 }
 
 .input:disabled {
@@ -31,12 +31,12 @@
 }
 
 .wrap button {
-  background: none;
+  background: #fff;
   border: none;
   padding: 0 var(--space-sm);
   display: grid;
   place-items: center;
-  color: var(--input-ui);
+  color: var(--primary-color);
 }
 
 .wrap button:hover {

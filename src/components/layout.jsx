@@ -4,7 +4,6 @@ import { SkipNavContent, SkipNavLink } from "./skip-nav"
 import { Footer } from "./footer"
 import { Seo } from "./seo"
 import '@fontsource/roboto'
-// import Fullscreen from "../components/FullScreen"
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
@@ -14,34 +13,31 @@ import { StoreContext } from "../context/store-context"
 import { Toast } from "./toast"
 // import { FiShare } from 'react-icons/fi';
 // import { FaRegPlusSquare } from 'react-icons/fa';
+import Fullscreen from "../components/FullScreen"
 import { ImArrowRight } from "react-icons/im"
-// import { CartButton } from "./cart-button"
-// import SearchIcon from "../../static/icons/search"
-// import Theme from "../components/theme"
+import { CartButton } from "./cart-button"
+import SearchIcon from "../../static/icons/search"
+import Theme from "../components/theme"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import Audio from '../assets/audio.mp3'
 // import TouchUp from '../components/TouchUp'
-// import { IoMdFingerPrint } from 'react-icons/io'
+import { IoMdFingerPrint } from 'react-icons/io'
 import "../assets/scss/style.scss"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import Consent from './Consent'
-// import Install from './install-discount'
+import Install from './install-discount'
 // 
 // import { BiLeftArrow } from "react-icons/bi"
 import { navigate } from "gatsby";
 
 export function Layout({ children }) {
   const { iconimage } = useSiteMetadata()
-  const { loading, didJustAddToCart } = React.useContext(StoreContext)
+  const { checkout, loading, didJustAddToCart } = React.useContext(StoreContext)
 
+  const items = checkout ? checkout.lineItems : []
 
-
-  // const items = checkout ? checkout.lineItems : []
-
-  // const quantity = items.reduce((total, item) => {
-  //   return total + item.quantity
-  // }, 0)
-
- 
+  const quantity = items.reduce((total, item) => {
+    return total + item.quantity
+  }, 0)
 
   return (
     <div style={{background:''}}> 
@@ -51,10 +47,10 @@ export function Layout({ children }) {
 
       <ModalRoutingContext.Consumer>
     {({ modal, closeTo }) => (
-      <div>
+      <div style={{overflow:'hidden'}}>
         {modal ? (
           <>
-          <div style={{position:'fixed', top:'4vh', right:'5vw', padding:'10px', fontSize:'40px', background:'#111 !important', opacity:'1 !important', zIndex:'2',  filter:' drop-shadow(0px 4px 3px #000)'}}>
+          <div style={{position:'fixed', top:'60px', right:'5vw', padding:'10px', fontSize:'40px', background:'#111 !important', filter:'none', opacity:'1 !important', zIndex:'2',  filter:' drop-shadow(0px 4px 3px #000)',}}>
           <Link state={{noScroll: true }} to={closeTo}>
             <AiOutlineClose />
           </Link>
@@ -73,13 +69,13 @@ export function Layout({ children }) {
 
       
       
-      {/* <audio controls="controls" autoplay="true" src={Audio}>
+      {/* <audio controls="controls" autoplay="false" src={Audio}>
     Your browser does not support the HTML5 Audio element.
 </audio> */}
 
 {/* <Fullscreen /> */}
 
-<header>
+<header name="pagetop" >
 
 {/* <Link to="/"><img id="logo" className="twlogo1" src={twLogo} alt="Twilightscapes Logo" style={{margin:'16px 0 40px 4vw', minWidth:'100px', maxWidth:'100px', height:'auto', padding:'0', border:'0px solid red', position:'fixed', zIndex:'2'}} /></Link> */}
 
@@ -89,7 +85,7 @@ export function Layout({ children }) {
 
 
 
-      <input name="openSidebarMenu" type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
+      <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
   <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
 
   {/* <div className="cornertext" style={{textShadow:'2px', color:'#fff',}}>
@@ -97,8 +93,6 @@ export function Layout({ children }) {
  <span><br />TAP CORNER<br /> FOR MENU<br />
 </span>
     </div> */}
-
-
 
 <Bug className="bug" style={{fontSize:'20px', maxWidth:'80px', opacity:'.3' }}/>
 
@@ -115,7 +109,7 @@ export function Layout({ children }) {
    <div id="sidebarMenu" style={{minWidth:'', width:''}}>
   
 {/* <div className="no-app promocode">
-30% OFF CODE: <span style={{color:'#FA02B7', fontWeight:'bold'}}>LoveTheNight</span>
+30% OFF CODE: <span style={{color:'var(--primary-color)', fontWeight:'bold'}}>LoveTheNight</span>
 </div> */}
 
 
@@ -137,20 +131,17 @@ export function Layout({ children }) {
 
 
 
+
     <ul className="sidebarMenuInner post-card" style={{maxWidth:'250px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
- <li className="carta" style={{border:'none', margin:'0 0', textAlign:'center'}}>
-<Link to="/"> 
-{/* <TwilightLogo /> */}
+ <li className="carta" style={{border:'none', margin:'1rem 0'}}>
+ <Link to="/"> 
 <img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" />
 <span>Clicking Skip, Sucks</span>
 </Link>
-
-
  </li>
- <li className="carto" style={{border:'none', margin:'0 0', textAlign:'center'}}>
-<Link to="/">
-{/* <TwilightLogo /> */}
+ <li className="carto" style={{border:'none', margin:'1rem 0'}}>
+ <Link to="/"> 
 <img src={iconimage} alt="AdFree YouTube" width="100%" height="100%" />
 <span>Clicking Skip, Sucks</span>
 </Link>
@@ -163,10 +154,6 @@ export function Layout({ children }) {
 
 
 
- <li className="carto" style={{textAlign:'center'}}>
- <Link state={{modal: true}}  className="navbar-item txtshadow" to="/contact/">
-Contact<span></span>
-</Link>
 
 
 
@@ -174,8 +161,8 @@ Contact<span></span>
 <li className="carta">
  <Link className="navbar-item txtshadow" to="/contact/">
 Contact Me<span>Ordering Questions?</span>
-</Link> */}
-</li>
+</Link> </li>*/}
+
 
 
 
@@ -187,36 +174,51 @@ Contact Me<span>Ordering Questions?</span>
 
       {/* <li className="carto">
               <Link className="navbar-item txtshadow" to="/about/">
-                About Us <span>Our story</span>
+                About Me <span>My story</span>
               </Link>
       </li> */}
 
       {/* <li className="carto">
-      <Link className="navbar-item txtshadow" to="/archive/">Blog<span>Latest Posts</span></Link>
+      <Link className="navbar-item txtshadow" to="/articles/">Articles<span>My rants &amp; raves</span></Link>
        </li> */}
 
-
-      {/* <li className="carto">
+{/* 
+      <li className="carto">
               <Link className="navbar-item txtshadow" to="/nft/">
                 NFT Collectibles <span>Limited Editions</span>
               </Link>
       </li> */}
 
 
-      {/* <li className="carto" style={{borderBottom:'0 !important'}}>
-              <Link className="navbar-item txtshadow" to="/archive/"  style={{borderBottom:'0 !important'}}>
-              The AdFree Archive <span>Video Multimedia Blog</span>
+      {/* <li className="carto">
+              <Link className="navbar-item txtshadow" to="/vault/favorites/">
+              The Vault <span>Full Photo archives</span>
+              </Link>
+      </li> */}
+
+
+{/* <li className="carto">
+              <Link className="navbar-item txtshadow" to="/experiences/">
+                Experiences
+                <span>Photo Multimedia</span>
               </Link>
       </li> */}
 
 
 
-      {/* <li className="carto" style={{textAlign:'center'}}>
+      <li className="carto">
               <Link className="navbar-item txtshadow" to="/photos/">
       
-              View Photos <span style={{color:'var(--primary-color)',}}>start here</span>
+              View My Photos <span style={{color:'var(--primary-color)',}}>Buy  one to say thanks!</span>
               </Link>
-      </li>  */}
+      </li> 
+
+      <li className="carto" style={{textAlign:'center'}}>
+ <Link className="navbar-item txtshadow" to="/contact/">
+Contact Me<span>I love feedback!</span>
+</Link>
+</li>
+
     
       <li className="carta">
       <div style={{display:'flex', justifyContent:'center'}}>
@@ -233,12 +235,12 @@ Contact Me<span>Ordering Questions?</span>
 
       <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-between', verticalAlign:'center', padding:'0 20px',  }}>
   
-      {/* <Theme  style={{padding:'0'}} /> */}
-   {/* <Link className="sherlock" to="/search" style={{marginRight:'0', marginTop:'5px'}}>
+      <Theme  style={{padding:'0'}} />
+   <Link className="sherlock" to="/search" style={{marginRight:'0', marginTop:'5px'}}>
     <span className="carto"><SearchIcon /></span>
-   </Link> */}
+   </Link>
    
-  {/* <div className="carto"><CartButton quantity={quantity} /></div> */}
+  <div className="carto"><CartButton quantity={quantity} /></div>
 
 
         </li>
@@ -297,7 +299,7 @@ Contact Me<span>Ordering Questions?</span>
 
       <SkipNavContent className="intro">{children}</SkipNavContent>
       
-
+      
       {/* <Consent /> */}
      {/* <Install /> */}
       <Footer />

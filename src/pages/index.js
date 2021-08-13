@@ -150,6 +150,9 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 <StaticImage className="homepage-bg" src="../../static/assets/in-the-sky-with-diamonds.jpg" alt="Twilightscapes" />
 
+<StaticImage className="homepage-logo" src="../../static/assets/adfree-youtube-logo-sq.svg" alt="Twilightscapes" style={{position:'absolute', top:'0', maxWidth:'25vw'}} />
+
+
 
   {/* <div className=" fluff" style={{padding:'0 12%', margin:'0 auto', textAlign:'center', position:'absolute', zIndex:'1', maxWidth:'800px', top:'30vh', color:'#fff'}}> */}
 

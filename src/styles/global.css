@@ -903,6 +903,9 @@ body{overflow-x: hidden; min-height: 100vh;
   transform: translateX(100vw);
   transition: transform 250ms ease-in-out;
 }
+
+#sidebarMenu button.menutheme div:nth-child(2){display: none !important;}
+
 .sidebarMenuInner{
   margin:0 0 0 0;
   padding:75vh 0 0 0;

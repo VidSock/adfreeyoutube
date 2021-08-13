@@ -240,7 +240,7 @@ export default function Product({ data: { product, suggestions } }) {
                     <select
                       aria-label="Variants"
                       onChange={(event) => handleOptionChange(index, event)}
-                      style={{border:'1px solid #555'}}
+                      style={{border:'1px solid red !important'}}
                     >
                       <option value="">{`Select ${name}`}</option>
                       {values.map((value) => (
@@ -253,7 +253,7 @@ export default function Product({ data: { product, suggestions } }) {
                 ))}
             </fieldset>
             <div className={addToCartStyle}>
-              Qty: &nbsp;<NumericInput
+              {/* Qty: &nbsp;<NumericInput
                 aria-label="Quantity"
                 onIncrement={() => setQuantity((q) => Math.min(q + 1, 20))}
                 onDecrement={() => setQuantity((q) => Math.max(1, q - 1))}
@@ -262,7 +262,7 @@ export default function Product({ data: { product, suggestions } }) {
                 min="1"
                 max="20"
               />
-              <br /><br />
+              <br /><br /> */}
               <AddToCart
                 variantId={productVariant.storefrontId}
                 quantity={quantity}

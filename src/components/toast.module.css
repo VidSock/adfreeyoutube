@@ -1,6 +1,6 @@
 .toastWrapper {
   background-color: var(--primary);
-  color: var(--text-color-inverted);
+  color: var(--text-color);
   width: max-content;
   position: fixed;
   right: 130px;

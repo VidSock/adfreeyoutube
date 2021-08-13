@@ -93,7 +93,7 @@
 }
 
 .selectVariant {
-  background-color: var(--input-background);
+  background-color: var(--primary);
   border-radius: var(--radius-md);
   cursor: pointer;
   margin-top: var(--space-md);
@@ -103,7 +103,7 @@
 
 .selectVariant select {
   appearance: none;
-  background-color: #000;
+  background-color: var(--primary-color);
   border: 1px solid var(--primary-color) !important;
   color: var(--input-text);
   cursor: inherit;
