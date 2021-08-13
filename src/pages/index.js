@@ -187,8 +187,8 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
     Your browser does not support the HTML5 Audio element.
 </audio>
 </div> */}
-<div style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto',}}>
-<form className="contact-form" onSubmit={this.handleSubmit} style={{margin:'0', padding:'0', display:'flex', width:'100%', justifyContent:'center', alignItems:'center'}}>
+<div className="" style={{display:'flex', justifyContent:'center', width:'100%', margin:'0 auto',}}>
+<form className="contact-form backdrop" onSubmit={this.handleSubmit} style={{margin:'0', padding:'0', display:'flex', width:'100%', justifyContent:'center', alignItems:'center'}}>
         <label htmlFor="youtubelink" style={{minWidth:'220px', width:'220px', textAlign:'right', border:'0px solid red', paddingRight:'20px'}}>
           Click "Share" and copy Url<br />Then paste Url here:</label>
           
@@ -201,6 +201,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
             onclick="paste(this)"
             placeholder="example: https://youtu.be/cVsQLlk-T0s"
             // autoFocus
+            className="youtubelinker"
           />
           
         {/* <button onClick={Iframer} /> */}
@@ -238,10 +239,16 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 {!this.state.isActive ? 
 <>
-  <div className="installwindow1" style={{fontSize:'100%',  display:'flex', flexDirection:'column', alignSelf:'center', verticalAlign:'middle', lineHeight:'200%', width:'100%', margin:'0 auto', padding:' .5rem', border:'0px solid #333', borderRadius:'12px', textAlign:'center', position:'absolute', top:'30vh', width:'100vw' }}>
-  
+<div className="" style={{position:'absolute', top:'0', right:'0', left:'0', zIndex:'0', height:'100vh', width:'100%', overflow:'hidden'}}>
 
-<div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'50%', margin:'0 auto', padding:' .5rem 1rem', border:'1px solid #333', borderRadius:'12px', backdropFilter:'blur(14px)', background:'rgba(0,0,0,0.60)', position:'relative', color:'#fff'}}>
+<StaticImage src="../../static/assets/in-the-sky-with-diamonds.jpg" alt="Twilightscapes" className="pop" />
+
+
+  <div className=" fluff" style={{display:'flex', flexDirection:'column', alignSelf:'center', padding:'0 12%', margin:'0 auto', textAlign:'center', position:'absolute', top:'30vh', width:'100vw', color:'#fff'}}>
+
+  <form className="contact-form frontdrop" onSubmit={this.handleSubmit} style={{margin:'0 auto', padding:'2rem', width:'100%', maxWidth:'800px', border:'1px solid #333', borderRadius:'12px', height:'auto'}}>
+
+{/* <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'50%', margin:'0 auto', padding:' .5rem 1rem', border:'1px solid #333', borderRadius:'12px', backdropFilter:'blur(14px)', background:'rgba(0,0,0,0.60)', position:'relative', color:'#fff'}}> */}
       
 {/* <button onClick={this.handleHide} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button> */}
 
@@ -251,9 +258,9 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 {/* <div style={{border:'0px solid red', display:'block', width:'100px', height:'100px', position:'absolute', bottom:'0', right:'0', zIndex:'-1', overflow:'hidden', }}><StaticImage src="../../static/assets/installed-bg.png" alt=""  />
 </div> */}
   
-  <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'0px solid #333', borderRadius:'12px', }}>
+
     
-  <form className="contact-form" onSubmit={this.handleSubmit} style={{margin:'0 auto', padding:'0', display:'flex', width:'50%', justifyContent:'center', alignItems:'center'}}>
+
 
 <input
             id=""
@@ -264,14 +271,17 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
             onInput={this.handleInputChange}
             onclick="paste(this)"
             placeholder="example: https://youtu.be/cVsQLlk-T0s"
-            // autoFocus
+            autoFocus
+            className="youtubelinker"
           />
 </form>
    
-   </div>
+
 
 </div>
+
 </div>
+
 </>
   : "" }
 
