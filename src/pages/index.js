@@ -8,6 +8,10 @@ import styled from "styled-components"
 // import { StaticImage } from "gatsby-plugin-image"
 import { Helmet } from "react-helmet"
 import { Seo } from "../components/seo"
+import { FaRegPlusSquare } from 'react-icons/fa';
+import { IoShareOutline } from 'react-icons/io5';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { StaticImage } from "gatsby-plugin-image"
 // import { RiSendPlane2Line } from "react-icons/ri"
 // import Install from "../components/install-discount"
 // import SVG from "../../static/assets/crude-addiction.svg"
@@ -49,6 +53,7 @@ const CustomBox = styled.div`
           
           state = {
             youtubelink: "",
+            isActive:false
           }
           handleInputChange = event => {
             const target = event.target
@@ -62,6 +67,17 @@ const CustomBox = styled.div`
  
           }
 
+        handleShow = ()=>{
+            this.setState({
+                isActive: true
+            })
+        }
+      
+        handleHide = () =>{
+            this.setState({
+                isActive: false
+            })
+        }
 
           handleSubmit = event => {
             event.preventDefault()
@@ -132,7 +148,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-<div className="vidbox" style={{maxHeight:'90vh', overflow:'hidden'}}>
+<div className="vidbox" style={{maxHeight:'100vh', overflow:'hidden'}}>
   
 <div className="video-background" style={{width:'100vw', overflow:'hidden'}}>
 
@@ -177,14 +193,14 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           Click "Share" and copy Url<br />Then paste Url here:</label>
           
           <input
-            id="youtubelink"
+            id=""
             type="text"
             name="youtubelink"
             value={this.state.youtubelink}
             onChange={this.handleInputChange}
             onclick="paste(this)"
             placeholder="example: https://youtu.be/cVsQLlk-T0s"
-            autoFocus
+            // autoFocus
           />
           
         {/* <button onClick={Iframer} /> */}
@@ -220,8 +236,44 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
+{!this.state.isActive ? 
+<>
+  <div className="installwindow1" style={{fontSize:'100%',  display:'flex', flexDirection:'column', alignSelf:'center', verticalAlign:'middle', lineHeight:'200%', width:'100%', margin:'0 auto', padding:' .5rem', border:'0px solid #333', borderRadius:'12px', textAlign:'center', position:'absolute', top:'30vh', width:'100vw' }}>
+  
 
+<div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'50%', margin:'0 auto', padding:' .5rem 1rem', border:'1px solid #333', borderRadius:'12px', backdropFilter:'blur(14px)', background:'rgba(0,0,0,0.60)', position:'relative', color:'#fff'}}>
+      
+{/* <button onClick={this.handleHide} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button> */}
 
+<p style={{fontSize:'18px', textAlign:'center'}}>Paste YouTube Link Here:
+</p>
+
+{/* <div style={{border:'0px solid red', display:'block', width:'100px', height:'100px', position:'absolute', bottom:'0', right:'0', zIndex:'-1', overflow:'hidden', }}><StaticImage src="../../static/assets/installed-bg.png" alt=""  />
+</div> */}
+  
+  <div style={{fontSize:'90%', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'middle', lineHeight:'200%', width:'90%', margin:'0 auto', padding:' .5rem 1rem', border:'0px solid #333', borderRadius:'12px', }}>
+    
+  <form className="contact-form" onSubmit={this.handleSubmit} style={{margin:'0 auto', padding:'0', display:'flex', width:'50%', justifyContent:'center', alignItems:'center'}}>
+
+<input
+            id=""
+            type="text"
+            name="youtubelink"
+            value={this.state.youtubelink}
+            onChange={this.handleShow}
+            onInput={this.handleInputChange}
+            onclick="paste(this)"
+            placeholder="example: https://youtu.be/cVsQLlk-T0s"
+            // autoFocus
+          />
+</form>
+   
+   </div>
+
+</div>
+</div>
+</>
+  : "" }
 
 
 
