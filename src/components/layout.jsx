@@ -4,7 +4,7 @@ import { SkipNavContent, SkipNavLink } from "./skip-nav"
 import { Footer } from "./footer"
 import { Seo } from "./seo"
 import '@fontsource/roboto'
-import Fullscreen from "../components/FullScreen"
+// import Fullscreen from "../components/FullScreen"
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
 import { AiOutlineClose } from "react-icons/ai"
@@ -77,7 +77,7 @@ export function Layout({ children }) {
     Your browser does not support the HTML5 Audio element.
 </audio> */}
 
-<Fullscreen />
+{/* <Fullscreen /> */}
 
 <header>
 

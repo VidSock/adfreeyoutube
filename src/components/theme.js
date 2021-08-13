@@ -43,15 +43,16 @@ const themeStyles = {
   modeIcons: {
     display: "flex",
     alignItems: "center",
-    color: "#ccc",
+    color: "inherit",
     mt: "10px",
     "&:hover": {
-      color: "color:",
+      color: "inherit",
       background:'transparent'
     },
   },
   modeText: {
     fontSize: "14px",
+    color: "inherit",
     display: ["block", "block", "block", "block"],
     p: " 0 10px",
     mt: "-5px",
