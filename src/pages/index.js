@@ -57,9 +57,12 @@ const CustomBox = styled.div`
             this.setState({
               [name]: value,
             })
-            
+   
+          
  
           }
+
+
           handleSubmit = event => {
             event.preventDefault()
             // alert(`Your Url ${this.state.youtubelink}!`)
@@ -70,15 +73,22 @@ const CustomBox = styled.div`
           
           render() {
 
- 
 
             const Url = this.state.youtubelink
 
             const urlNoProtocol = Url.replace(/^.*((youtu.be\/))/i, "")
+            const FinalUrl = "https://www.youtube.com/embed/" + urlNoProtocol + "?controls=1&amp;showinfo=1&amp;color=white&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=0&amp;playlist=" + urlNoProtocol + ""
 
 
-            const final = "https://www.youtube.com/embed/" + urlNoProtocol + "?controls=1&amp;showinfo=1&amp;color=white&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=0&amp;playlist=" + urlNoProtocol + ""
 
+            
+            function Iframer() {
+  
+              return (
+          
+                <iframe title="AdFree YouTube" id="youtube" className="blog-video" width="100%" height="400" src={FinalUrl} frameBorder="0" playsInline />
+              )
+            }
 
             
             return (
@@ -135,7 +145,18 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
   <div className="video-foreground" style={{position:'absolute', zIndex:'-1', overflow:'hidden'}}>
 
-  <iframe title="AdFree YouTube" id="youtube2" className="video" width="100%" height="350" src={final} frameBorder="0" allowFullScreen ></iframe>
+  
+
+
+
+  {urlNoProtocol ? (
+            
+       <Iframer />
+          ) : (
+            ""
+          )}
+          
+  {/* <iframe title="AdFree YouTube" id="youtube2" className="video" width="100%" height="350" src={FinalUrl} frameBorder="0" allowFullScreen ></iframe> */}
 
   </div>
   {/* zomZywCAPTA */}
@@ -166,7 +187,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
             autoFocus
           />
           
-        
+        {/* <button onClick={Iframer} /> */}
         {/* <button type="submit">Submit</button> */}
       </form></div>
 {/* <div className="fluff outerpanel" style={{borderLeft:'none', padding:'2rem 12%'}}> */}
