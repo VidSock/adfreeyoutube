@@ -112,7 +112,7 @@ const Post = ({ data, pageContext }) => {
     const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
 
-      <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'0', left:'0', right:'0', width:'100vw', height:'100vh',   }} />
+      <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'-15vh', left:'0', right:'0', width:'100vw', height:'122vh',   }} />
     )
   }
 
@@ -162,7 +162,7 @@ function AddSvg(){
         article={true}
       />
 
-<div className="vidbox1" style={{maxHeight:'100vh', overflow:'hidden', position:'relative', width:'100%', height:'100vh'}}>
+<div className="vidbox1" style={{overflow:'hidden', position:'relative', width:'100%', height:'100vh'}}>
   
 <div className="video-background1" style={{position:'absolute', top:'0', right:'0', left:'0', zIndex:'0', height:'100vh', overflow:'hidden'}}>
 
@@ -182,7 +182,7 @@ function AddSvg(){
               style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', zIndex:'4', objectFit:'contain'}}
             />
           ) : (
-            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'1'}} />
+            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'1', bottom:'10vh'}} />
           )}
 
 

@@ -4,11 +4,11 @@ title: Mayor Cuomo Resigns
 slug: /mayor-cuomo-resigns
 date: 2021-08-11 20:00 
 description: Mayor Cuomo tries to keep his hands to himself
-youtuber: 
+youtuber: ""
 youtubestart: "1"
 youtubeend: "26"
 youtubemute: "1"
-youtubecontrols: "1"
+youtubecontrols: "0"
 featuredImage: /assets/cuomotouchy-story.jpg
 overlayImage: /assets/cuomotouchy-story.jpg
 svgzindex: "2"
