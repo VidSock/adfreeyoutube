@@ -614,11 +614,10 @@ footer{background-color: transparent; padding:.1rem 0rem; margin:0; display:flex
   font-size: 1.5em;
 }
 
-
-#youtubelink:placeholder {
-  color: blue !important;
-  display: none !important;
+#youtubelink{
+  opacity:1 !important;
 }
+
 
 /* @media (max-width: 48em) {
   .abcontent{position:relative !important; height:100vh; overflow:visible;}
