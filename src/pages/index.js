@@ -153,7 +153,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
             
        <Iframer />
           ) : (
-            "Todd was here"
+            ""
           )}
           
   {/* <iframe title="AdFree YouTube" id="youtube2" className="video" width="100%" height="350" src={FinalUrl} frameBorder="0" allowFullScreen ></iframe> */}
