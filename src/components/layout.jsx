@@ -203,11 +203,11 @@ Contact Me<span>Ordering Questions?</span>
       </li> */}
 
 
-      <li className="carto" style={{borderBottom:'0 !important'}}>
+      {/* <li className="carto" style={{borderBottom:'0 !important'}}>
               <Link className="navbar-item txtshadow" to="/archive/"  style={{borderBottom:'0 !important'}}>
               The AdFree Archive <span>Video Multimedia Blog</span>
               </Link>
-      </li>
+      </li> */}
 
 
 
