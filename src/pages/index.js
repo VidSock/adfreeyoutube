@@ -141,21 +141,22 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 <div className="vidbox" style={{maxHeight:'100vh', overflow:'hidden'}}>
   <div className="video-background" style={{width:'100vw', overflow:'hidden'}}>
-  <div className="video-foreground" style={{position:'absolute', zIndex:'-1', overflow:'hidden'}}>
+  <div className="video-foreground" style={{position:'absolute', zIndex:'-1',}}>
 
 {!this.state.isActive ? 
 <>
-<div className="" style={{position:'relative', top:'0', right:'0', left:'0', zIndex:'0', width:'100vw',}}>
 
-<div className="homepage-bg">
-<StaticImage src="../../static/assets/in-the-sky-with-diamonds.jpg" alt="Twilightscapes" />
-</div>
+
+
+<StaticImage className="homepage-bg" src="../../static/assets/in-the-sky-with-diamonds.jpg" alt="Twilightscapes" />
+
 
   {/* <div className=" fluff" style={{padding:'0 12%', margin:'0 auto', textAlign:'center', position:'absolute', zIndex:'1', maxWidth:'800px', top:'30vh', color:'#fff'}}> */}
 
-<div style={{position:'absolute', zIndex:'1', width:'100vw', top:'30vh', color:'#fff', display:'flex', justifyContent:'center'}}>
 
-  <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'800px', margin:'0 auto'}}>
+
+  <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem', border:'1px solid #333', borderRadius:'12px', height:'auto', maxWidth:'88vw', margin:'0 8%', zIndex:'1', position:'absolute', top:'30vh', overflow:'hidden'}}>
+
 <p style={{fontSize:'18px', textAlign:'center'}}>Paste YouTube Link Here:
 </p>
 <input
@@ -172,11 +173,11 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           />
 </form>
    
-</div>
+
 
 {/* </div> */}
 
-</div>
+
 
 </>
   : "" }
