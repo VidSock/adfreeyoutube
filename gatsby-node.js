@@ -86,3 +86,19 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
   }
 }
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type YouTube implements Node {
+      youtuber: String
+      youtubestart: String
+      youtubeend: String
+      youtubemute: String
+      youtubecontrols: String
+      featuredImage2: String
+      svgzindex: String
+    }
+  `
+  createTypes(typeDefs)
+}
