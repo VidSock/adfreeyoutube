@@ -137,8 +137,8 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-<div style={{position:'fixed', top:'0', left:'0', right:'0', maxWidth:'100vw', zIndex:'0', display:'flex', justifyContent:'center'}}>
-  <StaticImage className="homepage-bg" src="../../static/assets/adfree-youtube-logo-sq.svg" alt="Twilightscapes" style={{maxWidth:'20vw', filter:'drop-shadow(2px 2px 2px #000)' }} />
+<div style={{position:'fixed', top:'4vh', left:'0', right:'0', maxWidth:'100vw', zIndex:'0', display:'flex', justifyContent:'center'}}>
+  <StaticImage className="homepage-bg" src="../../static/assets/adfree-youtube-logo-sq.svg" alt="Twilightscapes" style={{maxWidth:'18vw', filter:'drop-shadow(2px 2px 2px #000)' }} />
 </div>
 <StaticImage className="homepage-bg" src="../../static/assets/in-the-sky-with-diamonds.jpg" alt="Twilightscapes" />
 
@@ -184,7 +184,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
     <div className="" style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto',}}>
-    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'absolute', top:'30vh',}}>
+    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'absolute', top:'35vh',transition:' all 0.85s', animation:'fade .8s forwards'}}>
 
 <p style={{fontSize:'18px', textAlign:'center'}}>Paste YouTube Link Here:
 </p>
@@ -193,7 +193,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           type="text"
           name="youtubelink"
           value={this.state.youtubelink}
-          
+          onBlur={() => window.scrollTo({top: 0, behavior: 'smooth'})}
           onInput={this.handleInputChange}
           onChange={this.handleShow}
            
@@ -212,7 +212,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
     </>
   : 
 <div className="" style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto',}}>
-    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'relative', bottom:'0',}}>
+    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'relative', bottom:'0',transition:' all 1.85s', animation:'fade 1.5s forwards' }}>
 
 <p style={{fontSize:'18px', textAlign:'center'}}>Paste YouTube Link Here:
 </p>
