@@ -137,8 +137,9 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-
-
+<div style={{position:'fixed', top:'0', left:'0', right:'0', maxWidth:'100vw', zIndex:'0', display:'flex', justifyContent:'center'}}>
+  <StaticImage className="homepage-bg" src="../../static/assets/adfree-youtube-logo-sq.svg" alt="Twilightscapes" style={{maxWidth:'20vw', filter:'drop-shadow(2px 2px 2px #000)' }} />
+</div>
 <StaticImage className="homepage-bg" src="../../static/assets/in-the-sky-with-diamonds.jpg" alt="Twilightscapes" />
 
 {urlNoProtocol ? (
