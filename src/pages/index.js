@@ -20,15 +20,10 @@ import { StaticImage } from "gatsby-plugin-image"
 // import PhotoMenu from "../components/animated-photos-menu"
 // import CommentBox from "../components/commentbox"
 const CustomBox = styled.div`
-
 @media (max-width: 48em) {
-
 }
-
 @media (min-width: 58em) {
-
 }
-
 `
 
 
@@ -128,12 +123,9 @@ const CustomBox = styled.div`
 
 {/* <ScrollAnimation className="signup" animateIn="bounceInUp" delay={18000} duration="5" initiallyVisible={false} animateOnce={false} animatePreScroll={true} style={{position:'absolute', top:'50vh',
 right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', textAlign:'center', display:'flex', borderRadius:'12px', justifyContent:'center'}}>
-
-
 <ScrollAnimation  animateIn="fadeOut" delay={28000} duration="1" initiallyVisible={true} animateOnce={true} animatePreScroll={true} >
   <GiftShop />
 </ScrollAnimation>
-
 </ScrollAnimation> */}
 
 <div className="vidbox" style={{maxHeight:'100vh', overflow:'hidden'}}>
@@ -185,7 +177,6 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           // autoFocus
           className="youtubelinker"
         />
-
     </form> */}
 
 
@@ -204,7 +195,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           
           onInput={this.handleInputChange}
           onChange={this.handleShow}
-          onclick="paste(this)"
+           
           placeholder="example: https://youtu.be/cVsQLlk-T0s"
           autoFocus
           className="youtubelinker"
@@ -229,15 +220,15 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           type="text"
           name="youtubelink"
           value={this.state.youtubelink}
-          
+          onBlur={() => window.scrollTo({top: 0, behavior: 'smooth'})}
           onInput={this.handleInputChange}
           onChange={this.handleHide}
           onclick="paste(this)"
           placeholder="example: https://youtu.be/cVsQLlk-T0s"
-          autoFocus
+          // autoFocus
           className="youtubelinker"
         />
-        <button onClick={this.handleShow} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
+        {/* <button onClick={this.handleShow} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button> */}
 </form>
     
     </div>
