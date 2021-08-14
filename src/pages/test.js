@@ -10,7 +10,7 @@ import styled from "styled-components"
 import { Helmet } from "react-helmet"
 import { Seo } from "../components/seo"
 // import { RiSendPlane2Line } from "react-icons/ri"
-import ImgSwapper from "../components/imgSwapper"
+
 import Fullscreen from "../components/FullScreen"
 import Svg from "../../static/assets/starsandbars-1.svg"
 import FullScreen from "../components/FullScreen"
@@ -121,7 +121,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 </ScrollAnimation> */}
 
-<ImgSwapper />
+
 
 <div className="vidbox" style={{maxHeight:'100vh', overflow:'hidden'}}>
   
