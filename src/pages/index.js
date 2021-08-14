@@ -230,7 +230,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           // autoFocus
           className="youtubelinker"
         />
-        <br /><Link href="/contact/"><p className="headline" style={{fontSize:'20px', color:'#fff', fontWeight:'bold', textAlign:'center', textDecoration:'underline'}}>Enjoying this tool? Let Todd know about it.</p></Link> 
+        <br /><Link href="/contact/"><p className="headline" style={{fontSize:'20px', color:'#fff', fontWeight:'bold', textAlign:'center', textDecoration:'underline'}}>Enjoying this tool? Let Todd know here.</p></Link> 
         {/* <button onClick={this.handleShow} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button> */}
 </form>
     
