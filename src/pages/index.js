@@ -136,90 +136,115 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 </ScrollAnimation> */}
 
-
-
-
 <div className="vidbox" style={{maxHeight:'100vh', overflow:'hidden'}}>
-  <div className="video-background" style={{width:'100vw', overflow:'hidden'}}>
-  <div className="video-foreground" style={{position:'relative', zIndex:'-1', display:'flex', justifyContent:'center'}}>
+  <div className="video-background" style={{width:'100vw', height:'100vh', overflow:'hidden'}}>
+  <div className="video-foreground" style={{position:'relative', zIndex:'-1', display:'', justifyContent:'center', maxHeight:'100vh',}}>
 
-{!this.state.isActive ? 
-<>
+
+
+
+
 
 
 
 <StaticImage className="homepage-bg" src="../../static/assets/in-the-sky-with-diamonds.jpg" alt="Twilightscapes" />
 
-<StaticImage className="homepage-logo" src="../../static/assets/adfree-youtube-logo-sq.svg" alt="Twilightscapes" style={{position:'absolute', top:'0', maxWidth:'25vw'}} />
+{urlNoProtocol ? (
+     <Iframer />
+        ) : (
+          ""
+        )}
+
+</div>
+</div>
+{!this.state.isActive ? 
+
+<>
 
 
 
-  {/* <div className=" fluff" style={{padding:'0 12%', margin:'0 auto', textAlign:'center', position:'absolute', zIndex:'1', maxWidth:'800px', top:'30vh', color:'#fff'}}> */}
 
 
 
-  <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'absolute', top:'40vh',}}>
+   
+
+{/* <form className="contact-form backdrop" onSubmit={this.handleSubmit} style={{margin:'0', padding:'0', display:'flex', width:'100%', justifyContent:'center', alignItems:'center'}}>
+      <label htmlFor="youtubelink" style={{minWidth:'220px', width:'220px', textAlign:'right', border:'0px solid red', paddingRight:'20px'}}>
+        Click "Share" and copy Url<br />Then paste Url here:</label>
+        
+        <input
+          id=""
+          type="text"
+          name="youtubelink"
+          value={this.state.youtubelink}
+          onInput={this.handleInputChange}
+          onChange={this.handleHide}
+          onclick="paste(this)"
+          placeholder="example: https://youtu.be/cVsQLlk-T0s"
+          // autoFocus
+          className="youtubelinker"
+        />
+
+    </form> */}
+
+
+
+
+    <div className="" style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto',}}>
+    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'relative', top:'30vh',}}>
 
 <p style={{fontSize:'18px', textAlign:'center'}}>Paste YouTube Link Here:
 </p>
 <input
-            id=""
-            type="text"
-            name="youtubelink"
-            value={this.state.youtubelink}
-            onChange={this.handleShow}
-            onInput={this.handleInputChange}
-            onclick="paste(this)"
-            placeholder="example: https://youtu.be/cVsQLlk-T0s"
-            autoFocus
-            className="youtubelinker"
-          />
+          id=""
+          type="text"
+          name="youtubelink"
+          value={this.state.youtubelink}
+          
+          onInput={this.handleInputChange}
+          onChange={this.handleShow}
+          onclick="paste(this)"
+          placeholder="example: https://youtu.be/cVsQLlk-T0s"
+          autoFocus
+          className="youtubelinker"
+        />
+        <button onClick={this.handleShow} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
 </form>
-   
-
-
-{/* </div> */}
-
-
-
-</>
-  : "" }
+    
+    </div>
+    
 
 
 
-  {urlNoProtocol ? (
-       <Iframer />
-          ) : (
-            ""
-          )}
-  </div>
-</div>
+    </>
+  : 
+<div className="" style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto',}}>
+    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'relative', bottom:'0',}}>
+
+<p style={{fontSize:'18px', textAlign:'center'}}>Paste YouTube Link Here:
+</p>
+<input
+          id=""
+          type="text"
+          name="youtubelink"
+          value={this.state.youtubelink}
+          
+          onInput={this.handleInputChange}
+          onChange={this.handleHide}
+          onclick="paste(this)"
+          placeholder="example: https://youtu.be/cVsQLlk-T0s"
+          autoFocus
+          className="youtubelinker"
+        />
+        <button onClick={this.handleShow} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
+</form>
+    
+    </div>
+  }
+  
+
 {/*  */}
 </div>
-
-<div className="" style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto',}}>
-<form className="contact-form backdrop" onSubmit={this.handleSubmit} style={{margin:'0', padding:'0', display:'flex', width:'100%', justifyContent:'center', alignItems:'center'}}>
-        <label htmlFor="youtubelink" style={{minWidth:'220px', width:'220px', textAlign:'right', border:'0px solid red', paddingRight:'20px'}}>
-          Click "Share" and copy Url<br />Then paste Url here:</label>
-          
-          <input
-            id=""
-            type="text"
-            name="youtubelink"
-            value={this.state.youtubelink}
-            onInput={this.handleInputChange}
-            onChange={this.handleHide}
-            onclick="paste(this)"
-            placeholder="example: https://youtu.be/cVsQLlk-T0s"
-            // autoFocus
-            className="youtubelinker"
-          />
-
-      </form></div>
-
-
-
-
 
 
 
