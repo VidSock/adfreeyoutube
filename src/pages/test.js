@@ -10,7 +10,7 @@ import styled from "styled-components"
 import { Helmet } from "react-helmet"
 import { Seo } from "../components/seo"
 // import { RiSendPlane2Line } from "react-icons/ri"
-
+import ImgSwapper from "../components/imgSwapper"
 import Fullscreen from "../components/FullScreen"
 import Svg from "../../static/assets/starsandbars-1.svg"
 import FullScreen from "../components/FullScreen"
@@ -121,7 +121,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 </ScrollAnimation> */}
 
-
+<ImgSwapper />
 
 <div className="vidbox" style={{maxHeight:'100vh', overflow:'hidden'}}>
   
@@ -132,7 +132,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 {/* <div style={{width:'100%', height:'100%',  position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}}><StaticImage src="../img/trolley-test.png" alt="Twilightscapes" className="layer1" style={{height:'100vh'}} /></div> */}
 
-  <Svg style={{width:'100%', height:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} />
+  {/* <Svg style={{width:'100%', height:'100%', position:'absolute', bottom:'0', left:'0', right:'0', zIndex:'0', backgroundSize:'cover'}} /> */}
 
   <div className="video-foreground" style={{position:'absolute', zIndex:'-1'}}>
   {/* <iframe title="AdFree YouTube" className="" width="100%" height="350" src="https://www.youtube.com/embed/zomZywCAPTA?controls=0&amp;playsinline=1&amp;start=5270&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1&amp;playlist=zomZywCAPTA" frameBorder="0" allowFullScreen playsInline></iframe> */}

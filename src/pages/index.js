@@ -1,5 +1,5 @@
 import React from "react"
-// import { graphql } from "gatsby"
+import { Link } from "gatsby"
 import { Layout } from "../components/layout"
 // import { ProductListing } from "../components/product-listing"
 // import GoBack from "../components/goBack"
@@ -186,7 +186,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
     <div className="" style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto',}}>
     <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'absolute', top:'35vh',transition:' all 0.85s', animation:'fade .8s forwards'}}>
 
-<p style={{fontSize:'18px', textAlign:'center'}}>Paste YouTube Link Here:
+<p className="headline" style={{fontSize:'20px', color:'#fff', fontWeight:'bold', textAlign:'center'}}>Paste YouTube Link Here:
 </p>
 <input
           id=""
@@ -201,7 +201,8 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           autoFocus
           className="youtubelinker"
         />
-        <button onClick={this.handleShow} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
+        <br /><Link href="/contact/"><p className="headline" style={{fontSize:'20px', color:'#fff', fontWeight:'bold', textAlign:'center', textDecoration:'underline'}}>Enjoying this tool? Let Todd know about it.</p></Link> 
+        <button onClick={this.handleShow} style={{position:'absolute', right:'15px', top:'10px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
 </form>
     
     </div>
@@ -214,21 +215,22 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 <div className="" style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto',}}>
     <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'relative', bottom:'0',transition:' all 1.85s', animation:'fade 1.5s forwards' }}>
 
-<p style={{fontSize:'18px', textAlign:'center'}}>Paste YouTube Link Here:
+    <p className="headline" style={{fontSize:'20px', color:'#fff', fontWeight:'bold', textAlign:'center'}}>Paste YouTube Link Here:
 </p>
 <input
           id=""
           type="text"
           name="youtubelink"
           value={this.state.youtubelink}
-          onBlur={() => window.scrollTo({top: 0, behavior: 'smooth'})}
-          onInput={this.handleInputChange}
-          onChange={this.handleHide}
+          // onBlur={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+          onChangeCapture={this.handleInputChange}
+          // onChangeCapture={this.handleHide}
           onclick="paste(this)"
           placeholder="example: https://youtu.be/cVsQLlk-T0s"
           // autoFocus
           className="youtubelinker"
         />
+        <br /><Link href="/contact/"><p className="headline" style={{fontSize:'20px', color:'#fff', fontWeight:'bold', textAlign:'center', textDecoration:'underline'}}>Enjoying this tool? Let Todd know about it.</p></Link> 
         {/* <button onClick={this.handleShow} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button> */}
 </form>
     

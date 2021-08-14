@@ -175,7 +175,13 @@ module.exports = {
       },
     },
 
-
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: `${__dirname}/src/img/front/`, // wherever background images are stored
+      },
+    },
  
     
     {
