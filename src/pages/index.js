@@ -157,6 +157,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 </div>
 </div>
+</div>
 {!this.state.isActive ? 
 
 <>
@@ -191,7 +192,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
     <div className="" style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto',}}>
-    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'relative', top:'30vh',}}>
+    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'absolute', top:'30vh',}}>
 
 <p style={{fontSize:'18px', textAlign:'center'}}>Paste YouTube Link Here:
 </p>
@@ -244,7 +245,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
   
 
 {/*  */}
-</div>
+
 
 
 
