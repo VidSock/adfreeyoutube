@@ -114,7 +114,7 @@ const Post = ({ data, pageContext }) => {
     const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
 
-      <div style={{position:'absolute', top:'0', left:'0', width:'100vw', height:'100vh', zIndex:'1' }}>
+ 
       <ReactPlayer
   className='react-player'
       url={Url}
@@ -125,12 +125,12 @@ const Post = ({ data, pageContext }) => {
       autoplay={true}
       background={false}
       playing
-      muted={false}
+      muted={true}
       showPortrait
-      playIcon={<button style={{position:'absolute', bottom:'-30vh'}}>Play</button>}
+      playIcon={<button style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh'}}>Play</button>}
       light="https://i.stack.imgur.com/zw9Iz.png"
     />
-    </div>
+
       // <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'-15vh', left:'0', right:'0', width:'100vw', height:'122vh',   }} />
 
     )

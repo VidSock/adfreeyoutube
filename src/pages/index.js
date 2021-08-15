@@ -105,17 +105,15 @@ const CustomBox = styled.div`
         
                 <ReactPlayer
   className='react-player'
-      url={Url}
-      width={"100%"}
-      height="100%"
-      showinfo
-      controls
-      autoplay={true}
-      background={false}
+      url={FinalUrl}
+      width='100%'
+      height='100%'
+      shownfo={false}
+      controls={false}
+      // autoplay={true}
       playing
       muted={false}
-      showPortrait
-      playIcon={<button style={{position:'absolute', bottom:'-30vh'}}>Play</button>}
+      playIcon={<button>Play</button>}
       light="https://i.stack.imgur.com/zw9Iz.png"
     />
 
@@ -141,7 +139,7 @@ const CustomBox = styled.div`
           description={`Sometimes you just need a break from the ads, that's why there is AdFree`}
           image={'https://adfreeyoutube.com/default-og-image.jpg'}
         />
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'content-fill', overflow:'' }}>
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'content-fill', overflow:'hidden' }}>
 
 {/* <ScrollAnimation className="signup" animateIn="bounceInUp" delay={18000} duration="5" initiallyVisible={false} animateOnce={false} animatePreScroll={true} style={{position:'absolute', top:'50vh',
 right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', textAlign:'center', display:'flex', borderRadius:'12px', justifyContent:'center'}}>
