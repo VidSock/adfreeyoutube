@@ -925,7 +925,7 @@ border: 0px solid red;
 body{overflow-x: hidden; min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 body.homepage .fullscreenButt{display: none;}
