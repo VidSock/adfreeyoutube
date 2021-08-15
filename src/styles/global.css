@@ -649,7 +649,7 @@ p{margin-bottom: 1rem;}
 
 
 
-footer{background-color: transparent; padding:.1rem 0rem; margin:0; display:flex; justify-content: center; color:#fff; position:relative; bottom:0 ;}
+footer{background-color: #111; padding:.1rem 0rem; margin:0; display:flex; justify-content: center; color:#fff !important; position:relative; bottom:0 ; opacity: 1;}
 
 .searchboxer{
   -webkit-background-composite:#000 !important;
@@ -875,7 +875,7 @@ border: 0px solid red;
   .youtubeform input,
   textarea {
     width: 100%;
-    max-width: 100%;
+    max-width: 800px;
     margin: 0 0;
     font-size: 18px;
     font-weight: 600;

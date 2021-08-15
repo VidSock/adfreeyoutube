@@ -299,6 +299,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           placeholder="example: https://youtu.be/cVsQLlk-T0s"
           // autoFocus
           className="youtubelinker"
+          style={{maxWidth:'800px'}}
         />
         <br /><Link href="/contact/"><p className="headline" style={{fontSize:'16px', color:'#fff', fontWeight:'bold', textAlign:'center', textDecoration:'underline'}}>Enjoying this? Let Todd know.</p></Link> 
         {/* <button onClick={this.handleShow} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button> */}

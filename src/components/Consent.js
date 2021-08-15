@@ -14,7 +14,7 @@ const Consent = () => (
 <CookieConsent
 	debug={false}
 	location="none"
-	style={{ opacity:'1', padding:'2vh 3%', margin:'0 auto', border:'0px solid white', position:'relative', top:'0', zIndex:'2', display:'flex', alignSelf:'center', width:'50vw', justifyContent:'center', color:'inherit', background:'transparent'
+	style={{ opacity:'1', padding:'2vh 3%', margin:'0 auto', border:'0px solid white', position:'relative', top:'0', zIndex:'2', display:'flex', alignSelf:'center', width:'50vw', justifyContent:'center', color:'#fff', background:'#111'
    }}
 	enableDeclineButton={false}
 	declineButtonText="No Cookies"
