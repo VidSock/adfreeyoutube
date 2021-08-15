@@ -114,8 +114,25 @@ const Post = ({ data, pageContext }) => {
     const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
 
+      <div style={{position:'absolute', top:'0', left:'0', width:'100vw', height:'100vh', zIndex:'1' }}>
+      <ReactPlayer
+  className='react-player'
+      url={Url}
+      width={"100%"}
+      height="100%"
+      showinfo
+      controls
+      autoplay={true}
+      background={false}
+      playing
+      muted={false}
+      showPortrait
+      playIcon={<button style={{position:'absolute', bottom:'-30vh'}}>Play</button>}
+      light="https://i.stack.imgur.com/zw9Iz.png"
+    />
+    </div>
       // <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'-15vh', left:'0', right:'0', width:'100vw', height:'122vh',   }} />
-      ""
+
     )
   }
 
@@ -190,7 +207,6 @@ function AddSvg(){
 
 
 
-
 <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'content-fill', overflow:'hidden' }}>
 
 
@@ -257,24 +273,24 @@ function AddSvg(){
           )}
 
 
-  {/* {YouTube ? (
+  {YouTube ? (
             <Iframer />
        
           ) : (
             ""
-          )} */}
+          )}
 
 
 
 
 
-
+{/* 
         <ReactPlayer
           className='react-player'
           url={Url}
-          width='100%'
-          height='100%'
-        />
+          width='100vw'
+          height='100vh'
+        /> */}
       </div>
 
 

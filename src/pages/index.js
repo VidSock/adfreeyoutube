@@ -102,7 +102,23 @@ const CustomBox = styled.div`
             function Iframer() {
   
               return (
-          ""
+        
+                <ReactPlayer
+  className='react-player'
+      url={Url}
+      width={"100%"}
+      height="100%"
+      showinfo
+      controls
+      autoplay={true}
+      background={false}
+      playing
+      muted={false}
+      showPortrait
+      playIcon={<button style={{position:'absolute', bottom:'-30vh'}}>Play</button>}
+      light="https://i.stack.imgur.com/zw9Iz.png"
+    />
+
                 // <iframe title="AdFree YouTube" id="youtube" className="blog-video" width="100%" height="400" src={FinalUrl} frameBorder="0" playsInline />
               )
             }
@@ -125,7 +141,7 @@ const CustomBox = styled.div`
           description={`Sometimes you just need a break from the ads, that's why there is AdFree`}
           image={'https://adfreeyoutube.com/default-og-image.jpg'}
         />
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'content-fill', overflow:'hidden' }}>
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'content-fill', overflow:'' }}>
 
 {/* <ScrollAnimation className="signup" animateIn="bounceInUp" delay={18000} duration="5" initiallyVisible={false} animateOnce={false} animatePreScroll={true} style={{position:'absolute', top:'50vh',
 right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', textAlign:'center', display:'flex', borderRadius:'12px', justifyContent:'center'}}>
@@ -145,32 +161,38 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-{/* {urlNoProtocol ? (
+{urlNoProtocol ? (
      <Iframer />
         ) : (
           ""
-        )} */}
+        )}
 
 
 {/* <ReactPlayer /> */}
 
   
 
-<ReactPlayer
+{/* <ReactPlayer
       className='react-player'
+      controls
+      playing
       url={Url}
       width='100%'
       height='100%'
       playing={true}
       volume={1}
-      embedOptions="1"
+      embedOptions="0"
+      controls={true}
+      autoplay={true}
       config={{
         youtube: {
-          playerVars: {controls:0, showinfo:0 , mute:0, autoplay:1, playsinline:0, rel:0}
+          playerVars: { autoplay:1, controls:0, showinfo:0 , mute:0, autoplay:1, playsinline:0, rel:0}
         },
       }}
       onReady={() => console.log("ready now")}
-    />
+    /> */}
+
+
 
 
       </div>
