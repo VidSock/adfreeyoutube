@@ -114,7 +114,7 @@ const CustomBox = styled.div`
       // autoplay={true}
       playing
       muted={false}
-      playIcon={<button style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'20vh'}}>
+      playIcon={<button style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
         
         {/* <div className="lds-hourglass" style={{ fontSize:'60px',}}></div> */}
 
