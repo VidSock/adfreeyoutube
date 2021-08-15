@@ -21,10 +21,10 @@ import Theme from "../components/theme"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import Audio from '../assets/audio.mp3'
 // import TouchUp from '../components/TouchUp'
-import { IoMdFingerPrint } from 'react-icons/io'
+// import { IoMdFingerPrint } from 'react-icons/io'
 import "../assets/scss/style.scss"
 // import Consent from './Consent'
-import Install from './install-discount'
+// import Install from './install-discount'
 // 
 // import { BiLeftArrow } from "react-icons/bi"
 import { navigate } from "gatsby";
@@ -73,7 +73,7 @@ export function Layout({ children }) {
     Your browser does not support the HTML5 Audio element.
 </audio> */}
 
-{/* <Fullscreen /> */}
+<Fullscreen />
 
 <header name="pagetop" >
 
