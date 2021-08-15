@@ -165,7 +165,7 @@ function AddSvg2(){
 function AddSvg(){
   const svgUrl = "../assets/" + frontmatter.svgImage2.relativePath + ""
   return (
-    <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', overflow:'hidden', border:'0px solid red', zIndex:'3', width:'100vw', height:'100vh',  }} >You need a new browser</object>
+    <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'0', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'3', width:'100%', height:'100vh',  }} >You need a new browser</object>
   )
 }
 
@@ -183,7 +183,7 @@ function AddSvg(){
 
 <div className="vidbox1" style={{overflow:'hidden', position:'relative', width:'100%', height:'90vh', borderBottom:'0px solid red', boxShadow:'0 0 20px black'}}>
   
-<div className="video-background1" style={{position:'absolute', top:'0', right:'0', left:'0', zIndex:'0', height:'100vh', overflow:'hidden'}}>
+<div className="video-background1" style={{position:'absolute', top:'0', right:'0', left:'0', zIndex:'0', height:'100vh', overflow:'hidden', display:'flex', flexDirection:'column', justifyContent:'flex-end'}}>
 
 
 
@@ -213,7 +213,7 @@ function AddSvg(){
 
 
 
-  <div className="video-foreground" style={{position:'absolute', zIndex:'0', top:'0', left:'0', right:'0', width:'100%', height:'fit-content'}}>
+  <div className="video-foreground" style={{position:'absolute', zIndex:'0', top:'0', left:'0', right:'0', width:'100%', height:'100%'}}>
 
   {Svg ? (
             <AddSvg />
