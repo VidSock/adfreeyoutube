@@ -12,6 +12,7 @@ import { FaRegPlusSquare } from 'react-icons/fa';
 import { IoShareOutline } from 'react-icons/io5';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import { StaticImage } from "gatsby-plugin-image"
+import { ImPlay } from "react-icons/im"
 // import { RiSendPlane2Line } from "react-icons/ri"
 // import Install from "../components/install-discount"
 // import SVG from "../../static/assets/crude-addiction.svg"
@@ -113,8 +114,19 @@ const CustomBox = styled.div`
       // autoplay={true}
       playing
       muted={false}
-      playIcon={<button>Play</button>}
-      light="https://i.stack.imgur.com/zw9Iz.png"
+      playIcon={<button style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'20vh'}}>
+        
+        {/* <div className="lds-hourglass" style={{ fontSize:'60px',}}></div> */}
+
+
+        <div className="fadeInUpBig" style={{ textAlign:'center', animation:'fadeIn 5s'}}>
+        <div style={{ textAlign:'center', fontSize:'30px'}}>
+           Ads Removed!<br /><br /></div>
+      <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+      <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span></div>
+      
+      </button>}
+      light="../static/assets/transparent.png"
     />
 
                 // <iframe title="AdFree YouTube" id="youtube" className="blog-video" width="100%" height="400" src={FinalUrl} frameBorder="0" playsInline />
