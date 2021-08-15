@@ -147,6 +147,14 @@ export function Layout({ children }) {
 </Link>
  </li>
  
+
+ <li className="carto" style={{textAlign:'center'}}>
+ <Link className="navbar-item txtshadow" to="/contact/">
+Contact Me<span>I love feedback!</span>
+</Link>
+</li>
+
+
  {/* <li className="carta" style={{border:'none', marginBottom:'1rem'}}>
  <a className="" onClick={()=>navigate(-1)}><img id="logo" className="twlogo" src={twLogo} alt="Twilightscapes Logo" title="Return To Homepage" style={{minWidth:'100px', maxWidth:'',}} /></a>
  </li> */}
@@ -213,11 +221,13 @@ Contact Me<span>Ordering Questions?</span>
               </Link>
       </li> 
 
-      <li className="carto" style={{textAlign:'center'}}>
- <Link className="navbar-item txtshadow" to="/contact/">
-Contact Me<span>I love feedback!</span>
-</Link>
-</li>
+<li className="carto">
+              <Link className="navbar-item txtshadow" to="/archive/">
+                The Archive
+                <span>World's First 3D Blog</span>
+              </Link>
+      </li>
+      
 
     
       <li className="carta">

@@ -21,12 +21,12 @@ const styles = {
   },
   pagination: {
     a: {
-      color: "muted",
+      color: "inherit",
       "&.is-active": {
         color: "text",
       },
       "&:hover": {
-        color: "text",
+        color: "inherit",
       },
     },
   },
@@ -49,8 +49,8 @@ const Pagination = props => (
         <li>
           <Link to={props.previous.frontmatter.slug} rel="prev">
             <p
-              sx={{
-                color: "muted",
+              style={{
+                color: "inherit",
               }}
             >
               <span className="icon -left">
@@ -68,8 +68,8 @@ const Pagination = props => (
         <li>
           <Link to={props.next.frontmatter.slug} rel="next">
             <p
-              sx={{
-                color: "muted",
+              style={{
+                color: "inherit",
               }}
             >
               Next{" "}
@@ -301,7 +301,7 @@ function AddSvg(){
 
 
 
-      <div style={{padding:'0 5vw'}}>
+      <div style={{padding:'0 5vw', color:'inherit !important'}}>
       {(previous || next) && <Pagination {...props} />}
       </div>
 

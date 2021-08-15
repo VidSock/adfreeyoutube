@@ -21,15 +21,21 @@ So, in introducing a new multimedia blog system, I couldn't think of a better ex
 
 What is being demonstrated above and through many more FUTURE 3D blog posts, is where I feel the FUTURE of online blogging is heading. 
 
-The world is rapidly coming to expect fully immersive and engaging new ways of viewing content online and why should blogs be any different?
+Each blog post can be it's own mutlimeda display with multple layerd "assets" that can be put onto the screen at once or in timed fashion. 
 
-For years we've only had just plain ol blogs. Maybe one here or there that had a video blog, yeah, yeah... 
+Currently I have 5 interactive layers available to me on each blog post. This particular post is using 3, 2 animation layers and a video layer that is hosted through YouTube. 
+
+### So you ask why?
+
+Because I can... and because the world is rapidly coming to expect fully immersive and engaging new ways of viewing content online and why should blogs be any different?
+
+For years we've only had just plain old blogs. Maybe one here or there that had a video blog, but yeah, yeah... 
 
 ##BORING!
 
 The FUTURE world needs to happen TODAY and that FUTURE begins with 3D Blogging. That's right, no longer will we settle for just mere hero images in our blogs. We demand full multimedia support and capabilities, with animations, and all the bells and some whistles too!
 
-So, I've worked long and hard to come up with this all-new layered multimedia system that I am calling 3D blogs for the lack of a better name, lol. I hope you like it, and if you come up with a better name, do be sure to let me know okay?
+So, I've worked long and hard to come up with this all-new layered multimedia system that I am calling 3D blogs for the lack of a better name, lol. I hope you like it, and if you come up with a better name, do be sure to let me know!
 
 Anyways, I have a ton of ideas and I hope that you come back to see the latest 3D blog posts I have cooked up. 
 
