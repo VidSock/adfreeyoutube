@@ -2,15 +2,16 @@
 template: blog-post
 title: Some site updates
 slug: /some-site-updates
-date: 2021-08-12 19:43
+date: 2021-08-16 19:43
 description: A few new site updates have been made to make this the best Ad Free
   version of YouTube
-youtuber: "NfEdtor4cis"
+youtuber: ""
 youtubestart: "0"
 youtubeend: "0"
 youtubemute: "1"
 youtubecontrols: "0"
 svgzindex: "0"
+underlayImage: /assets/default-og-image.jpg
 overlayImage: /assets/default-og-image.jpg
 featuredImage: /assets/default-og-image.jpg
 svgImage2: /assets/default-og-image.jpg

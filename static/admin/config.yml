@@ -60,6 +60,13 @@ collections:
           tagname: "",
         }
       - {
+          label: "Underlay Image",
+          name: "overlayImage",
+          widget: "image",
+          required: false,
+          tagname: "",
+        }
+      - {
           label: "Overlay Image",
           name: "overlayImage",
           widget: "image",

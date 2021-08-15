@@ -122,8 +122,12 @@ const Post = ({ data, pageContext }) => {
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
 
-  const OverlayImage = frontmatter.overlayImage
-    ? frontmatter.overlayImage.childImageSharp.gatsbyImageData
+  // const OverlayImage = frontmatter.overlayImage
+  //   ? frontmatter.overlayImage.childImageSharp.gatsbyImageData
+  //   : ""
+
+  const UnderlayImage = frontmatter.underlayImage
+    ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
     : ""
 
 
@@ -133,6 +137,21 @@ const Post = ({ data, pageContext }) => {
     previous,
     next,
   }
+
+  const Svg2 = frontmatter.overlayImage
+ 
+  if (!Svg2) {
+    
+  }
+  else{
+    <AddSvg2 />
+  }
+function AddSvg2(){
+  const svg2Url = "../assets/" + frontmatter.overlayImage.relativePath + ""
+  return (
+    <object id="svg1" data={svg2Url} type="image/svg+xml" style={{position:'absolute', overflow:'hidden', border:'0px solid red', zIndex:'3', width:'100vw', height:'100vh',  }} >You need a new browser</object>
+  )
+}
 
 
   const Svg = frontmatter.svgImage2
@@ -162,7 +181,7 @@ function AddSvg(){
         article={true}
       />
 
-<div className="vidbox1" style={{overflow:'hidden', position:'relative', width:'100%', height:'90vh', borderBottom:'0px solid red', boxShadow:'0 0 20px red'}}>
+<div className="vidbox1" style={{overflow:'hidden', position:'relative', width:'100%', height:'90vh', borderBottom:'0px solid red', boxShadow:'0 0 20px black'}}>
   
 <div className="video-background1" style={{position:'absolute', top:'0', right:'0', left:'0', zIndex:'0', height:'100vh', overflow:'hidden'}}>
 
@@ -182,8 +201,10 @@ function AddSvg(){
               style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', zIndex:'0', objectFit:'cover'}}
             />
           ) : (
-            // <div style={{display:'block', height:'30vh', marginTop:'-500px', border:'1px solid red'}}>sdsd</div>
-            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'1', bottom:'10vh'}} />
+
+       
+            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'10vh'}} />
+  
           )}
 
 
@@ -202,9 +223,28 @@ function AddSvg(){
           )}
 
 
-  {OverlayImage ? (
+
+{Svg2 ? (
+            <AddSvg2 />
+       
+          ) : (
+            ""
+          )}
+
+  {/* {OverlayImage ? (
             <GatsbyImage
               image={OverlayImage}
+              alt={frontmatter.title + " - image"}
+              className="layer2"
+              style={{height:'100vh', zIndex:'1', postion:'absolute', bottom:'0', left:'0', objectFit:'contain' }}
+            />
+          ) : (
+            ""
+          )} */}
+
+{UnderlayImage ? (
+            <GatsbyImage
+              image={UnderlayImage}
               alt={frontmatter.title + " - image"}
               className="layer2"
               style={{height:'100vh', zIndex:'1', postion:'absolute', bottom:'0', left:'0', objectFit:'contain' }}
@@ -326,6 +366,9 @@ export const pageQuery = graphql`
           relativePath
         }
         overlayImage {
+          relativePath
+        }
+        underlayImage {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
           }
