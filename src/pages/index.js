@@ -19,6 +19,8 @@ import { StaticImage } from "gatsby-plugin-image"
 // import GiftShop from "../components/giftshop"
 // import PhotoMenu from "../components/animated-photos-menu"
 // import CommentBox from "../components/commentbox"
+import ReactPlayer from 'react-player/lazy'
+// import ReactPlayer from '../components/react-player'
 const CustomBox = styled.div`
 @media (max-width: 48em) {
 }
@@ -83,9 +85,11 @@ const CustomBox = styled.div`
           }
 
 
+
           
           render() {
 
+            
 
             const Url = this.state.youtubelink
 
@@ -98,8 +102,8 @@ const CustomBox = styled.div`
             function Iframer() {
   
               return (
-          
-                <iframe title="AdFree YouTube" id="youtube" className="blog-video" width="100%" height="400" src={FinalUrl} frameBorder="0" playsInline />
+          ""
+                // <iframe title="AdFree YouTube" id="youtube" className="blog-video" width="100%" height="400" src={FinalUrl} frameBorder="0" playsInline />
               )
             }
 
@@ -121,7 +125,7 @@ const CustomBox = styled.div`
           description={`Sometimes you just need a break from the ads, that's why there is AdFree`}
           image={'https://adfreeyoutube.com/default-og-image.jpg'}
         />
-
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'content-fill', overflow:'hidden' }}>
 
 {/* <ScrollAnimation className="signup" animateIn="bounceInUp" delay={18000} duration="5" initiallyVisible={false} animateOnce={false} animatePreScroll={true} style={{position:'absolute', top:'50vh',
 right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', textAlign:'center', display:'flex', borderRadius:'12px', justifyContent:'center'}}>
@@ -130,29 +134,49 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 </ScrollAnimation>
 </ScrollAnimation> */}
 
-<div className="vidbox" style={{maxHeight:'100vh', overflow:'hidden'}}>
-  <div className="video-background" style={{width:'100vw', height:'100vh', overflow:'hidden'}}>
-  <div className="video-foreground" style={{position:'relative', zIndex:'-1', display:'', justifyContent:'center', maxHeight:'100vh',}}>
+{/* <div className="vidbox" style={{maxHeight:'100vh', overflow:'hidden'}}>
+  <div className="video-background" style={{width:'100vw', height:'100vh', overflow:'hidden'}}> */}
+  {/* <div className="video-foreground" style={{position:'relative', zIndex:'-1', display:'', justifyContent:'center', maxHeight:'100vh',}}> */}
 
 
 
 
 
 
-<div style={{position:'fixed', top:'4vh', left:'0', right:'0', maxWidth:'100vw', zIndex:'0', display:'flex', justifyContent:'center'}}>
-  <StaticImage className="homepage-bg" src="../../static/assets/adfree-youtube-logo-sq.svg" alt="Twilightscapes" style={{maxWidth:'18vw', filter:'drop-shadow(2px 2px 2px #000)' }} />
-</div>
-<StaticImage className="homepage-bg" src="../../static/assets/in-the-sky-with-diamonds.jpg" alt="Twilightscapes" />
 
-{urlNoProtocol ? (
+
+{/* {urlNoProtocol ? (
      <Iframer />
         ) : (
           ""
-        )}
+        )} */}
 
-</div>
-</div>
-</div>
+
+{/* <ReactPlayer /> */}
+
+  
+
+<ReactPlayer
+      className='react-player'
+      url={Url}
+      width='100%'
+      height='100%'
+      playing={true}
+      volume={1}
+      embedOptions="1"
+      config={{
+        youtube: {
+          playerVars: {controls:0, showinfo:0 , mute:0, autoplay:1, playsinline:0, rel:0}
+        },
+      }}
+      onReady={() => console.log("ready now")}
+    />
+
+
+      </div>
+
+
+{/* </div> */}
 {!this.state.isActive ? 
 
 <>
@@ -183,7 +207,10 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
     </form> */}
 
 
-
+<div style={{position:'fixed', top:'4vh', left:'0', right:'0', maxWidth:'100vw', zIndex:'1', display:'flex', justifyContent:'center'}}>
+  <StaticImage className="homepage-bg" src="../../static/assets/adfree-youtube-logo-sq.svg" alt="Twilightscapes" style={{ maxWidth:'18vw', filter:'drop-shadow(2px 2px 2px #000)',}} />
+</div>
+<StaticImage className="homepage-bg" src="../../static/assets/in-the-sky-with-diamonds.jpg" alt="Twilightscapes" style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'0', zIndex:'0', objectFit:'cover', border:'none !important'}} />
 
     <div className="" style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto',}}>
     <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'absolute', top:'35vh',transition:' all 0.85s', animation:'fade .8s forwards'}}>
@@ -214,7 +241,16 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
     </>
   : 
+
+  
 <div className="" style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto',}}>
+
+
+
+
+
+
+  
     <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'relative', bottom:'0',transition:' all 1.85s', animation:'fade 1.5s forwards' }}>
 
     <p className="headline" style={{fontSize:'20px', color:'#fff', fontWeight:'bold', textAlign:'center'}}>Paste YouTube Link Here:

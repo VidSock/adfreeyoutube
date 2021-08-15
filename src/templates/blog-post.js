@@ -10,6 +10,7 @@ import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import CommentBox from "../components/commentbox"
 import { StaticImage } from "gatsby-plugin-image"
 // import SVG from "../../static/assets/crude-addiction.svg"
+import ReactPlayer from 'react-player/lazy'
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 import ShareSocial from '../components/share' 
@@ -92,6 +93,7 @@ const Post = ({ data, pageContext }) => {
   const { frontmatter, html, excerpt } = markdownRemark
 
 
+
   function refreshPage() {
     window.location.reload(true)
   }
@@ -112,7 +114,8 @@ const Post = ({ data, pageContext }) => {
     const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
 
-      <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'-15vh', left:'0', right:'0', width:'100vw', height:'122vh',   }} />
+      // <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'-15vh', left:'0', right:'0', width:'100vw', height:'122vh',   }} />
+      ""
     )
   }
 
@@ -149,7 +152,7 @@ const Post = ({ data, pageContext }) => {
 function AddSvg2(){
   const svg2Url = "../assets/" + frontmatter.overlayImage.relativePath + ""
   return (
-    <object id="svg1" data={svg2Url} type="image/svg+xml" style={{position:'absolute', overflow:'hidden', border:'0px solid red', zIndex:'3', width:'100vw', height:'100vh',  }} >You need a new browser</object>
+    <object id="svg1" data={svg2Url} type="image/svg+xml" style={{position:'absolute', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'100vh',  }} >You need a new browser</object>
   )
 }
 
@@ -165,7 +168,7 @@ function AddSvg2(){
 function AddSvg(){
   const svgUrl = "../assets/" + frontmatter.svgImage2.relativePath + ""
   return (
-    <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'0', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'3', width:'100%', height:'100vh',  }} >You need a new browser</object>
+    <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} >You need a new browser</object>
   )
 }
 
@@ -181,14 +184,14 @@ function AddSvg(){
         article={true}
       />
 
-<div className="vidbox1" style={{overflow:'hidden', position:'relative', width:'100%', height:'90vh', borderBottom:'0px solid red', boxShadow:'0 0 20px black'}}>
+
   
-<div className="video-background1" style={{position:'absolute', top:'0', right:'0', left:'0', zIndex:'0', height:'100vh', overflow:'hidden', display:'flex', flexDirection:'column', justifyContent:'flex-end'}}>
+{/* <div className="video-background1" style={{position:'absolute', top:'0', right:'0', left:'0', zIndex:'0', height:'100vh', overflow:'hidden', display:'flex', flexDirection:'column', justifyContent:'flex-end'}}> */}
 
 
 
 
-
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'content-fill', overflow:'hidden' }}>
 
 
 
@@ -197,13 +200,13 @@ function AddSvg(){
             <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
-              className="featured-image layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', zIndex:'0', objectFit:'cover'}}
+              className="featured-image1 layer1"
+              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'0', zIndex:'0', objectFit:'cover', border:'none !important'}}
             />
           ) : (
 
        
-            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'10vh'}} />
+            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', top:'0',border:'none !important'}} />
   
           )}
 
@@ -213,7 +216,7 @@ function AddSvg(){
 
 
 
-  <div className="video-foreground" style={{position:'absolute', zIndex:'0', top:'0', left:'0', right:'0', width:'100%', height:'100%'}}>
+ 
 
   {Svg ? (
             <AddSvg />
@@ -247,28 +250,44 @@ function AddSvg(){
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
               className="layer2"
-              style={{height:'100vh', zIndex:'1', postion:'absolute', bottom:'0', left:'0', objectFit:'contain' }}
+              style={{height:'100vh', zIndex:'1', postion:'absolute', top:'0', left:'0', objectFit:'contain', zIndex:'0' }}
             />
           ) : (
             ""
           )}
 
 
-  {YouTube ? (
+  {/* {YouTube ? (
             <Iframer />
        
           ) : (
             ""
-          )}
-  </div>
+          )} */}
 
 
-</div></div>
+
+
+
+
+        <ReactPlayer
+          className='react-player'
+          url={Url}
+          width='100%'
+          height='100%'
+        />
+      </div>
+
+
+  {/* </div> */}
+
+
+
 
 
 {/* <br />
 
 <GoBack /> */}
+
 
 
 

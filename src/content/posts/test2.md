@@ -11,9 +11,9 @@ youtubemute: "1"
 youtubecontrols: "0"
 svgzindex: "0"
 underlayImage: 
-overlayImage: /assets/intro.svg
+overlayImage: 
 featuredImage: /assets/mystery3000-promo.png
-svgImage2: /assets/mysteryscience.svg
+svgImage2: /assets/MysteryScience3000.svg
 ---
 First, let me thank you for visiting AdFree, I'm thrilled to have you here. 
 

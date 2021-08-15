@@ -43,6 +43,29 @@ opacity:.2;
   opacity:.6 !important;
   }
 
+
+
+
+
+
+  .player-wrapper {
+    position: relative;
+    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+  }
+  
+  .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+
+
+
+
+
+
+
 .video-background {
   /* background: #000; */
   position: absolute;
@@ -865,7 +888,7 @@ border: 0px solid red;
 body{overflow-x: hidden; min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 [aria-roledescription]{z-index:0 !important;}
