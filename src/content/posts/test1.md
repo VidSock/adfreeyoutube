@@ -2,7 +2,7 @@
 template: blog-post
 title: Some site updates
 slug: /some-site-updates
-date: 2021-08-16 19:43
+date: 2021-08-14 10:43
 description: A few new site updates have been made to make this the best Ad Free
   version of YouTube
 youtuber: ""
