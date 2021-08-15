@@ -15,6 +15,7 @@ import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 import ShareSocial from '../components/share' 
 import GoBack from "../components/goBack"
+import { ImPlay } from "react-icons/im"
 import TimeAgo from 'react-timeago'
 const styles = {
   "article blockquote": {
@@ -127,7 +128,7 @@ const Post = ({ data, pageContext }) => {
       playing
       muted={true}
       showPortrait
-      playIcon={<button style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh'}}>Play</button>}
+      playIcon={<button style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'60px', textAlign:'center', display:'flex', flexDirection:'row', verticalAlign:'center', justifyContent:'center', paddingTop:'30vh'}}><ImPlay /></button>}
       light="https://i.stack.imgur.com/zw9Iz.png"
     />
 
@@ -207,7 +208,7 @@ function AddSvg(){
 
 
 
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'content-fill', overflow:'hidden' }}>
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'content-fill', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
