@@ -128,8 +128,10 @@ const Post = ({ data, pageContext }) => {
       playing
       muted={true}
       showPortrait
-      playIcon={<button style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'60px', textAlign:'center', display:'flex', flexDirection:'row', verticalAlign:'center', justifyContent:'center', paddingTop:'30vh'}}><ImPlay /></button>}
-      light="https://i.stack.imgur.com/zw9Iz.png"
+      playIcon={<button style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'60px', textAlign:'center', display:'flex', flexDirection:'row', verticalAlign:'center', justifyContent:'center', paddingTop:'20vh'}}>
+      <ImPlay style={{margin:'1rem'}} />
+      <span style={{fontWeight:'bold', padding:'0 0 0 1rem'}}>Click To Play</span></button>}
+      light="../static/assets/transparent.png"
     />
 
       // <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'-15vh', left:'0', right:'0', width:'100vw', height:'122vh',   }} />
