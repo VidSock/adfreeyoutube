@@ -50,6 +50,8 @@ const CustomBox = styled.div`
             youtubelink: "",
             isActive:false
           }
+
+          
           handleInputChange = event => {
             const target = event.target
             const value = target.value
