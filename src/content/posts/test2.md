@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: Introducing the all-new 3D Blog
-slug: /test
+slug: /introducing-3d-blogs
 date: 2021-08-14 21:43
 description: Inventing a new blog system called 3D blogging
 youtuber: "XjuLZwlDxh8"
