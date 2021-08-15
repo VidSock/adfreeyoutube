@@ -106,13 +106,14 @@ const CustomBox = styled.div`
         
                 <ReactPlayer
   className='react-player'
-      url={FinalUrl}
+      url={Url}
       width='100%'
       height='100%'
       shownfo={false}
-      controls={false}
+      controls={true}
       // autoplay={true}
       playing
+      color="white"
       muted={false}
       playIcon={<button style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
         

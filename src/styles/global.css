@@ -928,6 +928,8 @@ body{overflow-x: hidden; min-height: 100vh;
   justify-content: flex-start;
 }
 
+body.homepage .fullscreenButt{display: none;}
+
 [aria-roledescription]{z-index:0 !important;}
 .react-slideshow-container .nav{  font-size: 40px !important;}
 
