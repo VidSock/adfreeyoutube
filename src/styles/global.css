@@ -45,6 +45,19 @@ opacity:.2;
 
 
 
+  @media (max-width: 48rem) {
+    .clickplay{
+      padding-top:20px !important;
+      font-size:'2rem' !important;
+    }
+    .clickplay span{
+      font-size:2rem !important;
+      color:#fff !important; 
+    }
+
+  }
+
+
 
 
 
