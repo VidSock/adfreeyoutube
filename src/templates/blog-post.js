@@ -128,9 +128,19 @@ const Post = ({ data, pageContext }) => {
       playing
       muted={true}
       showPortrait
-      playIcon={<button style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'60px', textAlign:'center', display:'flex', flexDirection:'row', verticalAlign:'center', justifyContent:'center', paddingTop:'0'}}>
-      <ImPlay style={{margin:'1rem'}} />
-      <span style={{fontWeight:'bold', padding:'0 0 0 1rem'}}>Click To Play</span></button>}
+      playIcon={<button className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'5%'}}>
+        
+      {/* <div className="lds-hourglass" style={{ fontSize:'60px',}}></div> */}
+
+
+      <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+      <div style={{ textAlign:'center', fontSize:'30px'}}>
+      <br /><br /></div>
+    <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+    <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+    
+    </div>
+    </button>}
       light="../static/assets/transparent.png"
     />
 
