@@ -128,6 +128,7 @@ const Post = ({ data, pageContext }) => {
       background={true}
       loop
       playing
+      playsinline
       muted={true}
       showPortrait
       playIcon={
