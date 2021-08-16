@@ -248,7 +248,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 <StaticImage className="homepage-bg" src="../../static/assets/in-the-sky-with-diamonds.jpg" alt="Twilightscapes" style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'0', zIndex:'0', objectFit:'cover', border:'none !important'}} />
 
     <div className="" style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto',}}>
-    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'absolute', top:'35vh',transition:' all 0.85s', animation:'fade .8s forwards'}}>
+    <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'absolute', top:'40vh',transition:' all 0.85s', animation:'fade .8s forwards'}}>
 
 <p className="headline" style={{fontSize:'20px', color:'#fff', fontWeight:'bold', textAlign:'center'}}>Paste YouTube Link Here:
 </p>
@@ -318,7 +318,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-
+<div className="mobilespace" style={{ border:'0px solid red'}}></div>
 
 
 {/* </div> */}

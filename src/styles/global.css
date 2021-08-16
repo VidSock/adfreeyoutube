@@ -943,6 +943,20 @@ body{overflow-x: hidden; min-height: 100vh;
 
 body.homepage .fullscreenButt{display: none;}
 
+body.homepage .mobilespace{
+  display: block;
+  width: 100vw;
+  height:15vh !important;
+}
+
+@media (max-width: 48em) {
+body.homepage .mobilespace{
+  display: block;
+  width: 100vw;
+  height:40vh !important;
+}
+}
+
 [aria-roledescription]{z-index:0 !important;}
 .react-slideshow-container .nav{  font-size: 40px !important;}
 
