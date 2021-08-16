@@ -122,13 +122,13 @@ const Post = ({ data, pageContext }) => {
       url={Url}
       width="100%"
       height="100%"
-      // showinfo
-      // controls
-      // autoplay={true}
+      showinfo
+      controls
+      autoplay={true}
       background={true}
       loop
       playing
-      // muted={true}
+      muted={true}
       showPortrait
       playIcon={
       <button className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
