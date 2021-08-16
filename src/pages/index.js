@@ -122,7 +122,7 @@ const CustomBox = styled.div`
 
         <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
         <div style={{ textAlign:'center', fontSize:'30px'}}>
-           Ads Removed!<br /><br /></div>
+           Ads Removed!</div>
       <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
       <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
       
