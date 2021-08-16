@@ -116,7 +116,7 @@ const CustomBox = styled.div`
       fullscreen
       color="white"
       muted={false}
-      playIcon={<button className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'5%'}}>
+      playIcon={<button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'5%'}}>
         
         {/* <div className="lds-hourglass" style={{ fontSize:'60px',}}></div> */}
 
@@ -266,7 +266,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           className="youtubelinker"
         />
         <br /><Link href="/contact/"><p className="headline" style={{fontSize:'16px', color:'#fff', fontWeight:'bold', textAlign:'center', textDecoration:'underline', marginTop:'20px'}}>Enjoying this? Let Todd know.</p></Link> 
-        <button onClick={this.handleShow} style={{position:'absolute', right:'15px', top:'10px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
+        <button aria-label="Click To Close" onClick={this.handleShow} style={{position:'absolute', right:'15px', top:'10px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
 </form>
     
     </div>
