@@ -258,13 +258,13 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           value={this.state.youtubelink}
           onBlur={() => window.scrollTo({top: 0, behavior: 'smooth'})}
           onInput={this.handleInputChange}
-          onChange={this.handleShow}
+          onChangeCapture={this.handleShow}
            
           placeholder="example: https://youtu.be/cVsQLlk-T0s"
           autoFocus
           className="youtubelinker"
         />
-        <br /><Link href="/contact/"><p className="headline" style={{fontSize:'16px', color:'#fff', fontWeight:'bold', textAlign:'center', textDecoration:'underline'}}>Enjoying this? Let Todd know.</p></Link> 
+        <br /><Link href="/contact/"><p className="headline" style={{fontSize:'16px', color:'#fff', fontWeight:'bold', textAlign:'center', textDecoration:'underline', marginTop:'20px'}}>Enjoying this? Let Todd know.</p></Link> 
         <button onClick={this.handleShow} style={{position:'absolute', right:'15px', top:'10px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
 </form>
     
