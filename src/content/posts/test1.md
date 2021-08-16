@@ -11,8 +11,8 @@ youtubeend: "0"
 youtubemute: "1"
 youtubecontrols: "0"
 svgzindex: "0"
-underlayImage: 
-overlayImage: 
+underlayImage: /assets/transparent.png
+overlayImage: /assets/transparent.png
 featuredImage: /assets/default-og-image.jpg
 svgImage2: /assets/transparent.png
 ---
