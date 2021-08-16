@@ -5,16 +5,16 @@ slug: /some-site-updates
 date: 2021-08-14 10:43
 description: A few new site updates have been made to make this the best Ad Free
   version of YouTube
-youtuber: ""
+youtuber: "u0WCaoF9vSc"
 youtubestart: "0"
 youtubeend: "0"
 youtubemute: "1"
 youtubecontrols: "0"
 svgzindex: "0"
-underlayImage: /assets/transparent.png
-overlayImage: /assets/transparent.png
+underlayImage: /assets/boatswains-blunder.png
+overlayImage: 
 featuredImage: /assets/default-og-image.jpg
-svgImage2: /assets/transparent.png
+svgImage2: 
 ---
 First, thank you for visiting AdFree! 
 
@@ -32,6 +32,10 @@ Thanks again for enjoying AdFree!
 
 
 <!--
+
+https://youtu.be/u0WCaoF9vSc ***
+
+
 NfEdtor4cis
 
 /assets/randpaul-sucks.svg

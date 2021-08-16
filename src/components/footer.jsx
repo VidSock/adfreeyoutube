@@ -187,13 +187,13 @@ export function Footer() {
         
       </div>
       <nav className={links} aria-label="footer">
-      <div style={{textAlign: 'center', margin: '0 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem'}}><Link to="/faq/">FAQ</Link>  |  <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
+      <div style={{textAlign: 'center', margin: '0 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem'}}><Link to="/faq/">FAQ</Link>  |  <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy</Link>  |  <Link to="/terms/">Terms of Use</Link></div>
   
   
   
       <div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '.75rem', textDecoration:'none'}}>
         
-       Copyright &copy; {(new Date().getFullYear())} AdFree - This website is a satire, parody or spoof. </div>
+       Copyright &copy; {(new Date().getFullYear())} AdFree - is NOT affiliated with YouTube in any way. </div>
        <Theme  style={{padding:'0', display:'flex', alignSelf:'center'}} />
       </nav>
    

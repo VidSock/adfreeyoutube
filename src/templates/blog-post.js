@@ -285,8 +285,9 @@ function AddSvg(){
             <GatsbyImage
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
-              className="layer2"
-              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', bottom:'-2px', zIndex:'2', objectFit:'contain', border:'0px solid red !important'}}
+              className="mcboaty"
+              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', bottom:'-2px', zIndex:'2',
+             objectFit:'contain', border:'0px solid red !important'}}
             />
             
           ) : (
