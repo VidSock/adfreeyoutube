@@ -13,7 +13,7 @@ import { StoreContext } from "../context/store-context"
 import { Toast } from "./toast"
 // import { FiShare } from 'react-icons/fi';
 // import { FaRegPlusSquare } from 'react-icons/fa';
-import Fullscreen from "../components/FullScreen"
+// import Fullscreen from "../components/FullScreen"
 import { ImArrowRight } from "react-icons/im"
 import { CartButton } from "./cart-button"
 import SearchIcon from "../../static/icons/search"
@@ -73,7 +73,7 @@ export function Layout({ children }) {
     Your browser does not support the HTML5 Audio element.
 </audio> */}
 
-<Fullscreen />
+{/* <Fullscreen /> */}
 
 <header name="pagetop" >
 

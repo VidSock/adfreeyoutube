@@ -11,10 +11,10 @@ youtubeend: "0"
 youtubemute: "1"
 youtubecontrols: "0"
 svgzindex: "0"
-underlayImage: /assets/default-og-image.jpg
-overlayImage: /assets/default-og-image.jpg
+underlayImage: 
+overlayImage: 
 featuredImage: /assets/default-og-image.jpg
-svgImage2: /assets/default-og-image.jpg
+svgImage2: /assets/transparent.png
 ---
 First, thank you for visiting AdFree! 
 

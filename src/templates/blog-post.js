@@ -117,30 +117,35 @@ const Post = ({ data, pageContext }) => {
 
  
       <ReactPlayer
+      style={{height:'', position:'absolute', top:'0', zIndex:'', background:'#000'}}
   className='react-player'
       url={Url}
-      width={"100%"}
+      width="100%"
       height="100%"
-      showinfo
-      controls
-      autoplay={true}
-      background={false}
+      // showinfo
+      // controls
+      // autoplay={true}
+      background={true}
+      loop
       playing
-      muted={true}
+      // muted={true}
       showPortrait
-      playIcon={<button className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+      playIcon={
+      <button className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
         
-      {/* <div className="lds-hourglass" style={{ fontSize:'60px',}}></div> */}
 
 
-      <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-      <div style={{ textAlign:'center', fontSize:'30px'}}>
-      </div>
+
+  <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
     <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+
     <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
     
     </div>
     </button>}
+
+
+
       light="../static/assets/transparent.png"
     />
 
@@ -182,7 +187,7 @@ const Post = ({ data, pageContext }) => {
 function AddSvg2(){
   const svg2Url = "../assets/" + frontmatter.overlayImage.relativePath + ""
   return (
-    <object id="svg1" data={svg2Url} type="image/svg+xml" style={{position:'absolute', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'100vh',  }} >You need a new browser</object>
+    <object id="svg1" data={svg2Url} type="image/svg+xml" style={{position:'absolute', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'3', width:'', height:'',  }} >You need a new browser</object>
   )
 }
 
@@ -198,7 +203,7 @@ function AddSvg2(){
 function AddSvg(){
   const svgUrl = "../assets/" + frontmatter.svgImage2.relativePath + ""
   return (
-    <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} >You need a new browser</object>
+    <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'', overflow:'hidden', border:'0px solid red', zIndex:'10', width:'100vw', height:'auto',  }} >You need a new browser</object>
   )
 }
 
@@ -220,25 +225,26 @@ function AddSvg(){
 
 
 
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'content-fill', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
-
+<div style={{display:'block', width:'100vw', height:'100vh', overflow:'hidden', position:'absolute', top:'0', display:''}}>
 {Image ? (
             <GatsbyImage
               image={Image}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'0', zIndex:'0', objectFit:'cover', border:'none !important'}}
+              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'0', zIndex:'0', objectFit:'contain', overflow:'hidden', border:'0px solid red !important'}}
             />
+            
           ) : (
 
        
-            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', top:'0',border:'none !important'}} />
+            <StaticImage src="../../static/default-og-image.jpg" alt="AdFree Default Image" style={{height:'auto', maxHeight:'60vh', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
-
+</div>
 
 
 
@@ -279,8 +285,9 @@ function AddSvg(){
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
               className="layer2"
-              style={{height:'100vh', zIndex:'1', postion:'absolute', top:'0', left:'0', objectFit:'contain', zIndex:'0' }}
+              style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', bottom:'-2px', zIndex:'2', objectFit:'contain', border:'0px solid red !important'}}
             />
+            
           ) : (
             ""
           )}
@@ -297,8 +304,8 @@ function AddSvg(){
 
 
 
-{/* 
-        <ReactPlayer
+
+        {/* <ReactPlayer
           className='react-player'
           url={Url}
           width='100vw'

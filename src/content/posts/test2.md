@@ -8,10 +8,10 @@ youtuber: "XjuLZwlDxh8"
 youtubestart: "32"
 youtubeend: "0"
 youtubemute: "1"
-youtubecontrols: "0"
+youtubecontrols: "1"
 svgzindex: "0"
 underlayImage: 
-overlayImage: 
+overlayImage: /assets/MysteryScience3000.svg
 featuredImage: /assets/mystery3000-promo.png
 svgImage2: /assets/MysteryScience3000.svg
 ---
