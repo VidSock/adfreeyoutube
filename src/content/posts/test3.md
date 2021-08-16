@@ -11,7 +11,7 @@ youtubemute: "1"
 youtubecontrols: "0"
 svgzindex: "0"
 underlayImage: /assets/swd-foreground.png
-overlayImage: /assets/campfire.svg
+overlayImage: /assets/campfire1.svg
 featuredImage: /assets/in-the-sky-with-diamonds.jpg
 svgImage2: 
 ---
