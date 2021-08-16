@@ -12,7 +12,7 @@ youtubecontrols: "1"
 svgzindex: "0"
 underlayImage: 
 overlayImage: /assets/MysteryScience3000.svg
-featuredImage: /assets/mystery3000-promo.png
+featuredImage: /assets/twilight-promo-mystery-science-3000.jpg
 svgImage2: /assets/MysteryScience3000.svg
 ---
 First, let me thank you for visiting AdFree, I'm thrilled to have you here. 
