@@ -117,38 +117,37 @@ const Post = ({ data, pageContext }) => {
 
  
       <ReactPlayer
-      style={{height:'', position:'absolute', top:'0', zIndex:'', background:'#000'}}
-  className='react-player'
-      url={Url}
-      width="100%"
-      height="100%"
-      showinfo
-      controls
-      autoplay={true}
-      background={true}
-      loop
-      playing
-      playsinline
-      muted={true}
-      showPortrait
-      playIcon={
-      <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
-        
-
-
-
-  <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
-    <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-
-    <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
-    
-    </div>
-    </button>}
-
-
-
-      light="../static/assets/transparent.png"
-    />
+          className='react-player'
+          url={Url}
+          width="100%"
+          height="100%"
+     
+ 
+          autoplay={true}
+          background={true}
+          loop
+          playing
+          playsinline
+          muted={true}
+          showPortrait
+          playIcon={
+            <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'10%'}}>
+              
+      
+      
+      
+        <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
+          <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+      
+          <span style={{fontWeight:'bold', padding:'0 0 0 1rem', fontSize:'60px'}}>Click To Play</span>
+          
+          </div>
+          </button>}
+      
+      
+      
+            light="../static/assets/transparent.png"
+          />
 
       // <iframe title="AdFree YouTube" id="youtube2" className="blog-video" width="100%" height="400" src={Url} frameBorder="0" playsInline  style={{position:'absolute', top:'-15vh', left:'0', right:'0', width:'100vw', height:'122vh',   }} />
 
@@ -177,36 +176,36 @@ const Post = ({ data, pageContext }) => {
     next,
   }
 
-  const Svg2 = frontmatter.overlayImage
+//   const Svg2 = frontmatter.overlayImage
  
-  if (!Svg2) {
+//   if (!Svg2) {
     
-  }
-  else{
-    <AddSvg2 />
-  }
-function AddSvg2(){
-  const svg2Url = "../assets/" + frontmatter.overlayImage.relativePath + ""
-  return (
-    <object id="svg1" data={svg2Url} type="image/svg+xml" style={{position:'absolute', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'3', width:'', height:'',  }} >You need a new browser</object>
-  )
-}
+//   }
+//   else{
+//     <AddSvg2 />
+//   }
+// function AddSvg2(){
+//   const svg2Url = "../assets/" + frontmatter.overlayImage.relativePath + ""
+//   return (
+//     <object id="svg1" data={svg2Url} type="image/svg+xml" style={{position:'absolute', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'3', width:'', height:'',  }} >You need a new browser</object>
+//   )
+// }
 
 
-  const Svg = frontmatter.svgImage2
-  const svgZindex = frontmatter.svgzindex
-  if (!Svg) {
+//   const Svg = frontmatter.svgImage
+//   const svgZindex = frontmatter.svgzindex
+//   if (!Svg) {
     
-  }
-  else{
-    <AddSvg />
-  }
-function AddSvg(){
-  const svgUrl = "../assets/" + frontmatter.svgImage2.relativePath + ""
-  return (
-    <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'', overflow:'hidden', border:'0px solid red', zIndex:'10', width:'100vw', height:'auto',  }} >You need a new browser</object>
-  )
-}
+//   }
+//   else{
+//     <AddSvg />
+//   }
+// function AddSvg(){
+//   const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
+//   return (
+//     <object className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'', overflow:'hidden', border:'0px solid red', zIndex:'10', width:'100vw', height:'auto',  }} >You need a new browser</object>
+//   )
+// }
 
   return (
     
@@ -254,21 +253,21 @@ function AddSvg(){
 
  
 
-  {Svg ? (
+  {/* {Svg ? (
             <AddSvg />
        
           ) : (
             ""
-          )}
+          )} */}
 
 
 
-{Svg2 ? (
+{/* {Svg2 ? (
             <AddSvg2 />
        
           ) : (
             ""
-          )}
+          )} */}
 
   {/* {OverlayImage ? (
             <GatsbyImage
@@ -303,16 +302,6 @@ function AddSvg(){
           )}
 
 
-
-
-
-
-        {/* <ReactPlayer
-          className='react-player'
-          url={Url}
-          width='100vw'
-          height='100vh'
-        /> */}
       </div>
 
 
@@ -331,10 +320,10 @@ function AddSvg(){
 
       <article className="blog-post">
         <header>
-          <section className="article-header" style={{textAlign:'center', margin:'0 4%', height:'auto'}}>
+          <section className="article-header" style={{textAlign:'center', margin:'0 4%', height:'auto', color:''}}>
             <h1>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
-            <TimeAgo date={frontmatter.date}/>
+            <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} />
           </section>
         </header>
 
@@ -419,12 +408,7 @@ export const pageQuery = graphql`
             gatsbyImageData(layout: FULL_WIDTH)
           }
         }
-        svgImage2 {
-          relativePath
-        }
-        overlayImage {
-          relativePath
-        }
+
         underlayImage {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)

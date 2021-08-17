@@ -226,6 +226,10 @@ opacity:.2;
   border-radius: 0;
 }
 
+body.homepage .gatsby-image-wrapper [data-main-image]{
+  border-radius:12px solid !important;
+}
+
 
 .gatsby-image-wrapper img{max-height: 100%; }
 
@@ -453,7 +457,7 @@ outline-color: var(--primary-color); */
 
 
 
-.button {
+/* .button {
   --padding: 15px;
   --margin: 20px;
 
@@ -477,11 +481,8 @@ outline-color: var(--primary-color); */
   font-size: 120%;
   text-shadow: 2px 2px 2px black;
   margin:2vh 1vw;
-   /* box-shadow:  2px 4px 7px #000; */
-  
-   /* filter: drop-shadow(0px 0px 10px rgba(155,155,155,.5));  */
 
-}
+} */
 
 @media (max-width: 48rem) {
 
@@ -789,6 +790,7 @@ body.carto .carta {display:block; height:100%;}
 /* body.carto .carto .blanco {display:none; height:100%;} */
 
 body .carto:hover{
+  position:inherit;
   /* background: rgba(0,0,0,0.2); transition: 1s background; */
 }
 
@@ -978,7 +980,7 @@ border: 0px solid red;
 
   }
 
-  .youtubeform{}
+
 
 
 
@@ -1333,9 +1335,10 @@ blockquote:after {
   margin-right: 0.25em;
   vertical-align: -0.4em;
   text-align: right;
-  position:absolute;
-  right:0;
-  bottom:-20px;
+  position:relative;
+  right:-25vw;
+  bottom:-8vh;
+  width:100%;
 
 }
 blockquote p {
@@ -2387,44 +2390,45 @@ background-position:center 70px;
       }
     
      .contentpanel{
-         display:block;
-         margin:0 auto;
-         padding:0 1rem;
-         text-decoration:none;
+ 
+        margin:0 auto;
+        padding:0 1rem;
+        text-decoration:none;
         text-align:left;
         text-shadow: 1px 2px 1px black;
-         font-weight:400;
-         color:#FFFFFF;
+        font-weight:400;
+        color:#FFFFFF;
         cursor:default;
         background: rgba(0,0,0,0.50);
-         transition: all 0.15s;
+        transition: all 0.15s;
         font-size:100%;
         opacity:0;
         overflow-y:auto;
-        back-drop-filter: blur(10px);
+        backdrop-filter: blur(10px);
         width:100%;
         height:100%;
         animation:fade 1.7s forwards;
         }
+        
         .contentpanel .button{max-width:50%; margin:1rem auto}
       
     
         .contentpanel > *{opacity:0; animation:fade 3s forwards;}
     
         .headline{
-          padding:1em;
-         margin:0 auto;
+        padding:1em;
+        margin:0 auto;
         /* box-shadow: 0px 1px 6px 1px black; */
-        text-shadow: 1px 2px 1px black;
+        text-shadow: 1px 0px 1px #999;
      /* background: rgba(250, 3, 196, 0.9); */
         /* background: rgba(0, 0, 0, 0.8); */
     
          /* filter: brightness(120%); */
-        font-size:100%;
-        font-weight:0 !important; 
 
-
-        color:#fff;
+        font-size: 36px;
+        font-size: clamp(18px, calc(1rem + 2vw), 36px);
+        font-size:clamp(2rem, 2.5vw, 2.8rem);
+   
         width:100%;
         transition: all .6s ease-out;
         display:block !important;
@@ -2606,85 +2610,4 @@ height:100vh;
 }
 
 
-        
-
-          /* body.featurepage .intro:before, body.spaceport .intro:before {
-            position:absolute !important;
-            top:0 !important;
-            left:0 !important;
-            z-index: 1 !important;
-            width: 57% !important;
-            height: 100vh !important;
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            background-repeat: no-repeat !important;
-            background-position: left top !important;
-       
-            
-            -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%) !important;
-            clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%) !important;
-            
-            background-image: linear-gradient(#3a3a3b 40%,#111212  100%) !important;
-                animation: slide 2.6s forwards;
-                animation-delay: .8s;
-                overflow: hidden;
-                
-                content: "  ";
-            font-size:180%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
-            }
-            
-            body.featurepage .intro:after, body.spaceport .intro:after{
-            position:absolute !important;
-            top:0 !important;
-           right:0 !important;
-            z-index: 1 !important;
-            width: 57% !important;
-            height: 100vh !important;
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
       
-            
-            -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
-            clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%) !important;
-            
-            background-image: linear-gradient(#3a3a3b 40%,#111212  100%) !important;
-                animation: slide 2.6s forwards !important;
-                animation-delay: .8s !important;
-                overflow: hidden !important;
-                
-                content: "  " ;
-            font-size:180% !important;
-            color:#f8f8fc !important;
-            text-shadow: 12px 7px 15px 12px black !important;
-            }
-
-            body.featurepage .intro:before{
-              content: "AIRLOCK" !important;
-              }
-            body.featurepage .intro:after{
-              content: "ESTABLISHED" !important;
-              }
-
-              body.spaceport .intro:before{
-                content: "AIRLOCK" !important;
-                }
-              body.spaceport .intro:after{
-                content: "OPENING!" !important;
-                } */
-
-            /* body.featurepage .intro:after{
-              content: " ";
-              position:fixed;
-            left:0;
-            top:0;
-            right:0;
-            animation: poof 1s forwards;
-            animation-delay: 1.5s;
-            filter: blur(80px);
-            width:100%;
-            height:100vh;
-            border:0x solid yellow;
-            background: rgba(0,0,0,0.6);
-            } */

@@ -67,15 +67,8 @@ collections:
           tagname: "",
         }
       - {
-          label: "Overlay Image",
-          name: "overlayImage",
-          widget: "image",
-          required: false,
-          tagname: "",
-        }
-      - {
           label: "SVG",
-          name: "svgImage2",
+          name: "svgImage",
           widget: "image",
           required: false,
           tagname: "",
@@ -107,6 +100,10 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "string" }
           - { label: "Featured Image", name: "featuredImage", widget: "image" }
+          - { label: "Secondary Image", name: "secondaryImage", widget: "image" }
+          - { label: "SVG Image", name: "svgImage", widget: "image" }
+          - { label: "SVG Z-Index", name: "svgzindex", widget: "string" }
+          - { label: "YouTube Url", name: "youtuber", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
           - label: "CTA"
             name: "cta"

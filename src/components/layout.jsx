@@ -221,12 +221,12 @@ Contact Me<span>Ordering Questions?</span>
               </Link>
       </li> 
 
-<li className="carto">
+{/* <li className="carto">
               <Link className="navbar-item txtshadow" to="/archive/">
                 The Archive
                 <span>World's First 3D Blog</span>
               </Link>
-      </li>
+      </li> */}
       
 
     

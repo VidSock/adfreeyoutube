@@ -342,6 +342,7 @@ article img {
     &:hover {
       // box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
       // background: #f2f2f2;
+      position:inherit;
     }
   }
   & + .button {
