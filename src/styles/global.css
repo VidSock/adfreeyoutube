@@ -1024,14 +1024,14 @@ body.homepage .fullscreenButt{display: none;}
 body.homepage .mobilespace{
   display: block;
   width: 100vw;
-  height:15vh !important;
+  height:10vh !important;
 }
 
 @media (max-width: 48em) {
 body.homepage .mobilespace{
   display: block;
   width: 100vw;
-  height:40vh !important;
+  height:55vh !important;
 }
 }
 
