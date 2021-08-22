@@ -266,7 +266,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           className="youtubelinker"
         />
         <br /><Link href="/contact/"><p className="headline" style={{fontSize:'16px', color:'#fff', fontWeight:'bold', textAlign:'center', textDecoration:'underline', marginTop:'20px'}}>Enjoying this? Let Todd know.</p></Link> 
-        <button aria-label="Click To Close" onClick={this.handleShow} style={{position:'absolute', right:'15px', top:'10px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
+        {/* <button aria-label="Click To Close" onClick={this.handleShow} style={{position:'absolute', right:'15px', top:'10px', fontSize:'24px'}}><AiOutlineCloseCircle /></button> */}
 </form>
     
     </div>
