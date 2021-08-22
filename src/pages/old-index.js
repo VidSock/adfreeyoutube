@@ -243,7 +243,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 <div style={{position:'fixed', top:'4vh', left:'0', right:'0', maxWidth:'100vw', zIndex:'1', display:'flex', justifyContent:'center'}}>
-  <StaticImage className="homepage-bg" src="../../static/assets/adfree-youtube-logo-sq.svg" alt="Twilightscapes" style={{ maxWidth:'48vw', filter:'drop-shadow(2px 2px 2px #000)',}} />
+  <StaticImage className="homepage-bg" src="../../static/assets/adfree-youtube-logo-sq.svg" alt="Twilightscapes" style={{ maxWidth:'18vw', filter:'drop-shadow(2px 2px 2px #000)',}} />
 </div>
 <StaticImage className="homepage-bg" src="../../static/assets/in-the-sky-with-diamonds.jpg" alt="Twilightscapes" style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'0', zIndex:'0', objectFit:'cover', border:'none !important'}} />
 
@@ -265,8 +265,11 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           autoFocus
           className="youtubelinker"
         />
-        <br /><Link href="/contact/"><p className="headline" style={{fontSize:'16px', color:'#fff', fontWeight:'bold', textAlign:'center', textDecoration:'underline', marginTop:'20px'}}>Enjoying this? Let Todd know.</p></Link> 
-        <button aria-label="Click To Close" onClick={this.handleShow} style={{position:'absolute', right:'15px', top:'10px', fontSize:'24px'}}><AiOutlineCloseCircle /></button>
+        <br />
+        
+        <Link href="/contact/"><p className="headline" style={{fontSize:'16px', color:'#fff', fontWeight:'bold', textAlign:'center', textDecoration:'underline', marginTop:'20px'}}>Enjoying this? Let Todd know.</p></Link> 
+
+        <button aria-label="Click To Close" onClick={this.handleShow} style={{position:'absolute', right:'15px', top:'10px', fontSize:'24px', color:'#999',}}><AiOutlineCloseCircle /></button>
 </form>
     
     </div>
@@ -304,7 +307,10 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
           className="youtubelinker"
           style={{maxWidth:'800px'}}
         />
-        <br /><Link href="/contact/"><p className="headline" style={{fontSize:'16px', color:'#fff', fontWeight:'bold', textAlign:'center', textDecoration:'underline'}}>Enjoying this? Let Todd know.</p></Link> 
+        <br />
+        
+        <Link href="/contact/"><p className="headline" style={{fontSize:'16px', color:'#fff', fontWeight:'bold', textAlign:'center', textDecoration:'underline'}}>Enjoying this? Let Todd know.</p></Link> 
+
         {/* <button onClick={this.handleShow} style={{position:'absolute', right:'-5px', top:'-5px', fontSize:'24px'}}><AiOutlineCloseCircle /></button> */}
 </form>
     

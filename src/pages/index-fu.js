@@ -1,13 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Layout } from "../components/layout"
+
 // import { ProductListing } from "../components/product-listing"
 // import GoBack from "../components/goBack"
 import styled from "styled-components"
 // import ShareSocial from '../components/share' 
 // import { StaticImage } from "gatsby-plugin-image"
-import { Helmet } from "react-helmet"
-import { Seo } from "../components/seo"
+// import { Helmet } from "react-helmet"
+// import { Seo } from "../components/seo"
 import { FaRegPlusSquare } from 'react-icons/fa';
 import { IoShareOutline } from 'react-icons/io5';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
@@ -31,17 +31,7 @@ const CustomBox = styled.div`
 
 
 
-// export const query = graphql`
-//   query {
-//     shopifyCollection(handle: { eq: "feature" }) {
-//       products {
-//         ...ProductCard
-//       }
-//     }
-//   }
-// `
 
-       // export default function nftPage({ data: { products } }) {
   
 
 
@@ -86,27 +76,21 @@ const CustomBox = styled.div`
           }
 
 
-
-          
           render() {
 
-            
-
+          
             const Url = this.state.youtubelink
 
             const urlNoProtocol = Url.replace(/^.*((youtu.be\/))/i, "")
             const FinalUrl = "https://www.youtube.com/embed/" + urlNoProtocol + "?controls=1&amp;showinfo=1&amp;color=white&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=0&amp;playlist=" + urlNoProtocol + ""
 
-
-
-            
             function Iframer() {
   
               return (
         
                 <ReactPlayer
   className='react-player'
-      url={Url}
+      url={FinalUrl}
       width='100%'
       height='100%'
       shownfo={false}
@@ -116,10 +100,8 @@ const CustomBox = styled.div`
       fullscreen
       color="white"
       muted={false}
-      playIcon={<button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'5%'}}>
+      playIcon={<button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'10', top:'0', border:'0px solid red', width:'100vw', height:'100vh', background:'#111', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'columh', verticalAlign:'center', justifyContent:'center', paddingTop:'5%'}}>
         
-        {/* <div className="lds-hourglass" style={{ fontSize:'60px',}}></div> */}
-
 
         <div className="" style={{ textAlign:'center', animation:'fadeIn 3s'}}>
         <div style={{ textAlign:'center', fontSize:'30px'}}>
@@ -132,47 +114,17 @@ const CustomBox = styled.div`
       light="../static/assets/transparent.png"
     />
 
-                // <iframe title="AdFree YouTube" id="youtube" className="blog-video" width="100%" height="400" src={FinalUrl} frameBorder="0" playsInline />
               )
             }
 
             
             return (
 
-
 <>
 
 
-    <CustomBox style={{}}>
-    <Layout className="thanks-page">
-    <Helmet>
-  <body className="homepage" />
-</Helmet>
 
-<Seo
-          title={`Clicking Skip, Sucks`}
-          description={`Sometimes you just need a break from the ads, that's why there is AdFree`}
-          image={'https://adfreeyoutube.com/default-og-image.jpg'}
-        />
-<div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'content-fill', overflow:'hidden' }}>
-
-{/* <ScrollAnimation className="signup" animateIn="bounceInUp" delay={18000} duration="5" initiallyVisible={false} animateOnce={false} animatePreScroll={true} style={{position:'absolute', top:'50vh',
-right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', textAlign:'center', display:'flex', borderRadius:'12px', justifyContent:'center'}}>
-<ScrollAnimation  animateIn="fadeOut" delay={28000} duration="1" initiallyVisible={true} animateOnce={true} animatePreScroll={true} >
-  <GiftShop />
-</ScrollAnimation>
-</ScrollAnimation> */}
-
-{/* <div className="vidbox" style={{maxHeight:'100vh', overflow:'hidden'}}>
-  <div className="video-background" style={{width:'100vw', height:'100vh', overflow:'hidden'}}> */}
-  {/* <div className="video-foreground" style={{position:'relative', zIndex:'-1', display:'', justifyContent:'center', maxHeight:'100vh',}}> */}
-
-
-
-
-
-
-
+{/* <div className='player-wrapper' style={{position:'relative', top:'0', zIndex:'0', height:'content-fill', overflow:'hidden' }}> */}
 
 {urlNoProtocol ? (
      <Iframer />
@@ -181,71 +133,16 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
         )}
 
 
-{/* <ReactPlayer /> */}
+      {/* </div> */}
 
-  
-
-{/* <ReactPlayer
-      className='react-player'
-      controls
-      playing
-      url={Url}
-      width='100%'
-      height='100%'
-      playing={true}
-      volume={1}
-      embedOptions="0"
-      controls={true}
-      autoplay={true}
-      config={{
-        youtube: {
-          playerVars: { autoplay:1, controls:0, showinfo:0 , mute:0, autoplay:1, playsinline:0, rel:0}
-        },
-      }}
-      onReady={() => console.log("ready now")}
-    /> */}
-
-
-
-
-      </div>
-
-
-{/* </div> */}
 {!this.state.isActive ? 
 
 <>
 
+{/* <div style={{position:'fixed', top:'4vh', left:'0', right:'0', maxWidth:'100vw', zIndex:'1', display:'flex', justifyContent:'center'}}>
+  <StaticImage className="homepage-bg" src="../../static/assets/nft-logo.svg" alt="Twilightscapes" style={{ maxWidth:'48vw', filter:'drop-shadow(2px 2px 2px #000)',}} />
+</div> */}
 
-
-
-
-
-   
-
-{/* <form className="contact-form backdrop" onSubmit={this.handleSubmit} style={{margin:'0', padding:'0', display:'flex', width:'100%', justifyContent:'center', alignItems:'center'}}>
-      <label htmlFor="youtubelink" style={{minWidth:'220px', width:'220px', textAlign:'right', border:'0px solid red', paddingRight:'20px'}}>
-        Click "Share" and copy Url<br />Then paste Url here:</label>
-        
-        <input
-          id=""
-          type="text"
-          name="youtubelink"
-          value={this.state.youtubelink}
-          onInput={this.handleInputChange}
-          onChange={this.handleHide}
-          onclick="paste(this)"
-          placeholder="example: https://youtu.be/cVsQLlk-T0s"
-          // autoFocus
-          className="youtubelinker"
-        />
-    </form> */}
-
-
-<div style={{position:'fixed', top:'4vh', left:'0', right:'0', maxWidth:'100vw', zIndex:'1', display:'flex', justifyContent:'center'}}>
-  <StaticImage className="homepage-bg" src="../../static/assets/adfree-youtube-logo-sq.svg" alt="Twilightscapes" style={{ maxWidth:'48vw', filter:'drop-shadow(2px 2px 2px #000)',}} />
-</div>
-<StaticImage className="homepage-bg" src="../../static/assets/in-the-sky-with-diamonds.jpg" alt="Twilightscapes" style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'absolute', top:'0', zIndex:'0', objectFit:'cover', border:'none !important'}} />
 
     <div className="" style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto',}}>
     <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'absolute', top:'40vh',transition:' all 0.85s', animation:'fade .8s forwards'}}>
@@ -271,21 +168,12 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
     
     </div>
     
-
-
-
     </>
   : 
 
-  
 <div className="" style={{display:'flex', justifyContent:'center', width:'90%', margin:'0 auto',}}>
 
 
-
-
-
-
-  
     <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem 12%', border:'1px solid #333', borderRadius:'12px', height:'auto', width:'100%', maxWidth:'800px', margin:'0 auto', zIndex:'1', position:'relative', bottom:'0',transition:' all 1.85s', animation:'fade 1.5s forwards' }}>
 
     <p className="headline" style={{fontSize:'20px', color:'#fff', fontWeight:'bold', textAlign:'center'}}>Paste YouTube Link Here:
@@ -318,13 +206,10 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 
 
 
-<div className="mobilespace" style={{ border:'0px solid red'}}></div>
 
 
-{/* </div> */}
-{/* <PhotoMenu /> */}
-       </Layout>
-     </CustomBox>
+
+
      </>
 
     )
